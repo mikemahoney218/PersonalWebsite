@@ -74,6 +74,7 @@ Let's start off discussing these aesthetics by finishing up talking about positi
 
 ```{r, message=FALSE}
 library(dplyr)
+set.seed(42)
 tibble(x = rnorm(20, 0, 0.5),
        y = rnorm(20, 0, 0.5)) %>%
   ggplot(aes(x, y)) + 
