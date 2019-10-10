@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mike Mahoney</title>
-    <link>/authors/admin/</link>
-      <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/authors/admin/</link>
+      <atom:link href="https://www.mikemahoney218.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Mike Mahoney</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
     <image>
-      <url>/img/logo.jpg</url>
+      <url>https://www.mikemahoney218.com/img/logo.jpg</url>
       <title>Mike Mahoney</title>
-      <link>/authors/admin/</link>
+      <link>https://www.mikemahoney218.com/authors/admin/</link>
     </image>
     
   </channel>

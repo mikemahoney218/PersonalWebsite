@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Other | Mike Mahoney</title>
-    <link>/categories/other/</link>
-      <atom:link href="/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/categories/other/</link>
+      <atom:link href="https://www.mikemahoney218.com/categories/other/index.xml" rel="self" type="application/rss+xml" />
     <description>Other</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 23 Oct 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/logo.jpg</url>
+      <url>https://www.mikemahoney218.com/img/logo.jpg</url>
       <title>Other</title>
-      <link>/categories/other/</link>
+      <link>https://www.mikemahoney218.com/categories/other/</link>
     </image>
     
     <item>
       <title>Welcome to the New Site!</title>
-      <link>/post/newsite/welcome-to-the-new-site/</link>
+      <link>https://www.mikemahoney218.com/post/newsite/welcome-to-the-new-site/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>/post/newsite/welcome-to-the-new-site/</guid>
+      <guid>https://www.mikemahoney218.com/post/newsite/welcome-to-the-new-site/</guid>
       <description>
 
 

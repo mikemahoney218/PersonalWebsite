@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials | Mike Mahoney</title>
-    <link>/tags/tutorials/</link>
-      <atom:link href="/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/tags/tutorials/</link>
+      <atom:link href="https://www.mikemahoney218.com/tags/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <description>Tutorials</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/logo.jpg</url>
+      <url>https://www.mikemahoney218.com/img/logo.jpg</url>
       <title>Tutorials</title>
-      <link>/tags/tutorials/</link>
+      <link>https://www.mikemahoney218.com/tags/tutorials/</link>
     </image>
     
     <item>
       <title>Theory of Data Visualizations</title>
-      <link>/tutorials/dataviz/dataviz-theory/</link>
+      <link>https://www.mikemahoney218.com/tutorials/dataviz/dataviz-theory/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tutorials/dataviz/dataviz-theory/</guid>
+      <guid>https://www.mikemahoney218.com/tutorials/dataviz/dataviz-theory/</guid>
       <description>
 
 
@@ -50,7 +50,7 @@
 library(ggplot2)
   ggplot(dplyr::as_tibble(Orange), aes(age, circumference)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This visualization isn’t anything too complex – two variables, thirty-five observations, not much text – but it already shows us a trend that exists in the data. We could use this information, if we were so inspired, to start investigating the &lt;em&gt;whys&lt;/em&gt; of why tree growth changes with age, now that we’re broadly aware of &lt;em&gt;how&lt;/em&gt; it changes.&lt;/p&gt;
 &lt;p&gt;Explanatory graphs, meanwhile, are all about the &lt;em&gt;whys&lt;/em&gt;. Where an exploratory graphic focuses on identifying patterns in the first place, an explanatory graphic aims to explain why they happen and – in the best examples – what exactly the reader is to do about them. Explanatory graphics can exist on their own or in the context of a larger report, but their goals are the same: to provide evidence about why a pattern exists and provide a call to action. For instance, we can reimagine the same tree graph with a few edits in order to explain what patterns we’re seeing:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
@@ -71,7 +71,7 @@ Orange %&amp;gt;%
        title = &amp;quot;Orange tree growth tapers by year 4&amp;quot;,
        subtitle = &amp;quot;Biomass increases more rapidly than leaf area, slowing rate of growth once tree reaches 15cm&amp;quot;,
        caption = &amp;quot;Data from Draper and Smith, 1998\nRed line represents mean growth curve, grey lines growth curves for individual trees.&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;I want to specifically call out the title here: “Orange tree growth tapers by year 4.” A good graphic tells a story, remember. As such, whatever title you give your graph should reflect the point of that story – titles such as “Tree diameter (cm) versus age (days)” and so on add nothing that the user can’t get from the graphic itself. Instead, use your title to advance your message whenever it makes sense – otherwise, if it doesn’t add any new information, you can likely erase it altogether.&lt;/p&gt;
 &lt;p&gt;The important takeaway here is not that explanatory graphics are necessarily more polished than exploratory ones, or that exploratory graphics are only for the analyst – periodic reporting, for instance, will often use highly polished exploratory graphics to identify existing trends, hoping to spur more intensive analysis that will identify the whys. Instead, the message is that knowing the end purpose of your graph – whether it should help identify patterns in the first place or explain how they got there – can help you decide what elements need to be included to tell the story your graphic is designed to address.&lt;/p&gt;
 &lt;/div&gt;
@@ -96,9 +96,9 @@ Orange %&amp;gt;%
     
     <item>
       <title>Mechanics of Data Visualizations</title>
-      <link>/tutorials/dataviz/dataviz-mechanics/</link>
+      <link>https://www.mikemahoney218.com/tutorials/dataviz/dataviz-mechanics/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tutorials/dataviz/dataviz-mechanics/</guid>
+      <guid>https://www.mikemahoney218.com/tutorials/dataviz/dataviz-mechanics/</guid>
       <description>
 
 
@@ -110,12 +110,12 @@ Orange %&amp;gt;%
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
 ggplot(mpg, aes(displ, hwy)) +
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;They have an x and a y scale, and - as in our scatterplot here - the position a point falls along each scale tells you how large its values are. But this setup only allows us to look at two variables in our data - and we’re frequently interested in seeing relationships between more than two variables.&lt;/p&gt;
 &lt;p&gt;So the question becomes: how can we visualize those extra variables? We can try adding another position scale:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(lattice)
 wireframe(hwy ~ cty + displ, data = mpg)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But 3D images are hard to wrap your head around, complicated to produce, and not as effective in delivering your message. They do have their uses - particularly when you’re able to build real 3D models, and not just make 3D shapes on 2D planes - but frequently aren’t worth the trouble.&lt;/p&gt;
 &lt;p&gt;So what tools do we have in our toolbox? The ones that are generally agreed upon (no, really - this is an area of active debate) fall into four categories:&lt;/p&gt;
 &lt;ul&gt;
@@ -144,7 +144,7 @@ tibble(x = rnorm(20, 0, 0.5),
   geom_point() + 
   geom_point(aes(x = 20, y = 20)) +
   theme(axis.text = element_blank())&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Which values do you think are higher?&lt;/p&gt;
 &lt;p&gt;Most people innately assume that the bottom-left hand corner represents a 0 on both axes, and that the further you get from that corner the higher the values are. This – relatively obvious – revelation hints at a much more important concept in data visualizations: perceptual topology should match data topology. Values that feel larger in a graph should represent values that &lt;em&gt;are&lt;/em&gt; larger in your data. As such, when working with position, higher values should be the ones further away from that lower left-hand corner – you should let your viewer’s subconscious assumptions do the heavy lifting for you.&lt;/p&gt;
 &lt;p&gt;Applying this advice to categorical data can get a little tricky. Imagine that we’re looking at the average highway mileages for manufacturers of the cars in our dataset:&lt;/p&gt;
@@ -154,7 +154,7 @@ tibble(x = rnorm(20, 0, 0.5),
   ggplot(aes(manufacturer, hwy)) + 
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this case, the position along the x axis just represents a different car maker, in alphabetical order. But remember, position in a graph is an aesthetic that we can use to encode more information in our graphics. And we aren’t doing that here – for instance, we could show the same information without using x position at all:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   group_by(manufacturer) %&amp;gt;%
@@ -164,7 +164,7 @@ tibble(x = rnorm(20, 0, 0.5),
   scale_x_discrete(limits = c(1, 1)) +
   theme(axis.text.x = element_blank()) + 
   labs (x = &amp;quot;&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Try to compare Pontiac and Hyundai on the first graph, versus on this second one. If anything, removing our extraneous x aesthetic has made it easier to compare manufacturers. This is a big driver behind our second mantra – that everything should be made as simple as possible, but no simpler. Having extra aesthetics confuses a graph, making it harder to understand the story it’s trying to tell.&lt;/p&gt;
 &lt;p&gt;However, when making a graphic, we should always be aiming to make important comparisons easy. As such, we should take advantage of our x aesthetic, arranging our manufacturers not by the alphabet, but rather by their average highway mileage:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(forcats)
@@ -175,7 +175,7 @@ mpg %&amp;gt;%
   ggplot(aes(manufacturer, hwy)) + 
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;By reordering our graphic, we’re now able to better compare more similar manufacturers. It’s now dramatically faster to understand our visualization – closer comparisons are easier to make, so placing more similar values closer together makes them dramatically easier to grasp. Look at Pontiac vs Hyundai now, for instance. Generally speaking, don’t put things in alphabetical order - use the order you place things to encode additional information.&lt;/p&gt;
 &lt;p&gt;As a quick sidenote, I personally believe that, when working with categorical values along the X axis, you should reorder your values so the highest value comes first. For some reason, I just find having the tallest bar/highest point (or whatever is being used to show value) next to the Y axis line is much cleaner looking than the alternative:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
@@ -185,7 +185,7 @@ mpg %&amp;gt;%
   ggplot(aes(manufacturer, hwy)) + 
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For what it’s worth, I’m somewhat less dogmatic about this when the values are on the Y axis. I personally believe the highest value should always be at the top, as humans expect higher values to be further from that bottom left corner:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   group_by(manufacturer) %&amp;gt;%
@@ -195,7 +195,7 @@ mpg %&amp;gt;%
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
   coord_flip()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;However, I’m not as instantly repulsed by the opposite ordering as I am with the X axis, likely because the bottom bar/point being the furthest looks like a more natural shape, and is still along the X axis line:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   group_by(manufacturer) %&amp;gt;%
@@ -205,7 +205,7 @@ mpg %&amp;gt;%
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
   coord_flip()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;For this, at least, your mileage may vary. Also, it’s worth pointing out how much cleaner the labels on this graph are when they’re on the Y axis - flipping your coordinate system, like we’ve done here, is a good way to display data when you’ve got an unwieldy number of categories.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;color&#34; class=&#34;section level3&#34;&gt;
@@ -219,14 +219,14 @@ ggplot(df, aes(x, y)) +
   geom_point(size = 3) + 
   theme(text = element_blank(),
         legend.position = &amp;quot;null&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;And now let’s add color for our third variable:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df, aes(x, y, color = factor(z))) + 
   geom_point(size = 3) + 
   theme(text = element_blank(),
         legend.position = &amp;quot;null&amp;quot;) + 
   scale_color_brewer(palette = &amp;quot;OrRd&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Remember: perceptual topology should match data topology. Which values are larger?&lt;/p&gt;
 &lt;p&gt;Most people would say the darker ones. But is it always that simple? Let’s change our color scale to compare:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df, aes(x, y, color = factor(z))) + 
@@ -234,7 +234,7 @@ ggplot(df, aes(x, y)) +
   theme(text = element_blank(),
         legend.position = &amp;quot;null&amp;quot;) + 
   scale_color_brewer(palette = &amp;quot;Dark2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Sure, some of these colors are darker than others – but I wouldn’t say any of them tell me a value is particularly high or low.&lt;/p&gt;
 &lt;p&gt;That’s because humans don’t percieve &lt;em&gt;hue&lt;/em&gt; as an ordered variable - the actual color a point is doesn’t tell us how large a value is. Instead, the first graph altered the &lt;em&gt;luminance&lt;/em&gt; of each point - how bright or dark it was - in order to tell us what value it has.&lt;/p&gt;
 &lt;p&gt;There’s one other axis you can move colors along in order to encode value, known as &lt;em&gt;chroma&lt;/em&gt;:&lt;/p&gt;
@@ -243,7 +243,7 @@ ggplot(df, aes(x, y)) +
   theme(text = element_blank(),
         legend.position = &amp;quot;null&amp;quot;) + 
   scale_color_gradient(low = &amp;quot;grey&amp;quot;, high = &amp;quot;red&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Chroma - or how vibrant a color is - also encodes a value, with more vibrant colors representing higher values. These three values – hue, chroma, and luminence – form the HCL color spectrum, which is more or less how humans perceive colors in our daily lives. By altering the C and L components, we’re able to use color to encode numeric values in our graphics.&lt;/p&gt;
 &lt;p&gt;Now, color brings with it a number of challenges. For example, as we’ve already shown, changing the hue of a color doesn’t actually help us to encode any more information in our graphics. Combine that with the most common way to choose colors for a graphic - using the rainbow - and you wind up with a lot of graphics like this:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df, aes(x, y, color = factor(z))) + 
@@ -251,23 +251,23 @@ ggplot(df, aes(x, y)) +
   scale_color_manual(values = rainbow(5)) + 
   theme(text = element_blank(),
         legend.position = &amp;quot;null&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-14-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Which values are larger? Who knows?&lt;/p&gt;
 &lt;p&gt;Now, it’s not actually fair of me to say that hue doesn’t encode any information in our graphics. For instance, in this example, you can clearly see that blue points are different in some manner from red points. It’s more appropriate to say that hue is an &lt;em&gt;unordered value&lt;/em&gt; – there’s no hue that represents a larger or smaller value than any other, but two hues do clearly represent two different values.&lt;/p&gt;
 &lt;p&gt;This becomes relevant when dealing with categorical data. For instance, moving back to the scatterplot we started with:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(displ, hwy)) +
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;If we wanted to encode a categorical variable in this – for instance, the class of vehicle – we could use hue to distinguish the different types of cars from one another:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(displ, hwy, color = class)) +
   geom_point() + 
   scale_color_brewer(palette = &amp;quot;Dark2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-16-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this case, using hue to distinguish our variables clearly makes more sense than using either chroma or luminesence:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(displ, hwy, color = class)) +
   geom_point() + 
   scale_color_brewer(palette = &amp;quot;OrRd&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This is a case of knowing what tool to use for the job - chroma and luminescence will clearly imply certain variables are closer together than is appropriate for categorical data, while hue won’t give your audience any helpful information about an ordered variable. Note, though, that I’d still discourage using the rainbow to distinguish categories in your graphics – the rainbow is not perceptually uniform (for instance, red and orange are much more similar colors than yellow and blue), and you’ll wind up implying connections between your categories that you might not want to suggest.&lt;/p&gt;
 &lt;p&gt;Speaking of knowing the right rool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
@@ -278,7 +278,7 @@ ggplot(df, aes(x, y)) +
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
   scale_fill_brewer(palette = &amp;quot;Dark2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this graph, the variable “class” is being represented by both position, along the x axis, and by color. By duplicating this effort, we’re making our graph harder to understand – encoding the information once is enough, and doing it any more times than that is a distraction. Remember the second mantra: Everything should be made as simple as possible – but no simpler. The best data visualization is one that includes all the elements needed to deliver the message, and no more.&lt;/p&gt;
 &lt;p&gt;You can feel free to use color in your graphics, so long as it adds more information to the plot - for instance, if it’s encoding a third variable:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
@@ -290,7 +290,7 @@ ggplot(df, aes(x, y)) +
   geom_col() + 
   scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
   scale_fill_brewer(palette = &amp;quot;Dark2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-19-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But replicating as we did above is just adding more junk to your chart.&lt;/p&gt;
 &lt;p&gt;There’s one last way you can use color effectively in your plot, and that’s to highlight points with certain characteristics:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
@@ -303,7 +303,7 @@ ggplot(df, aes(x, y)) +
   scale_shape_manual(values = c(14:22))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: `show_guide` has been deprecated. Please use `show.legend`
 ## instead.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Doing so allows the viewer to quickly pick out the most important sections of our graph, increasing its effectiveness. Note that I used shape instead of color to separate the class of vehicles, by the way – combining point highlighting and using color to distinguish categorical variables can work, but can also get somewhat chaotic:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   group_by(class) %&amp;gt;%
@@ -316,7 +316,7 @@ ggplot(df, aes(x, y)) +
   scale_color_brewer(palette = &amp;quot;Dark2&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: `show_guide` has been deprecated. Please use `show.legend`
 ## instead.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;There’s one other reason color is a tricky aesthetic to get right in your graphics: about 5% of the population (10% of men, 1% of women) can’t see colors at all. That means you should be careful when using it in your visualizations – use colorblind-safe color palettes (google “ColorBrewer” or “viridis” for more on these), and pair it with another aesthetic whenever possible.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;shape&#34; class=&#34;section level3&#34;&gt;
@@ -324,25 +324,25 @@ ggplot(df, aes(x, y)) +
 &lt;p&gt;The easiest aesthetic to pair color with is the next most frequently used – shape. This one is much more intuitive than color – to demonstrate, let’s go back to our scatterplot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-22-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We can now change the shape of each point based on what class of vehicle it represents:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ, shape = class)) + 
   geom_point() + 
   scale_shape_manual(values = 1:7)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-23-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Imagine we were doing the same exercise as we did with color earlier – which values are larger?&lt;/p&gt;
 &lt;p&gt;I’ve spoiled the answer already by telling you what the shapes represent – none of them are inherently larger than the others. Shape, like hue, is an &lt;em&gt;unordered value&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;The same basic concepts apply when we change the shape of lines, not just points. For instance, if we plot separate trendlines for front-wheel, rear-wheel, and four-wheel drive cars, we can use linetype to represent each type of vehicle:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ, linetype = drv)) + 
   geom_smooth(se = F)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using method = &amp;#39;loess&amp;#39; and formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-24-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But even here, no one linetype implies a higher or lower value than the others.&lt;/p&gt;
 &lt;p&gt;There are two caveats to be made to this rule, however. For instance, if we go back to our original scatterplot and change which shapes we’re using:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ, shape = class)) + 
   geom_point() + 
   scale_shape_manual(values = c(5, 23, 9, 2, 17, 6, 20))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-25-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This graph seems to imply more connection between the first three classes of car (which are all different types of diamonds) and the next three classes (which are all types of triangle), while singling out SUVs. In this way, we’re able to use shape to imply connection between our groupings - more similar shapes, which differ only in angle or texture, imply a closer relationship to one another than to other types of shape. This can be a blessing as well as a curse - if you pick, for example, a square and a diamond to represent two unrelated groupings, your audience might accidentally read more into the relationship than you had meant to imply.&lt;/p&gt;
 &lt;p&gt;It’s also worth noting that different shapes can pretty quickly clutter up a graph. As a general rule of thumb, using more than 3-4 shapes on a graph is a bad idea, and more than 6 means you need to do some thinking about what you actually want people to take away.&lt;/p&gt;
 &lt;/div&gt;
@@ -351,18 +351,18 @@ ggplot(df, aes(x, y)) +
 &lt;p&gt;Our last aesthetic is that of size. Going back to our original scatterplot, we could imagine using size like this:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ, size = cty)) +
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-26-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Size is an inherently &lt;em&gt;ordered value&lt;/em&gt; - large size points imply larger values. Specifically, humans perceive larger areas as corresponding to larger values - the points which are three times larger in the above graph are about three times larger in value, as well.&lt;/p&gt;
 &lt;p&gt;This becomes tricky when size is used incorrectly, either by mistake or to distort the data. Sometimes an analyst maps radius to the variable, rather than area of the point, resulting in graphs as the below:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ, size = cty)) +
   geom_point() + 
   scale_radius()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-27-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this example, the points representing a cty value of 10 don’t look anything close to 1/3 as large as the points representing 30. This makes the increase seem much steeper upon looking at this chart – so be careful when working with size as an aesthetic that your software is using the area of points, not radius!&lt;/p&gt;
 &lt;p&gt;It’s also worth noting that unlike color – which can be used to distinguish groupings, as well as represent an ordered value – it’s generally a bad idea to use size for a categorical variable. For instance, if we mapped point size to class of vehicle:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ, size = class)) +
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-28-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We seem to be implying relationships here that don’t actually exist, like a minivan and midsize vehicle being basically the same. As a result, it’s best to only use size for continuous (or numeric) data.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;a-tangent&#34; class=&#34;section level3&#34;&gt;
@@ -389,7 +389,7 @@ ggplot(df, aes(x, y)) +
         y = &amp;quot;&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Using size for a discrete variable is not advised.&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `geom_smooth()` using method = &amp;#39;loess&amp;#39; and formula &amp;#39;y ~ x&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-29-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The second half cautions us against not using all the aesthetics it takes to tell our story, in case we don’t produce the most expressive graphic possible:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(iris, aes(Sepal.Length, Sepal.Width)) + 
   geom_point() + 
@@ -397,7 +397,7 @@ ggplot(df, aes(x, y)) +
         axis.text = element_blank()) + 
   labs( x = &amp;quot;&amp;quot;, 
         y = &amp;quot;&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-30-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Instead, we should use exactly as many aesthetics as it takes to tell our story, carefully choosing each to encode the most information possible into our graphics:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
   geom_point() + 
@@ -406,7 +406,7 @@ ggplot(df, aes(x, y)) +
         axis.text = element_blank()) + 
   labs( x = &amp;quot;&amp;quot;, 
         y = &amp;quot;&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-31-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As for the specific takeaways from this section, I can think of the following:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Match perceptual and data topology – if a color or position &lt;em&gt;feels like a higher value&lt;/em&gt;, use it to represent data that is a higher value&lt;/li&gt;
@@ -428,12 +428,12 @@ ggplot(df, aes(x, y)) +
 &lt;p&gt;Think back to our first chart:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ)) +
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-32-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;As you already know, this is a &lt;em&gt;scatterplot&lt;/em&gt; - also known as a &lt;em&gt;point graph&lt;/em&gt;. Now say we added a line of best fit to it:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ)) +
   geom_point() + 
   geom_smooth(se = F)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-33-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-33-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This didn’t stop being a scatterplot once we drew a line on it – but the term scatterplot no longer really encompasses everything that’s going on here. It’s also obviously not a line chart, as even though there’s a line on it, it also has points.&lt;/p&gt;
 &lt;p&gt;Rather than quibble about what type of chart this is, it’s more helpful to describe what tools we’ve used to depict our data. We refer to these as &lt;em&gt;geoms&lt;/em&gt;, short for &lt;em&gt;geometries&lt;/em&gt; – because when you get really deep into things, these are geometric representations of how your dataset is distributed along the x and y axes of your graph. I don’t want to get too far down that road – I just want to explain the vocabulary so that we aren’t talking about &lt;em&gt;what type of chart&lt;/em&gt; that is, but rather &lt;em&gt;what geoms it uses&lt;/em&gt;. Framing things that way makes it easier to understand how things can be combined and reformatted, rather than assuming each type of chart can only do one thing.&lt;/p&gt;
 &lt;div id=&#34;two-continuous-variables&#34; class=&#34;section level3&#34;&gt;
@@ -442,13 +442,13 @@ ggplot(df, aes(x, y)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(mpg, aes(hwy, displ)) +
   geom_point() + 
   geom_line()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-34-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-34-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;It’s important to be clear about which type of chart you’re expected to produce! I always refer to the prior as a trendline, for clarity.&lt;/p&gt;
 &lt;p&gt;These types of charts have enormous value for quick exploratory graphics, showing how various combinations of variables interact with one another. For instance, many analysts start familiarizing themselves with new datasets using correlation matrices (also known as scatterplot matrices), which create a grid of scatterplots representing each variable:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   select_if(is.numeric) %&amp;gt;%
   GGally::ggpairs()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-35-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-35-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this format, understanding interactions between your data is quick and easy, with certain variable interactions obviously jumping out as promising avenues for further exploration.&lt;/p&gt;
 &lt;p&gt;To back up just a little, there’s one major failing of scatterplots that I want to highlight before moving on. If you happen to have more than one point with the same x and y values, a scatterplot will just draw each point over the previous, making it seem like you have less data than you actually do. Adding a little bit of random noise - for instance, using RAND() in Excel - to your values can help show the actual densities of your data, especially when you’re dealing with numbers that haven’t been measured as precisely as they could a have been.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;a &amp;lt;- ggplot(mpg, aes(hwy, cty)) +
@@ -458,14 +458,14 @@ b &amp;lt;- ggplot(mpg, aes(hwy, cty)) +
   geom_jitter()
 
 cowplot::plot_grid(a, b)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-36-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-36-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One last chart that does well with two continuous variables is the area chart, which resembles a line chart but fills in the area beneath the line:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mpg %&amp;gt;%
   group_by(cty) %&amp;gt;%
   summarise(hwy = mean(hwy)) %&amp;gt;%
 ggplot(aes(cty, hwy)) +
   geom_area()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-37-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Area plots make sense when 0 is a relevant number to your dataset – that is, a 0 value wouldn’t be particularly unexpected. They’re also frequently used when you have multiple groupings and care about their total sum:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   count(carat, cut) %&amp;gt;%
@@ -473,7 +473,7 @@ ggplot(aes(cty, hwy)) +
   geom_area() +
   scale_x_continuous(limits = c(0.2, 2))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Removed 268 rows containing missing values (position_stack).&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-38-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-38-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;(This new dataset is the “diamonds” dataset, representing 54,000 diamonds sizes, qualities, cut, and sale prices. We’ll be going back and forth using it and the EPA dataset from now on.)&lt;/p&gt;
 &lt;p&gt;Now one drawback of stacked area charts is that it can be very hard to estimate how any individual grouping shifts along the x axis, due to the cumulative effects of all the groups underneath them. For instance, there are actually fewer “fair” diamonds at 0.25 carats than at 1.0 – but because “ideal” and “premium” spike so much, your audience might draw the wrong conclusions. In situations where the total matters more than the groupings, this is alright – but otherwise, it’s worth looking at other types of charts as a result.&lt;/p&gt;
 &lt;/div&gt;
@@ -483,26 +483,26 @@ ggplot(aes(cty, hwy)) +
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat)) + 
   geom_histogram()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-39-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-39-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One important flag to raise with histograms is that you need to pay attention to how your data is being binned. If you haven’t picked the right width for your bins, you might risk missing peaks and valleys in your dataset, and might misunderstand how your data is distributed – for instance, look what shifts if we graph 500 bins, instead of the 30 we used above:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat)) + 
   geom_histogram(bins = 500)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-40-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-40-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;An alternative to the histogram is the frequency plot, which uses a line chart in the place of bars to represent the frequency of a value in your dataset:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat)) + 
   geom_freqpoly(bins = 30)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-41-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-41-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Again, however, you have to pay attention to how wide your data bins are with these charts – you might accidentally smooth over major patterns in your data if you aren’t careful!&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat)) + 
   geom_freqpoly(bins = 500)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-42-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-42-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One large advantage of the frequency chart over the histogram is how it deals with multiple groupings – if your groupings trade dominance at different levels of your variable, the frequency graph will make it much more obvious how they shift than a histogram will.&lt;/p&gt;
 &lt;p&gt;(Note that I’ve done something weird to the data in order to show how the distributions change below.)&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat, color = cut)) + 
   geom_freqpoly(bins = 500) + 
   scale_y_log10()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning: Transformation introduced infinite values in continuous y-axis&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-43-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-43-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;one-categorical-variable-one-continous&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;One categorical variable, one continous&lt;/h3&gt;
@@ -512,7 +512,7 @@ ggplot(aes(cty, hwy)) +
   summarise(price = mean(price)) %&amp;gt;%
   ggplot(aes(cut, price)) + 
   geom_col()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-44-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-44-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The bar chart is possibly the least exciting type of graph in existence, mostly because of how prevalent it is – but that’s because it’s really good at what it does. Bar charts are one of the most easily interpreted and effective types of visualizations, no matter how exciting they are.&lt;/p&gt;
 &lt;p&gt;However, some people are really intent on ruining that. Take, for instance, the stacked bar chart, often used to add a third variable to the mix:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
@@ -520,14 +520,14 @@ ggplot(aes(cty, hwy)) +
   summarise(price = mean(price)) %&amp;gt;%
   ggplot(aes(cut, price, fill = color)) + 
   geom_col()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-45-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-45-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Compare Fair/G to Premium/G. It’s next to impossible to accurately compare the boxes – they don’t share a top or a bottom line, so you can’t really make a comparison. In these situations, it’s a better idea to use a dodged bar chart instead:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   group_by(cut, color) %&amp;gt;%
   summarise(price = mean(price)) %&amp;gt;%
   ggplot(aes(cut, price, fill = color)) + 
   geom_col(position = &amp;quot;dodge&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-46-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-46-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Dodged bar charts are usually a better choice for comparing the actual numbers of different groupings. However, this chart does a good job showing one of the limitations dodged bar charts come up against – once you get past 4 or 5 groupings, making comparisons is tricky. In these cases, you’re probably trying to apply the wrong chart for the job, and should consider either breaking your chart up into smaller ones – remember, ink is cheap, and electrons or cheaper – or replacing your bars with a few lines.&lt;/p&gt;
 &lt;p&gt;The one place where stacked bar charts are appropriate, however, is when you’re comparing the relative proportions of two different groups in each bar. For instance, take the following graph:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df &amp;lt;- tibble(x = rep(c(&amp;quot;A&amp;quot;, &amp;quot;B&amp;quot;, &amp;quot;C&amp;quot;), each = 2),
@@ -536,7 +536,7 @@ ggplot(aes(cty, hwy)) +
 
 ggplot(df, aes(x, y, fill = group)) + 
   geom_col()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-47-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-47-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;In this case, making comparisons across groups is trivial, made simple by the fact that the groupings all share a common line - at 100% for group 1, and at 0% for group 2. This point of reference solves the issue we had with more than two groupings – though note we’d still prefer a dodged bar chart if the bars didn’t always sum to the same amount.&lt;/p&gt;
 &lt;div id=&#34;a-quick-tangent&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;A Quick Tangent&lt;/h4&gt;
@@ -546,10 +546,10 @@ ggplot(df, aes(x, y, fill = group)) +
    group = c(&amp;quot;A&amp;quot;, &amp;quot;B&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;D&amp;quot;, &amp;quot;E&amp;quot;, &amp;quot;F&amp;quot;))
 
 pie(df$y, labels = df$group)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-48-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-48-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(df, aes(x, y, fill = group)) + 
   geom_col()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-49-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-49-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;It’s a lot easier to tell that, say, A is smaller than C through F in the pie chart than the bar plot, since humans are better at summing angles than areas. In these instances, feel free to use a pie chart – and to tell anyone giving you flack that I said it was OK.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -559,13 +559,13 @@ pie(df$y, labels = df$group)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;One method is to use density, as we would in a scatterplot, to show how many datapoints you have falling into each combination of categories graphed. You can do this by making a “point cloud” chart, where more dense clouds represent more common combinations:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(cut, clarity)) + 
   geom_jitter(alpha = 0.06)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-50-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-50-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Even without a single number on this chart, its message is clear - we can tell how our diamonds are distributed with a single glance. A similar way to do this is to use a heatmap, where differently colored cells represent a range of values:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   count(cut, clarity) %&amp;gt;%
   ggplot(aes(cut, clarity, fill = n)) + 
   geom_tile()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-51-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-51-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;I personally think heatmaps are less effective – partially because by using the color aesthetic to encode this value, you can’t use it for anything else – but they’re often easier to make with the resources at hand.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -574,9 +574,9 @@ pie(df$y, labels = df$group)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Making Excellent Visualizations</title>
-      <link>/tutorials/dataviz/excellent/</link>
+      <link>https://www.mikemahoney218.com/tutorials/dataviz/excellent/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tutorials/dataviz/excellent/</guid>
+      <guid>https://www.mikemahoney218.com/tutorials/dataviz/excellent/</guid>
       <description>
 
 
@@ -591,14 +591,14 @@ pie(df$y, labels = df$group)&lt;/code&gt;&lt;/pre&gt;
 library(ggplot2)
 ggplot(diamonds, aes(carat, price)) + 
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, it seems like 54,000 points is a few too many for this plot to do us much good! This is a clear case of what’s called &lt;em&gt;overplotting&lt;/em&gt; – we simply have too much data on a single graph.&lt;/p&gt;
 &lt;p&gt;There are three real solutions to this problem. First off, we could decide simply that we want to refactor our chart, and instead show how a metric – such as average sale price – changes at different carats, rather than how our data is distributed:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
 diamonds %&amp;gt;%
   ggplot(aes(carat, price)) + 
   geom_smooth(se = F)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;There are all sorts of ways we can do this sort of refactoring – if we wanted, we could get a very similar graph by binning our data and making a bar plot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds2 &amp;lt;- diamonds
 diamonds2$Bin &amp;lt;- cut(diamonds$carat, 30, include.lowest = T)
@@ -608,42 +608,42 @@ diamonds2 %&amp;gt;%
   summarise(price = mean(price)) %&amp;gt;%
   ggplot(aes(Bin, price)) + 
   geom_col(color = &amp;quot;black&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Either way, though, we’re not truly showing the same thing as was in the original graph – we don’t have any indication of how our data is distributed along both these axes.&lt;/p&gt;
 &lt;p&gt;The second solution solves this problem much more effectively – make all your points semi-transparent:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   ggplot(aes(carat, price)) + 
   geom_point(alpha = 0.07)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;By doing this, we’re now able to see areas where our data is much more densely distributed, something that was lost in the summary statistics – for instance, it appears that low-carat diamonds are much more tighly grouped than higher carat ones. We can also see some dark stripes at “round-number” values for carat – that indicates to me that our data has some integrity issues, if appraisers are more likely to give a stone a rounded number.&lt;/p&gt;
 &lt;p&gt;The challenge with this approach comes when we want to map a third variable – let’s use cut – in our graphic. We can try to change the aesthetics of our graph as usual:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   ggplot(aes(carat, price, color = cut, shape = cut)) + 
   geom_point(alpha = 0.07) + 
   guides(color = guide_legend(override.aes = list(alpha = 1)))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to facet our plots – that is, to split our one large plot into several small multiples:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   ggplot(aes(carat, price)) + 
   geom_point(alpha = 0.07) + 
   facet_wrap(~ cut)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Ink is cheap. Electrons are even cheaper. Make more than one graph.&lt;/p&gt;
 &lt;p&gt;By splitting out our data into several smaller graphics, we’re much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatterplots showing how different groups are distributed:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;diamonds %&amp;gt;%
   ggplot(aes(carat, price)) + 
   geom_point(alpha = 0.07) + 
   facet_grid(cut ~ clarity)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;One last, extremely helpful use of faceting is to split apart charts with multiple entangled lines:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat, price, color = clarity)) + 
   geom_smooth(se = F)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;These charts, commonly referred to as “spaghetti charts”, are usually much easier to use when split into small multiples:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat, price)) + 
   geom_smooth(se = F) + 
   facet_wrap(~ clarity)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Now, one major drawback of facet charts is that they can make comparisons much harder – if, in our line chart, it’s more important to know that most clarities are close in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it’s worth reassessing how many lines you actually need on your graph – if you only care about a few clarities, then only include those lines. The goal is to make making important comparisons easy, with the understanding that some comparisons are more important than others.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;dealing-with-chartjunk&#34; class=&#34;section level3&#34;&gt;
@@ -666,7 +666,7 @@ diamonds2 %&amp;gt;%
        title = &amp;quot;Orange tree growth tapers by year 4&amp;quot;,
        subtitle = &amp;quot;Biomass increases more rapidly than leaf area, slowing rate of growth once tree reaches 15cm&amp;quot;,
        caption = &amp;quot;Data from Draper and Smith, 1998\nRed line represents mean growth curve, grey lines growth curves for individual trees.&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-10-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;You might have noticed that this chart is differently styled from all the others in this course – it doesn’t have the grey background or grid lines or anything else.&lt;/p&gt;
 &lt;p&gt;Remember our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We’ve lost some of the distracting elements – the colored background and gridlines – and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value – and if you’re expecting people to need specific values, you should give them a table!)&lt;/p&gt;
 &lt;p&gt;Those extraneous elements are known as &lt;em&gt;chartjunk&lt;/em&gt;. You see this a lot with graphs made in Excel – they’ll have dark backgrounds, dark lines, special shading effects or gradients that don’t encode information, or – worst of all – those “3D” bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler – so don’t try to pretty up your graph with non-useful elements.&lt;/p&gt;
@@ -768,21 +768,21 @@ two.y(x=data$date,
       y2.lim = c(0, max(data$BOGMBASEW + 1000)),
       y2.lab = &amp;quot;Millions of Dollars&amp;quot;,
       ttxt = &amp;quot;Both on the same scale&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-11-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;overcomplex-visualizations&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Overcomplex visualizations&lt;/h3&gt;
 &lt;p&gt;Another common issue in visualizations comes from the analyst getting a little too technical with their graphs. For instance, think back to our original diamonds scatterplot:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat, price)) +
   geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Looking at this chart, we can see that carat and price have a positive correlation – as one increases, the other does as well. However, it’s not a linear relationship; instead, it appears that price increases faster as carat increases.&lt;/p&gt;
 &lt;p&gt;The more statistically-minded analyst might already be thinking that we could make this relationship linear by log-transforming the axes – and they’d be right! We can see a clear linear relationship when we make the transformation:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(diamonds, aes(carat, price)) +
   geom_point() + 
   scale_y_log10() +
   scale_x_log10() &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-13-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Unfortunately, transforming your visualizations in this way can make your graphic hard to understand – in fact, only about &lt;a href=&#34;https://www.nature.com/articles/s41559-018-0610-7?WT.feed_name=subjects_ecology&#34;&gt;60% of professional scientists&lt;/a&gt; can even understand them. As such, transforming your axes like this tends to reduce the effectiveness of your graphic – this type of visualization should be reserved for exploratory graphics and modeling, instead.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;

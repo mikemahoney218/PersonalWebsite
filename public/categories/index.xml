@@ -2,61 +2,61 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | Mike Mahoney</title>
-    <link>/categories/</link>
-      <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/categories/</link>
+      <atom:link href="https://www.mikemahoney218.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 09 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/logo.jpg</url>
+      <url>https://www.mikemahoney218.com/img/logo.jpg</url>
       <title>Categories</title>
-      <link>/categories/</link>
+      <link>https://www.mikemahoney218.com/categories/</link>
     </image>
     
     <item>
       <title>DataViz</title>
-      <link>/categories/dataviz/</link>
+      <link>https://www.mikemahoney218.com/categories/dataviz/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/dataviz/</guid>
+      <guid>https://www.mikemahoney218.com/categories/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorials</title>
-      <link>/categories/tutorials/</link>
+      <link>https://www.mikemahoney218.com/categories/tutorials/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/tutorials/</guid>
+      <guid>https://www.mikemahoney218.com/categories/tutorials/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beaver</title>
-      <link>/categories/beaver/</link>
+      <link>https://www.mikemahoney218.com/categories/beaver/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/beaver/</guid>
+      <guid>https://www.mikemahoney218.com/categories/beaver/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>/categories/publications/</link>
+      <link>https://www.mikemahoney218.com/categories/publications/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/publications/</guid>
+      <guid>https://www.mikemahoney218.com/categories/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Announcements</title>
-      <link>/categories/announcements/</link>
+      <link>https://www.mikemahoney218.com/categories/announcements/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/announcements/</guid>
+      <guid>https://www.mikemahoney218.com/categories/announcements/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Other</title>
-      <link>/categories/other/</link>
+      <link>https://www.mikemahoney218.com/categories/other/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>/categories/other/</guid>
+      <guid>https://www.mikemahoney218.com/categories/other/</guid>
       <description></description>
     </item>
     
