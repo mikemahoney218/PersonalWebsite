@@ -1,0 +1,287 @@
+---
+title: "Making Excellent Visualizations"
+author: [Mike Mahoney]
+output:
+  html_document:
+    code_folding: hide
+date: '2019-10-09'
+slug: excellent
+categories:
+  - Tutorials
+  - DataViz
+tags: ["Data Visualization", "Tutorials"]
+image:
+  caption: ''
+  focal_point: ''
+summary: "Part 3 in the data visualization series"
+draft: false
+linktitle: "Making Excellent Visualizations"
+menu:
+  dataviz:
+    weight: 30
+type: docs
+weight: 30
+---
+  
+<br>
+
+As we move into our final section, it's time to dwell on our final mantra:
+
+## Ink is cheap. Electrons are even cheaper.
+
+### Dealing with big datasets
+
+Think back to the diamonds dataset we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatterplot would be a good way to do so:
+
+```{r}
+knitr::opts_chunk$set(warning = F, message = F)
+library(ggplot2)
+ggplot(diamonds, aes(carat, price)) + 
+  geom_point()
+```
+
+Unfortunately, it seems like 54,000 points is a few too many for this plot to do us much good! This is a clear case of what's called _overplotting_ -- we simply have too much data on a single graph. 
+
+There are three real solutions to this problem. First off, we could decide simply that we want to refactor our chart, and instead show how a metric -- such as average sale price -- changes at different carats, rather than how our data is distributed:
+
+```{r}
+library(dplyr)
+diamonds %>%
+  ggplot(aes(carat, price)) + 
+  geom_smooth(se = F)
+```
+
+There are all sorts of ways we can do this sort of refactoring -- if we wanted, we could get a very similar graph by binning our data and making a bar plot: 
+
+```{r}
+diamonds2 <- diamonds
+diamonds2$Bin <- cut(diamonds$carat, 30, include.lowest = T)
+
+diamonds2 %>%
+  group_by(Bin) %>%
+  summarise(price = mean(price)) %>%
+  ggplot(aes(Bin, price)) + 
+  geom_col(color = "black")
+```
+
+Either way, though, we're not truly showing the same thing as was in the original graph -- we don't have any indication of how our data is distributed along both these axes. 
+
+The second solution solves this problem much more effectively -- make all your points semi-transparent:
+
+```{r}
+diamonds %>%
+  ggplot(aes(carat, price)) + 
+  geom_point(alpha = 0.07)
+```
+
+By doing this, we're now able to see areas where our data is much more densely distributed, something that was lost in the summary statistics -- for instance, it appears that low-carat diamonds are much more tighly grouped than higher carat ones. We can also see some dark stripes at "round-number" values for carat -- that indicates to me that our data has some integrity issues, if appraisers are more likely to give a stone a rounded number.
+
+The challenge with this approach comes when we want to map a third variable -- let's use cut -- in our graphic. We can try to change the aesthetics of our graph as usual:
+
+```{r}
+diamonds %>%
+  ggplot(aes(carat, price, color = cut, shape = cut)) + 
+  geom_point(alpha = 0.07) + 
+  guides(color = guide_legend(override.aes = list(alpha = 1)))
+```
+
+But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to facet our plots -- that is, to split our one large plot into several small multiples:
+
+```{r}
+diamonds %>%
+  ggplot(aes(carat, price)) + 
+  geom_point(alpha = 0.07) + 
+  facet_wrap(~ cut)
+```
+
+Ink is cheap. Electrons are even cheaper. Make more than one graph. 
+
+By splitting out our data into several smaller graphics, we're much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatterplots showing how different groups are distributed:
+
+```{r}
+diamonds %>%
+  ggplot(aes(carat, price)) + 
+  geom_point(alpha = 0.07) + 
+  facet_grid(cut ~ clarity)
+```
+
+One last, extremely helpful use of faceting is to split apart charts with multiple entangled lines:
+```{r}
+ggplot(diamonds, aes(carat, price, color = clarity)) + 
+  geom_smooth(se = F)
+```
+
+These charts, commonly referred to as "spaghetti charts", are usually much easier to use when split into small multiples:
+
+```{r}
+ggplot(diamonds, aes(carat, price)) + 
+  geom_smooth(se = F) + 
+  facet_wrap(~ clarity)
+```
+
+Now, one major drawback of facet charts is that they can make comparisons much harder -- if, in our line chart, it's more important to know that most clarities are close in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it's worth reassessing how many lines you actually need on your graph -- if you only care about a few clarities, then only include those lines. The goal is to make making important comparisons easy, with the understanding that some comparisons are more important than others.  
+
+### Dealing with chartjunk
+
+Cast your mind back to the graphic I used as an example of an explanatory chart:
+
+```{r}
+Orange %>%
+  as_tibble() %>%
+  ggplot(aes(age, circumference)) + 
+  geom_point() + 
+  geom_smooth(aes(group = Tree), se = F, color = "lightgrey", formula = "y ~ poly(x, 3)", method = "lm") + 
+  geom_smooth(se = F, color = "red", formula = "y ~ poly(x, 3)", method = "lm") +
+  scale_x_continuous(labels = c("Growth increases as\nleaf area outpaces biomass", 
+                                "Biomass catches up,\nslowing growth", 
+                                "Biomass growth \noutpaces leaf area", 
+                                "I cut them down\nwith a saw"),
+                     breaks = c(400, 800, 1200, 1550)) + 
+  theme_classic() + 
+  labs(x = "Age",
+       y = "Circumference (mm)",
+       title = "Orange tree growth tapers by year 4",
+       subtitle = "Biomass increases more rapidly than leaf area, slowing rate of growth once tree reaches 15cm",
+       caption = "Data from Draper and Smith, 1998\nRed line represents mean growth curve, grey lines growth curves for individual trees.")
+```
+
+You might have noticed that this chart is differently styled from all the others in this course -- it doesn't have the grey background or grid lines or anything else.
+
+Remember our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We've lost some of the distracting elements -- the colored background and gridlines -- and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value -- and if you're expecting people to need specific values, you should give them a table!)
+
+Those extraneous elements are known as _chartjunk_. You see this a lot with graphs made in Excel -- they'll have dark backgrounds, dark lines, special shading effects or gradients that don't encode information, or -- worst of all -- those "3D" bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler -- so don't try to pretty up your graph with non-useful elements. 
+
+Another common instance of chartjunk is animation in graphics. While animated graphics are exciting and trendy, they tend to reduce the effectiveness of your graphics because as humans, when something is moving we can't focus on anything else. [Check out these examples from the Harvard Vision Lab](http://visionlab.harvard.edu/silencing/) -- they show just how hard it is to notice changes when animation is added. This isn't to say you can never use animation -- but its uses are best kept to times when your graphic looking cool is more important than it conveying information.
+
+## Common Mistakes
+
+As we wind down this course, I want to touch on a few common mistakes that didn't have a great home in any other section -- mostly because we were too busy talking about _good_ design principles.
+
+### Dual y axes
+
+Chief amongst these mistakes are plots with two y axes, beloved by charlatans and financial advisors since days unwritten. Plots with two y axes are a great way to force a correlation that doesn't really exist into existence on your chart. In almost every case, you should just make two graphs -- ink is cheap. Electrions are even cheaper. The precise reasons are outside of the scope of this lesson, [so check out thist link](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/) for an extremely entertaining read on the subject. I've borrowed Kieran's code for the below viz -- look at how we can imply different things, just by changing how we scale our axes!
+
+```{r}
+library(lubridate)
+
+data <- read.csv("data/fred-data.csv")
+data$date <- ymd(data$date)
+
+## Time series
+data$SP500 <- ts(data$SP500, frequency = 52, start=c(2009, 03, 11))
+data$BOGMBASEW <- ts(data$BOGMBASEW, frequency = 52, start=c(2009, 03, 11))
+
+### Quick convenience function, as we're goingn to make this plot four
+### times.
+two.y <- function(x, y1, y2,
+                  y1.lim = range(y1),
+                  y2.lim = range(y2),
+                  y2.lab = "Billions of Dollars",
+                  ttxt = NULL,
+                  ...) {
+
+    ## y1.lim <- range(y1)
+    ## y2.lim <- range(y2)
+    y1.lo <- y1.lim[1]
+    y1.hi <- y1.lim[2]
+    y2.lo <- y2.lim[1]
+    y2.hi <- y2.lim[2]
+
+    par(mar=c(5,4,4,5)+.1)
+    plot(x, y1,
+         type="l",
+         col="deepskyblue4",
+         xlab="Date",
+         ylab="Index",
+         ylim=c(y1.lo-100, y1.hi+100))
+
+    par(new=TRUE)
+
+    plot(x, y2, type="l",
+         col="firebrick",
+         xaxt="n",
+         yaxt="n",
+         xlab="",
+         ylab="",
+         ylim=c(y2.lo, y2.hi))
+    title(main = ttxt)
+
+    axis(4)
+
+    mtext(y2.lab, side=4, line=3)
+    legend("topleft",
+           col=c("deepskyblue4","firebrick"),
+           bty="n", lty=1,
+           legend=c("S&P 500", "Money Supply"))
+
+
+}
+
+par(mar=c(0,0,0,0)+.1)
+par(mfrow = c(2,2))
+## 1. Base plot
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW/1000,
+      ttxt = "Original")
+
+## 2. Change an axis
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW/1000,
+      y1.lim = c(696, 2126),
+      y2.lim = c(0, 5000),
+      ttxt = "Start y2 at zero")
+
+
+## 3. Change y1 axis limits
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW/1000,
+      y1.lim = c(0, 4000),
+      ttxt = "Start y1 at zero, max both at max y2")
+
+
+## 4. Put them both on the same axis
+## (kind of a degenerate case)
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW,
+      y1.lim = c(0, max(data$BOGMBASEW + 1000)),
+      y2.lim = c(0, max(data$BOGMBASEW + 1000)),
+      y2.lab = "Millions of Dollars",
+      ttxt = "Both on the same scale")
+```
+
+### Overcomplex visualizations
+
+Another common issue in visualizations comes from the analyst getting a little too technical with their graphs. For instance, think back to our original diamonds scatterplot:
+```{r}
+ggplot(diamonds, aes(carat, price)) +
+  geom_point()
+```
+
+Looking at this chart, we can see that carat and price have a positive correlation -- as one increases, the other does as well. However, it's not a linear relationship; instead, it appears that price increases faster as carat increases. 
+
+The more statistically-minded analyst might already be thinking that we could make this relationship linear by log-transforming the axes -- and they'd be right! We can see a clear linear relationship when we make the transformation:
+
+```{r}
+ggplot(diamonds, aes(carat, price)) +
+  geom_point() + 
+  scale_y_log10() +
+  scale_x_log10() 
+```
+
+Unfortunately, transforming your visualizations in this way can make your graphic hard to understand -- in fact, only about [60% of professional scientists](https://www.nature.com/articles/s41559-018-0610-7?WT.feed_name=subjects_ecology) can even understand them. As such, transforming your axes like this tends to reduce the effectiveness of your graphic -- this type of visualization should be reserved for exploratory graphics and modeling, instead.
+
+## Conclusion
+And that just about wraps up this introduction to the basic concepts of data visualizations. Hopefully you've picked up some concepts or vocabulary that can help you think about your own visualizations in your daily life. I wanted to close out here with a list of resources I've found helpful in making graphics -- I'll keep adding to this over time:
+
+* When picking colors, I often find myself reaching for one of the following tools:
+    * [ColorBrewer](http://colorbrewer2.org/#type=diverging&scheme=BrBG&n=5) provided most of the palettes for these graphics
+    * [ColorSupply](https://colorsupplyyy.com/) makes picking custom colors easier
+    * [Viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html) provides beautiful, colorblind-friendly palettes for use (though this resource is a little harder to understand)
+* I used the following resources in putting this post together:
+    * [Hadley Wickham's Stat 405 Course](http://stat405.had.co.nz/), particularly the lecture on [effective visualizations](http://stat405.had.co.nz/lectures/20-effective-vis.pdf) (I've lifted "perceptual topology should match data toplogy", "make important comparisons easy", and "visualization is only one part of data analysis" directly from his slides)
+    * [Jeffrey Heer's CSE 442 lecture on visualizations](https://courses.cs.washington.edu/courses/cse442/17au/lectures/CSE442-VisualEncoding.pdf), particularly the definitions for expressiveness and effectiveness 
+crayola crayon

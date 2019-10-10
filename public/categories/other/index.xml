@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Other | Mike Mahoney</title>
+    <link>/categories/other/</link>
+      <atom:link href="/categories/other/index.xml" rel="self" type="application/rss+xml" />
+    <description>Other</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 23 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.jpg</url>
+      <title>Other</title>
+      <link>/categories/other/</link>
+    </image>
+    
+    <item>
+      <title>Welcome to the New Site!</title>
+      <link>/post/newsite/welcome-to-the-new-site/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/post/newsite/welcome-to-the-new-site/</guid>
+      <description>
+
+
+&lt;p&gt;Welcome to my new site! I’ll be using this site to post links to talks I give, packages I work on, and future publications. Please excuse me as I get this site off the ground - things are a little barren at the moment, but should get better as we go!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

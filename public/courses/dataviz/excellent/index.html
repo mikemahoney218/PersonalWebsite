@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Mike Mahoney">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 3 in the data visualization series">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/dataviz/excellent/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.4328da65e155d83fa0ef343b44a52976.css">
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/courses/dataviz/excellent/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@MikeMahoney218">
+  <meta property="twitter:creator" content="@MikeMahoney218">
+  
+  <meta property="og:site_name" content="Mike Mahoney">
+  <meta property="og:url" content="/courses/dataviz/excellent/">
+  <meta property="og:title" content="Making Excellent Visualizations | Mike Mahoney">
+  <meta property="og:description" content="Part 3 in the data visualization series"><meta property="og:image" content="/img/logo.jpg">
+  <meta property="twitter:image" content="/img/logo.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-10-09T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-10-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Making Excellent Visualizations | Mike Mahoney</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/logo.jpg" alt="Mike Mahoney"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/dataviz/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/dataviz/dataviz-mechanics/">Mechanics of Data Visualizations</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/dataviz/excellent/">Making Excellent Visualizations</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Making Excellent Visualizations</h1>
+
+          <div class="article-style">
+            
+
+<div id="TOC">
+true
+</div>
+
+<p><br></p>
+<p>This is the third of three posts - you can find the first post <a href="https://www.mikemahoney218.com/tutorial/dataviz-theory/">here</a>, and the second post <a href="https://www.mikemahoney218.com/tutorial/dataviz-mechanics/">here</a>.</p>
+<p>As we move into our final section, it’s time to dwell on our final mantra:</p>
+<div id="ink-is-cheap.-electrons-are-even-cheaper." class="section level2">
+<h2>Ink is cheap. Electrons are even cheaper.</h2>
+<div id="dealing-with-big-datasets" class="section level3">
+<h3>Dealing with big datasets</h3>
+<p>Think back to the diamonds dataset we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatterplot would be a good way to do so:</p>
+<pre class="r"><code>knitr::opts_chunk$set(warning = F, message = F)
+library(ggplot2)
+ggplot(diamonds, aes(carat, price)) + 
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Unfortunately, it seems like 54,000 points is a few too many for this plot to do us much good! This is a clear case of what’s called <em>overplotting</em> – we simply have too much data on a single graph.</p>
+<p>There are three real solutions to this problem. First off, we could decide simply that we want to refactor our chart, and instead show how a metric – such as average sale price – changes at different carats, rather than how our data is distributed:</p>
+<pre class="r"><code>library(dplyr)
+diamonds %&gt;%
+  ggplot(aes(carat, price)) + 
+  geom_smooth(se = F)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>There are all sorts of ways we can do this sort of refactoring – if we wanted, we could get a very similar graph by binning our data and making a bar plot:</p>
+<pre class="r"><code>diamonds2 &lt;- diamonds
+diamonds2$Bin &lt;- cut(diamonds$carat, 30, include.lowest = T)
+
+diamonds2 %&gt;%
+  group_by(Bin) %&gt;%
+  summarise(price = mean(price)) %&gt;%
+  ggplot(aes(Bin, price)) + 
+  geom_col(color = &quot;black&quot;)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Either way, though, we’re not truly showing the same thing as was in the original graph – we don’t have any indication of how our data is distributed along both these axes.</p>
+<p>The second solution solves this problem much more effectively – make all your points semi-transparent:</p>
+<pre class="r"><code>diamonds %&gt;%
+  ggplot(aes(carat, price)) + 
+  geom_point(alpha = 0.07)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>By doing this, we’re now able to see areas where our data is much more densely distributed, something that was lost in the summary statistics – for instance, it appears that low-carat diamonds are much more tighly grouped than higher carat ones. We can also see some dark stripes at “round-number” values for carat – that indicates to me that our data has some integrity issues, if appraisers are more likely to give a stone a rounded number.</p>
+<p>The challenge with this approach comes when we want to map a third variable – let’s use cut – in our graphic. We can try to change the aesthetics of our graph as usual:</p>
+<pre class="r"><code>diamonds %&gt;%
+  ggplot(aes(carat, price, color = cut, shape = cut)) + 
+  geom_point(alpha = 0.07) + 
+  guides(color = guide_legend(override.aes = list(alpha = 1)))</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to facet our plots – that is, to split our one large plot into several small multiples:</p>
+<pre class="r"><code>diamonds %&gt;%
+  ggplot(aes(carat, price)) + 
+  geom_point(alpha = 0.07) + 
+  facet_wrap(~ cut)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Ink is cheap. Electrons are even cheaper. Make more than one graph.</p>
+<p>By splitting out our data into several smaller graphics, we’re much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatterplots showing how different groups are distributed:</p>
+<pre class="r"><code>diamonds %&gt;%
+  ggplot(aes(carat, price)) + 
+  geom_point(alpha = 0.07) + 
+  facet_grid(cut ~ clarity)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>One last, extremely helpful use of faceting is to split apart charts with multiple entangled lines:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat, price, color = clarity)) + 
+  geom_smooth(se = F)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>These charts, commonly referred to as “spaghetti charts”, are usually much easier to use when split into small multiples:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat, price)) + 
+  geom_smooth(se = F) + 
+  facet_wrap(~ clarity)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Now, one major drawback of facet charts is that they can make comparisons much harder – if, in our line chart, it’s more important to know that most clarities are close in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it’s worth reassessing how many lines you actually need on your graph – if you only care about a few clarities, then only include those lines. The goal is to make making important comparisons easy, with the understanding that some comparisons are more important than others.</p>
+</div>
+<div id="dealing-with-chartjunk" class="section level3">
+<h3>Dealing with chartjunk</h3>
+<p>Cast your mind back to the graphic I used as an example of an explanatory chart:</p>
+<pre class="r"><code>Orange %&gt;%
+  as_tibble() %&gt;%
+  ggplot(aes(age, circumference)) + 
+  geom_point() + 
+  geom_smooth(aes(group = Tree), se = F, color = &quot;lightgrey&quot;, formula = &quot;y ~ poly(x, 3)&quot;, method = &quot;lm&quot;) + 
+  geom_smooth(se = F, color = &quot;red&quot;, formula = &quot;y ~ poly(x, 3)&quot;, method = &quot;lm&quot;) +
+  scale_x_continuous(labels = c(&quot;Growth increases as\nleaf area outpaces biomass&quot;, 
+                                &quot;Biomass catches up,\nslowing growth&quot;, 
+                                &quot;Biomass growth \noutpaces leaf area&quot;, 
+                                &quot;I cut them down\nwith a saw&quot;),
+                     breaks = c(400, 800, 1200, 1550)) + 
+  theme_classic() + 
+  labs(x = &quot;Age&quot;,
+       y = &quot;Circumference (mm)&quot;,
+       title = &quot;Orange tree growth tapers by year 4&quot;,
+       subtitle = &quot;Biomass increases more rapidly than leaf area, slowing rate of growth once tree reaches 15cm&quot;,
+       caption = &quot;Data from Draper and Smith, 1998\nRed line represents mean growth curve, grey lines growth curves for individual trees.&quot;)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>You might have noticed that this chart is differently styled from all the others in this course – it doesn’t have the grey background or grid lines or anything else.</p>
+<p>Remember our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We’ve lost some of the distracting elements – the colored background and gridlines – and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value – and if you’re expecting people to need specific values, you should give them a table!)</p>
+<p>Those extraneous elements are known as <em>chartjunk</em>. You see this a lot with graphs made in Excel – they’ll have dark backgrounds, dark lines, special shading effects or gradients that don’t encode information, or – worst of all – those “3D” bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler – so don’t try to pretty up your graph with non-useful elements.</p>
+<p>Another common instance of chartjunk is animation in graphics. While animated graphics are exciting and trendy, they tend to reduce the effectiveness of your graphics because as humans, when something is moving we can’t focus on anything else. <a href="http://visionlab.harvard.edu/silencing/">Check out these examples from the Harvard Vision Lab</a> – they show just how hard it is to notice changes when animation is added. This isn’t to say you can never use animation – but its uses are best kept to times when your graphic looking cool is more important than it conveying information.</p>
+</div>
+</div>
+<div id="common-mistakes" class="section level2">
+<h2>Common Mistakes</h2>
+<p>As we wind down this course, I want to touch on a few common mistakes that didn’t have a great home in any other section – mostly because we were too busy talking about <em>good</em> design principles.</p>
+<div id="dual-y-axes" class="section level3">
+<h3>Dual y axes</h3>
+<p>Chief amongst these mistakes are plots with two y axes, beloved by charlatans and financial advisors since days unwritten. Plots with two y axes are a great way to force a correlation that doesn’t really exist into existence on your chart. In almost every case, you should just make two graphs – ink is cheap. Electrions are even cheaper. The precise reasons are outside of the scope of this lesson, <a href="https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/">so check out thist link</a> for an extremely entertaining read on the subject. I’ve borrowed Kieran’s code for the below viz – look at how we can imply different things, just by changing how we scale our axes!</p>
+<pre class="r"><code>library(lubridate)
+
+data &lt;- read.csv(&quot;data/fred-data.csv&quot;)
+data$date &lt;- ymd(data$date)
+
+## Time series
+data$SP500 &lt;- ts(data$SP500, frequency = 52, start=c(2009, 03, 11))
+data$BOGMBASEW &lt;- ts(data$BOGMBASEW, frequency = 52, start=c(2009, 03, 11))
+
+### Quick convenience function, as we&#39;re goingn to make this plot four
+### times.
+two.y &lt;- function(x, y1, y2,
+                  y1.lim = range(y1),
+                  y2.lim = range(y2),
+                  y2.lab = &quot;Billions of Dollars&quot;,
+                  ttxt = NULL,
+                  ...) {
+
+    ## y1.lim &lt;- range(y1)
+    ## y2.lim &lt;- range(y2)
+    y1.lo &lt;- y1.lim[1]
+    y1.hi &lt;- y1.lim[2]
+    y2.lo &lt;- y2.lim[1]
+    y2.hi &lt;- y2.lim[2]
+
+    par(mar=c(5,4,4,5)+.1)
+    plot(x, y1,
+         type=&quot;l&quot;,
+         col=&quot;deepskyblue4&quot;,
+         xlab=&quot;Date&quot;,
+         ylab=&quot;Index&quot;,
+         ylim=c(y1.lo-100, y1.hi+100))
+
+    par(new=TRUE)
+
+    plot(x, y2, type=&quot;l&quot;,
+         col=&quot;firebrick&quot;,
+         xaxt=&quot;n&quot;,
+         yaxt=&quot;n&quot;,
+         xlab=&quot;&quot;,
+         ylab=&quot;&quot;,
+         ylim=c(y2.lo, y2.hi))
+    title(main = ttxt)
+
+    axis(4)
+
+    mtext(y2.lab, side=4, line=3)
+    legend(&quot;topleft&quot;,
+           col=c(&quot;deepskyblue4&quot;,&quot;firebrick&quot;),
+           bty=&quot;n&quot;, lty=1,
+           legend=c(&quot;S&amp;P 500&quot;, &quot;Money Supply&quot;))
+
+
+}
+
+par(mar=c(0,0,0,0)+.1)
+par(mfrow = c(2,2))
+## 1. Base plot
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW/1000,
+      ttxt = &quot;Original&quot;)
+
+## 2. Change an axis
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW/1000,
+      y1.lim = c(696, 2126),
+      y2.lim = c(0, 5000),
+      ttxt = &quot;Start y2 at zero&quot;)
+
+
+## 3. Change y1 axis limits
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW/1000,
+      y1.lim = c(0, 4000),
+      ttxt = &quot;Start y1 at zero, max both at max y2&quot;)
+
+
+## 4. Put them both on the same axis
+## (kind of a degenerate case)
+two.y(x=data$date,
+      y1=data$SP500,
+      y2=data$BOGMBASEW,
+      y1.lim = c(0, max(data$BOGMBASEW + 1000)),
+      y2.lim = c(0, max(data$BOGMBASEW + 1000)),
+      y2.lab = &quot;Millions of Dollars&quot;,
+      ttxt = &quot;Both on the same scale&quot;)</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="overcomplex-visualizations" class="section level3">
+<h3>Overcomplex visualizations</h3>
+<p>Another common issue in visualizations comes from the analyst getting a little too technical with their graphs. For instance, think back to our original diamonds scatterplot:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat, price)) +
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Looking at this chart, we can see that carat and price have a positive correlation – as one increases, the other does as well. However, it’s not a linear relationship; instead, it appears that price increases faster as carat increases.</p>
+<p>The more statistically-minded analyst might already be thinking that we could make this relationship linear by log-transforming the axes – and they’d be right! We can see a clear linear relationship when we make the transformation:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat, price)) +
+  geom_point() + 
+  scale_y_log10() +
+  scale_x_log10() </code></pre>
+<p><img src="/courses/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Unfortunately, transforming your visualizations in this way can make your graphic hard to understand – in fact, only about <a href="https://www.nature.com/articles/s41559-018-0610-7?WT.feed_name=subjects_ecology">60% of professional scientists</a> can even understand them. As such, transforming your axes like this tends to reduce the effectiveness of your graphic – this type of visualization should be reserved for exploratory graphics and modeling, instead.</p>
+</div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>And that just about wraps up this introduction to the basic concepts of data visualizations. Hopefully you’ve picked up some concepts or vocabulary that can help you think about your own visualizations in your daily life. I wanted to close out here with a list of resources I’ve found helpful in making graphics – I’ll keep adding to this over time:</p>
+<ul>
+<li>When picking colors, I often find myself reaching for one of the following tools:
+<ul>
+<li><a href="http://colorbrewer2.org/#type=diverging&amp;scheme=BrBG&amp;n=5">ColorBrewer</a> provided most of the palettes for these graphics</li>
+<li><a href="https://colorsupplyyy.com/">ColorSupply</a> makes picking custom colors easier</li>
+<li><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">Viridis</a> provides beautiful, colorblind-friendly palettes for use (though this resource is a little harder to understand)</li>
+</ul></li>
+<li>I used the following resources in putting this post together:
+<ul>
+<li><a href="http://stat405.had.co.nz/">Hadley Wickham’s Stat 405 Course</a>, particularly the lecture on <a href="http://stat405.had.co.nz/lectures/20-effective-vis.pdf">effective visualizations</a> (I’ve lifted “perceptual topology should match data toplogy”, “make important comparisons easy”, and “visualization is only one part of data analysis” directly from his slides)</li>
+<li><a href="https://courses.cs.washington.edu/courses/cse442/17au/lectures/CSE442-VisualEncoding.pdf">Jeffrey Heer’s CSE 442 lecture on visualizations</a>, particularly the definitions for expressiveness and effectiveness
+crayola crayon</li>
+</ul></li>
+</ul>
+</div>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/data-visualization/">Data Visualization</a>
+  
+  <a class="badge badge-light" href="/tags/tutorials/">Tutorials</a>
+  
+</div>
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/dataviz/dataviz-mechanics/" rel="next">Mechanics of Data Visualizations</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/dataviz/dataviz-theory/" rel="prev">Theory of Data Visualizations</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Oct 9, 2019</p>
+
+          
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/dataviz/MakingExcellentVisualizations.html">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

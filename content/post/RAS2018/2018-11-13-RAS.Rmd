@@ -1,0 +1,17 @@
+---
+title: One Conference Down, One to Go!
+author: Mike Mahoney
+date: '2018-11-13'
+slug: one-conference-down
+categories:
+  - Announcements
+tags: []
+image:
+  caption: ''
+  focal_point: ''
+---
+  
+  
+I was happy to attend the Rochester Academy of Sciences Fall Paper Session this past weekend! It seemed like an incredibly diverse array of work was on display - one particularly notable poster connected human heights and weights to the weight of their cremation remains - and the atmosphere was incredibly welcoming.
+
+My talk on beaver impacts seemed to get decent reviews! I've [posted my slides on SlideShare](https://www.slideshare.net/MichaelMahoney83/beaver-foraging-preferences-and-impacts-on-forest-structure-ras), and will be posting a rough script of the talk soon enough. I've got plans for a few changes before the [FEMC conference](https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/), coming up in a month.

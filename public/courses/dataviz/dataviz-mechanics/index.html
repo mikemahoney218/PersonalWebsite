@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Mike Mahoney">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Part 2 in the data visualization series">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/dataviz/dataviz-mechanics/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.4328da65e155d83fa0ef343b44a52976.css">
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/courses/dataviz/dataviz-mechanics/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@MikeMahoney218">
+  <meta property="twitter:creator" content="@MikeMahoney218">
+  
+  <meta property="og:site_name" content="Mike Mahoney">
+  <meta property="og:url" content="/courses/dataviz/dataviz-mechanics/">
+  <meta property="og:title" content="Mechanics of Data Visualizations | Mike Mahoney">
+  <meta property="og:description" content="Part 2 in the data visualization series"><meta property="og:image" content="/img/logo.jpg">
+  <meta property="twitter:image" content="/img/logo.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-10-09T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-10-09T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Mechanics of Data Visualizations | Mike Mahoney</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/"><img src="/img/logo.jpg" alt="Mike Mahoney"></a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/dataviz/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/courses/dataviz/dataviz-mechanics/">Mechanics of Data Visualizations</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/dataviz/excellent/">Making Excellent Visualizations</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Mechanics of Data Visualizations</h1>
+
+          <div class="article-style">
+            
+
+<div id="TOC">
+true
+</div>
+
+<p>This is the second of three posts - you can find the first post <a href="https://www.mikemahoney218.com/tutorial/dataviz-theory/">here</a>, and the third <a href="https://www.mikemahoney218.com/tutorial/dataviz-excellent/">here</a>.</p>
+<p>Let’s move from theoretical considerations of graphing to the actual building blocks you have at your disposal. As we do so, we’re also going to move on to mantra #2:</p>
+<div id="everything-should-be-made-as-simple-as-possible-but-no-simpler." class="section level2">
+<h2>Everything should be made as simple as possible – but no simpler.</h2>
+<p>Graphs are inherently a 2D image of our data:</p>
+<pre class="r"><code>library(ggplot2)
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>They have an x and a y scale, and - as in our scatterplot here - the position a point falls along each scale tells you how large its values are. But this setup only allows us to look at two variables in our data - and we’re frequently interested in seeing relationships between more than two variables.</p>
+<p>So the question becomes: how can we visualize those extra variables? We can try adding another position scale:</p>
+<pre class="r"><code>library(lattice)
+wireframe(hwy ~ cty + displ, data = mpg)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>But 3D images are hard to wrap your head around, complicated to produce, and not as effective in delivering your message. They do have their uses - particularly when you’re able to build real 3D models, and not just make 3D shapes on 2D planes - but frequently aren’t worth the trouble.</p>
+<p>So what tools do we have in our toolbox? The ones that are generally agreed upon (no, really - this is an area of active debate) fall into four categories:</p>
+<ul>
+<li>Position (like we already have with X and Y)</li>
+<li>Color</li>
+<li>Shape</li>
+<li>Size</li>
+</ul>
+<p>These are the tools we can use to encode more information into our graphics. We’re going to call these <em>aesthetics</em>, but any number of other words could work - some people refer to them as scales, some as values. I call them aesthetics because that’s what my software of choice calls them - but the word itself comes from the fact that these are the things that change how your graph looks.</p>
+<p>For what it’s worth, we’re using an EPA dataset for this unit, representing fuel economy data from 1999 and 2008 for 38 popular models of car. “Hwy” is highway mileage, “displ” is engine displacement (so volume), and “cty” is city mileage. But frankly, our dataset doesn’t matter right now - most of our discussion here is applicable to any dataset you’ll pick up.</p>
+<p>We’re going to go through each of these aesthetics, to talk about how you can encode more information in each of your graphics. Along the way, remember our mantras:</p>
+<ol style="list-style-type: decimal">
+<li>A good graphic tells a story</li>
+<li>Everything should be made as simple as possible - but no simpler</li>
+<li>Use the right tool for the job</li>
+<li>Ink is cheap. Electrons are even cheaper</li>
+</ol>
+<p>We’ll talk about how these are applicable throughout this section.</p>
+<div id="position" class="section level3">
+<h3>Position</h3>
+<p>Let’s start off discussing these aesthetics by finishing up talking about position. The distance of values along the x, y, or – in the case of our 3D graphic – z axes represents how large a particular variable is. People inherently understand that values further out on each axis are more extreme - for instance, imagine you came across the following graphic (made with simulated data):</p>
+<pre class="r"><code>library(dplyr)
+tibble(x = rnorm(20, 0, 0.5),
+       y = rnorm(20, 0, 0.5)) %&gt;%
+  ggplot(aes(x, y)) + 
+  geom_point() + 
+  geom_point(aes(x = 20, y = 20)) +
+  theme(axis.text = element_blank())</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Which values do you think are higher?</p>
+<p>Most people innately assume that the bottom-left hand corner represents a 0 on both axes, and that the further you get from that corner the higher the values are. This – relatively obvious – revelation hints at a much more important concept in data visualizations: perceptual topology should match data topology. Values that feel larger in a graph should represent values that <em>are</em> larger in your data. As such, when working with position, higher values should be the ones further away from that lower left-hand corner – you should let your viewer’s subconscious assumptions do the heavy lifting for you.</p>
+<p>Applying this advice to categorical data can get a little tricky. Imagine that we’re looking at the average highway mileages for manufacturers of the cars in our dataset:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(manufacturer) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  ggplot(aes(manufacturer, hwy)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07)))</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>In this case, the position along the x axis just represents a different car maker, in alphabetical order. But remember, position in a graph is an aesthetic that we can use to encode more information in our graphics. And we aren’t doing that here – for instance, we could show the same information without using x position at all:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(manufacturer) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  ggplot(aes(1, hwy, label = manufacturer)) + 
+  geom_label() + 
+  scale_x_discrete(limits = c(1, 1)) +
+  theme(axis.text.x = element_blank()) + 
+  labs (x = &quot;&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Try to compare Pontiac and Hyundai on the first graph, versus on this second one. If anything, removing our extraneous x aesthetic has made it easier to compare manufacturers. This is a big driver behind our second mantra – that everything should be made as simple as possible, but no simpler. Having extra aesthetics confuses a graph, making it harder to understand the story it’s trying to tell.</p>
+<p>However, when making a graphic, we should always be aiming to make important comparisons easy. As such, we should take advantage of our x aesthetic, arranging our manufacturers not by the alphabet, but rather by their average highway mileage:</p>
+<pre class="r"><code>library(forcats)
+mpg %&gt;%
+  group_by(manufacturer) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  mutate(manufacturer = fct_reorder(manufacturer, hwy, .desc = T)) %&gt;%
+  ggplot(aes(manufacturer, hwy)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07)))</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>By reordering our graphic, we’re now able to better compare more similar manufacturers. It’s now dramatically faster to understand our visualization – closer comparisons are easier to make, so placing more similar values closer together makes them dramatically easier to grasp. Look at Pontiac vs Hyundai now, for instance. Generally speaking, don’t put things in alphabetical order - use the order you place things to encode additional information.</p>
+<p>As a quick sidenote, I personally believe that, when working with categorical values along the X axis, you should reorder your values so the highest value comes first. For some reason, I just find having the tallest bar/highest point (or whatever is being used to show value) next to the Y axis line is much cleaner looking than the alternative:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(manufacturer) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  mutate(manufacturer = fct_reorder(manufacturer, hwy)) %&gt;%
+  ggplot(aes(manufacturer, hwy)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07)))</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>For what it’s worth, I’m somewhat less dogmatic about this when the values are on the Y axis. I personally believe the highest value should always be at the top, as humans expect higher values to be further from that bottom left corner:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(manufacturer) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  mutate(manufacturer = fct_reorder(manufacturer, hwy)) %&gt;%
+  ggplot(aes(manufacturer, hwy)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
+  coord_flip()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>However, I’m not as instantly repulsed by the opposite ordering as I am with the X axis, likely because the bottom bar/point being the furthest looks like a more natural shape, and is still along the X axis line:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(manufacturer) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  mutate(manufacturer = fct_reorder(manufacturer, hwy, .desc = T)) %&gt;%
+  ggplot(aes(manufacturer, hwy)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
+  coord_flip()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>For this, at least, your mileage may vary. Also, it’s worth pointing out how much cleaner the labels on this graph are when they’re on the Y axis - flipping your coordinate system, like we’ve done here, is a good way to display data when you’ve got an unwieldy number of categories.</p>
+</div>
+<div id="color" class="section level3">
+<h3>Color</h3>
+<p>While we’ve done a good job covering the role position plays in communicating information, we’re still stuck on the same question we started off with: How can we show a third variable on the graph?</p>
+<p>One of the most popular ways is to use colors to represent your third variable. It might be worth talking through how color can be used with a simulated dataset. Take for example the following graph:</p>
+<pre class="r"><code>df &lt;- tibble(x = c(1:20),
+        y = rnorm(20),
+        z = rep(c(1, 2, 3, 4), 5))
+ggplot(df, aes(x, y)) + 
+  geom_point(size = 3) + 
+  theme(text = element_blank(),
+        legend.position = &quot;null&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>And now let’s add color for our third variable:</p>
+<pre class="r"><code>ggplot(df, aes(x, y, color = factor(z))) + 
+  geom_point(size = 3) + 
+  theme(text = element_blank(),
+        legend.position = &quot;null&quot;) + 
+  scale_color_brewer(palette = &quot;OrRd&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Remember: perceptual topology should match data topology. Which values are larger?</p>
+<p>Most people would say the darker ones. But is it always that simple? Let’s change our color scale to compare:</p>
+<pre class="r"><code>ggplot(df, aes(x, y, color = factor(z))) + 
+  geom_point(size = 3) + 
+  theme(text = element_blank(),
+        legend.position = &quot;null&quot;) + 
+  scale_color_brewer(palette = &quot;Dark2&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>Sure, some of these colors are darker than others – but I wouldn’t say any of them tell me a value is particularly high or low.</p>
+<p>That’s because humans don’t percieve <em>hue</em> as an ordered variable - the actual color a point is doesn’t tell us how large a value is. Instead, the first graph altered the <em>luminance</em> of each point - how bright or dark it was - in order to tell us what value it has.</p>
+<p>There’s one other axis you can move colors along in order to encode value, known as <em>chroma</em>:</p>
+<pre class="r"><code>ggplot(df, aes(x, y, color = z)) + 
+  geom_point(size = 3) + 
+  theme(text = element_blank(),
+        legend.position = &quot;null&quot;) + 
+  scale_color_gradient(low = &quot;grey&quot;, high = &quot;red&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Chroma - or how vibrant a color is - also encodes a value, with more vibrant colors representing higher values. These three values – hue, chroma, and luminence – form the HCL color spectrum, which is more or less how humans perceive colors in our daily lives. By altering the C and L components, we’re able to use color to encode numeric values in our graphics.</p>
+<p>Now, color brings with it a number of challenges. For example, as we’ve already shown, changing the hue of a color doesn’t actually help us to encode any more information in our graphics. Combine that with the most common way to choose colors for a graphic - using the rainbow - and you wind up with a lot of graphics like this:</p>
+<pre class="r"><code>ggplot(df, aes(x, y, color = factor(z))) + 
+  geom_point(size = 3) + 
+  scale_color_manual(values = rainbow(5)) + 
+  theme(text = element_blank(),
+        legend.position = &quot;null&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>Which values are larger? Who knows?</p>
+<p>Now, it’s not actually fair of me to say that hue doesn’t encode any information in our graphics. For instance, in this example, you can clearly see that blue points are different in some manner from red points. It’s more appropriate to say that hue is an <em>unordered value</em> – there’s no hue that represents a larger or smaller value than any other, but two hues do clearly represent two different values.</p>
+<p>This becomes relevant when dealing with categorical data. For instance, moving back to the scatterplot we started with:</p>
+<pre class="r"><code>ggplot(mpg, aes(displ, hwy)) +
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>If we wanted to encode a categorical variable in this – for instance, the class of vehicle – we could use hue to distinguish the different types of cars from one another:</p>
+<pre class="r"><code>ggplot(mpg, aes(displ, hwy, color = class)) +
+  geom_point() + 
+  scale_color_brewer(palette = &quot;Dark2&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>In this case, using hue to distinguish our variables clearly makes more sense than using either chroma or luminesence:</p>
+<pre class="r"><code>ggplot(mpg, aes(displ, hwy, color = class)) +
+  geom_point() + 
+  scale_color_brewer(palette = &quot;OrRd&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>This is a case of knowing what tool to use for the job - chroma and luminescence will clearly imply certain variables are closer together than is appropriate for categorical data, while hue won’t give your audience any helpful information about an ordered variable. Note, though, that I’d still discourage using the rainbow to distinguish categories in your graphics – the rainbow is not perceptually uniform (for instance, red and orange are much more similar colors than yellow and blue), and you’ll wind up implying connections between your categories that you might not want to suggest.</p>
+<p>Speaking of knowing the right rool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(class) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  mutate(class = fct_reorder(class, hwy, .desc = T)) %&gt;%
+  ggplot(aes(class, hwy, fill = class)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
+  scale_fill_brewer(palette = &quot;Dark2&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p>In this graph, the variable “class” is being represented by both position, along the x axis, and by color. By duplicating this effort, we’re making our graph harder to understand – encoding the information once is enough, and doing it any more times than that is a distraction. Remember the second mantra: Everything should be made as simple as possible – but no simpler. The best data visualization is one that includes all the elements needed to deliver the message, and no more.</p>
+<p>You can feel free to use color in your graphics, so long as it adds more information to the plot - for instance, if it’s encoding a third variable:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(class) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+  mutate(class = fct_reorder(class, hwy, .desc = T),
+         &quot;How much I like a car:&quot; = c(&quot;A lot&quot;, &quot;Don&#39;t&quot;, &quot;A lot&quot;, &quot;Don&#39;t&quot;, &quot;Meh&quot;, &quot;Don&#39;t&quot;, &quot;Meh&quot;)) %&gt;%
+  ggplot(aes(class, hwy, fill = `How much I like a car:`)) + 
+  geom_col() + 
+  scale_y_continuous(expand = expand_scale(mult = c(0, 0.07))) + 
+  scale_fill_brewer(palette = &quot;Dark2&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>But replicating as we did above is just adding more junk to your chart.</p>
+<p>There’s one last way you can use color effectively in your plot, and that’s to highlight points with certain characteristics:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(class) %&gt;%
+  filter(hwy == max(hwy)) %&gt;%
+  ggplot(aes(displ, hwy)) +
+  geom_point(size = 3, aes(shape = class), color = &quot;red&quot;, show_guide = FALSE) + 
+  geom_point(data = mpg, aes(shape = class)) + 
+  labs(caption = &quot;Points highlighted in red have the highest gas mileage for their class&quot;) + 
+  scale_shape_manual(values = c(14:22))</code></pre>
+<pre><code>## Warning: `show_guide` has been deprecated. Please use `show.legend`
+## instead.</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<p>Doing so allows the viewer to quickly pick out the most important sections of our graph, increasing its effectiveness. Note that I used shape instead of color to separate the class of vehicles, by the way – combining point highlighting and using color to distinguish categorical variables can work, but can also get somewhat chaotic:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(class) %&gt;%
+  filter(hwy == max(hwy)) %&gt;%
+  ggplot(aes(displ, hwy)) +
+  geom_point(size = 3, aes(color = class), color = &quot;red&quot;, show_guide = FALSE) + 
+  geom_point(data = mpg, aes(color = class)) + 
+  labs(caption = &quot;Points highlighted in red have the highest gas mileage for their class&quot;) + 
+  scale_shape_manual(values = c(14:22)) +
+  scale_color_brewer(palette = &quot;Dark2&quot;)</code></pre>
+<pre><code>## Warning: `show_guide` has been deprecated. Please use `show.legend`
+## instead.</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-21-1.png" width="672" /></p>
+<p>There’s one other reason color is a tricky aesthetic to get right in your graphics: about 5% of the population (10% of men, 1% of women) can’t see colors at all. That means you should be careful when using it in your visualizations – use colorblind-safe color palettes (google “ColorBrewer” or “viridis” for more on these), and pair it with another aesthetic whenever possible.</p>
+</div>
+<div id="shape" class="section level3">
+<h3>Shape</h3>
+<p>The easiest aesthetic to pair color with is the next most frequently used – shape. This one is much more intuitive than color – to demonstrate, let’s go back to our scatterplot:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ)) + 
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
+<p>We can now change the shape of each point based on what class of vehicle it represents:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ, shape = class)) + 
+  geom_point() + 
+  scale_shape_manual(values = 1:7)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<p>Imagine we were doing the same exercise as we did with color earlier – which values are larger?</p>
+<p>I’ve spoiled the answer already by telling you what the shapes represent – none of them are inherently larger than the others. Shape, like hue, is an <em>unordered value</em>.</p>
+<p>The same basic concepts apply when we change the shape of lines, not just points. For instance, if we plot separate trendlines for front-wheel, rear-wheel, and four-wheel drive cars, we can use linetype to represent each type of vehicle:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ, linetype = drv)) + 
+  geom_smooth(se = F)</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p>But even here, no one linetype implies a higher or lower value than the others.</p>
+<p>There are two caveats to be made to this rule, however. For instance, if we go back to our original scatterplot and change which shapes we’re using:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ, shape = class)) + 
+  geom_point() + 
+  scale_shape_manual(values = c(5, 23, 9, 2, 17, 6, 20))</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
+<p>This graph seems to imply more connection between the first three classes of car (which are all different types of diamonds) and the next three classes (which are all types of triangle), while singling out SUVs. In this way, we’re able to use shape to imply connection between our groupings - more similar shapes, which differ only in angle or texture, imply a closer relationship to one another than to other types of shape. This can be a blessing as well as a curse - if you pick, for example, a square and a diamond to represent two unrelated groupings, your audience might accidentally read more into the relationship than you had meant to imply.</p>
+<p>It’s also worth noting that different shapes can pretty quickly clutter up a graph. As a general rule of thumb, using more than 3-4 shapes on a graph is a bad idea, and more than 6 means you need to do some thinking about what you actually want people to take away.</p>
+</div>
+<div id="size" class="section level3">
+<h3>Size</h3>
+<p>Our last aesthetic is that of size. Going back to our original scatterplot, we could imagine using size like this:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ, size = cty)) +
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
+<p>Size is an inherently <em>ordered value</em> - large size points imply larger values. Specifically, humans perceive larger areas as corresponding to larger values - the points which are three times larger in the above graph are about three times larger in value, as well.</p>
+<p>This becomes tricky when size is used incorrectly, either by mistake or to distort the data. Sometimes an analyst maps radius to the variable, rather than area of the point, resulting in graphs as the below:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ, size = cty)) +
+  geom_point() + 
+  scale_radius()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-27-1.png" width="672" /></p>
+<p>In this example, the points representing a cty value of 10 don’t look anything close to 1/3 as large as the points representing 30. This makes the increase seem much steeper upon looking at this chart – so be careful when working with size as an aesthetic that your software is using the area of points, not radius!</p>
+<p>It’s also worth noting that unlike color – which can be used to distinguish groupings, as well as represent an ordered value – it’s generally a bad idea to use size for a categorical variable. For instance, if we mapped point size to class of vehicle:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ, size = class)) +
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-28-1.png" width="672" /></p>
+<p>We seem to be implying relationships here that don’t actually exist, like a minivan and midsize vehicle being basically the same. As a result, it’s best to only use size for continuous (or numeric) data.</p>
+</div>
+<div id="a-tangent" class="section level3">
+<h3>A Tangent</h3>
+<p>Now that we’ve gone over these four aesthetics, I want to go on a quick tangent. When it comes to how quickly and easily humans perceive each of these aesthetics, research has settled on the following order:</p>
+<ol style="list-style-type: decimal">
+<li>Position</li>
+<li>Size</li>
+<li>Color (especially chroma and luminescence)</li>
+<li>Shape</li>
+</ol>
+<p>And as we’ve discussed repeatedly, the best data visualization is one that includes exactly as many elements as it takes to deliver a message, and no more. Everything should be made as simple as possible, but no simpler.</p>
+<p>However, we live in a world of humans, where the scientifically most effective method is not always the most popular one. And since color is inherently more exciting than size as an aesthetic, the practitioner often finds themselves using colors to denote values where size would have sufficed. And since we know that color should usually be used alongside shape in order to be more inclusive in our visualizations, size often winds up being the last aesthetic used in a chart. This is fine - sometimes we have to optimize for other things than “how quickly can someone understand my chart”, such as “how attractive does my chart look” or “what does my boss want from me”. But it’s worth noting, in case you see contradictory advice in the future - the disagreement comes from if your source is teaching the most scientifically sound theory, or the most applicable practice.</p>
+</div>
+<div id="summary" class="section level3">
+<h3>Summary</h3>
+<p>We started off this section with our second mantra: that everything should be made as simple as possible, but no simpler. The first half of that cautions us against overusing aesthetics and against adding too much to a graphic, lest we erode its efficency in conveying information:</p>
+<pre class="r"><code>ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species, size = Species, shape = Species)) + 
+  geom_point() + 
+  geom_smooth(se = F, aes(linetype = Species)) + 
+  theme(legend.position = &quot;none&quot;,
+        axis.text = element_blank()) + 
+  labs( x = &quot;&quot;, 
+        y = &quot;&quot;)</code></pre>
+<pre><code>## Warning: Using size for a discrete variable is not advised.</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<p>The second half cautions us against not using all the aesthetics it takes to tell our story, in case we don’t produce the most expressive graphic possible:</p>
+<pre class="r"><code>ggplot(iris, aes(Sepal.Length, Sepal.Width)) + 
+  geom_point() + 
+  theme(legend.position = &quot;none&quot;,
+        axis.text = element_blank()) + 
+  labs( x = &quot;&quot;, 
+        y = &quot;&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-30-1.png" width="672" /></p>
+<p>Instead, we should use exactly as many aesthetics as it takes to tell our story, carefully choosing each to encode the most information possible into our graphics:</p>
+<pre class="r"><code>ggplot(iris, aes(Sepal.Length, Sepal.Width, color = Species)) + 
+  geom_point() + 
+  scale_color_brewer(palette = &quot;Dark2&quot;) + 
+  theme(legend.position = &quot;none&quot;,
+        axis.text = element_blank()) + 
+  labs( x = &quot;&quot;, 
+        y = &quot;&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-31-1.png" width="672" /></p>
+<p>As for the specific takeaways from this section, I can think of the following:</p>
+<ul>
+<li>Match perceptual and data topology – if a color or position <em>feels like a higher value</em>, use it to represent data that is a higher value</li>
+<li>Make important comparisons easy – place them near each other, call attention to them</li>
+<li>Use aesthetics to encode more information into your graphics
+<ul>
+<li>Use exactly as many aesthetics as you need – no more, no less.</li>
+</ul></li>
+<li>Don’t place things in alphabetical order</li>
+<li>Don’t use the rainbow for a color scheme</li>
+<li>Use ordered aesthetics (like position, chroma, luminescence, and size) to show ordered values (like numeric data)</li>
+<li>Use unordered aesthetics (like hue or shape) to show unordered values</li>
+</ul>
+<p>Let’s transition away from aesthetics, and towards our third mantra:</p>
+</div>
+</div>
+<div id="use-the-right-tool-for-the-job." class="section level2">
+<h2>Use the right tool for the job.</h2>
+<p>Think back to our first chart:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ)) +
+  geom_point()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p>As you already know, this is a <em>scatterplot</em> - also known as a <em>point graph</em>. Now say we added a line of best fit to it:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ)) +
+  geom_point() + 
+  geom_smooth(se = F)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
+<p>This didn’t stop being a scatterplot once we drew a line on it – but the term scatterplot no longer really encompasses everything that’s going on here. It’s also obviously not a line chart, as even though there’s a line on it, it also has points.</p>
+<p>Rather than quibble about what type of chart this is, it’s more helpful to describe what tools we’ve used to depict our data. We refer to these as <em>geoms</em>, short for <em>geometries</em> – because when you get really deep into things, these are geometric representations of how your dataset is distributed along the x and y axes of your graph. I don’t want to get too far down that road – I just want to explain the vocabulary so that we aren’t talking about <em>what type of chart</em> that is, but rather <em>what geoms it uses</em>. Framing things that way makes it easier to understand how things can be combined and reformatted, rather than assuming each type of chart can only do one thing.</p>
+<div id="two-continuous-variables" class="section level3">
+<h3>Two continuous variables</h3>
+<p>This chart uses two geoms that are really good for graphs that have a continuous y and a continuous x - points and lines. This is what people refer to most of the time when they say a line graph - a single smooth trendline that shows a pattern in the data. However, a line graph can also mean a chart where each point is connected in turn:</p>
+<pre class="r"><code>ggplot(mpg, aes(hwy, displ)) +
+  geom_point() + 
+  geom_line()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
+<p>It’s important to be clear about which type of chart you’re expected to produce! I always refer to the prior as a trendline, for clarity.</p>
+<p>These types of charts have enormous value for quick exploratory graphics, showing how various combinations of variables interact with one another. For instance, many analysts start familiarizing themselves with new datasets using correlation matrices (also known as scatterplot matrices), which create a grid of scatterplots representing each variable:</p>
+<pre class="r"><code>mpg %&gt;%
+  select_if(is.numeric) %&gt;%
+  GGally::ggpairs()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
+<p>In this format, understanding interactions between your data is quick and easy, with certain variable interactions obviously jumping out as promising avenues for further exploration.</p>
+<p>To back up just a little, there’s one major failing of scatterplots that I want to highlight before moving on. If you happen to have more than one point with the same x and y values, a scatterplot will just draw each point over the previous, making it seem like you have less data than you actually do. Adding a little bit of random noise - for instance, using RAND() in Excel - to your values can help show the actual densities of your data, especially when you’re dealing with numbers that haven’t been measured as precisely as they could a have been.</p>
+<pre class="r"><code>a &lt;- ggplot(mpg, aes(hwy, cty)) +
+  geom_point()
+
+b &lt;- ggplot(mpg, aes(hwy, cty)) +
+  geom_jitter()
+
+cowplot::plot_grid(a, b)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
+<p>One last chart that does well with two continuous variables is the area chart, which resembles a line chart but fills in the area beneath the line:</p>
+<pre class="r"><code>mpg %&gt;%
+  group_by(cty) %&gt;%
+  summarise(hwy = mean(hwy)) %&gt;%
+ggplot(aes(cty, hwy)) +
+  geom_area()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
+<p>Area plots make sense when 0 is a relevant number to your dataset – that is, a 0 value wouldn’t be particularly unexpected. They’re also frequently used when you have multiple groupings and care about their total sum:</p>
+<pre class="r"><code>diamonds %&gt;%
+  count(carat, cut) %&gt;%
+  ggplot(aes(carat, n, fill = cut)) +
+  geom_area() +
+  scale_x_continuous(limits = c(0.2, 2))</code></pre>
+<pre><code>## Warning: Removed 268 rows containing missing values (position_stack).</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
+<p>(This new dataset is the “diamonds” dataset, representing 54,000 diamonds sizes, qualities, cut, and sale prices. We’ll be going back and forth using it and the EPA dataset from now on.)</p>
+<p>Now one drawback of stacked area charts is that it can be very hard to estimate how any individual grouping shifts along the x axis, due to the cumulative effects of all the groups underneath them. For instance, there are actually fewer “fair” diamonds at 0.25 carats than at 1.0 – but because “ideal” and “premium” spike so much, your audience might draw the wrong conclusions. In situations where the total matters more than the groupings, this is alright – but otherwise, it’s worth looking at other types of charts as a result.</p>
+</div>
+<div id="one-continuous-variable" class="section level3">
+<h3>One continuous variable</h3>
+<p>If instead you’re looking to see how a single continuous variable is distributed throughout your dataset, one of the best tools at your disposal is the histogram. A histogram shows you how many observations in your dataset fall into a certain range of a continuous variable, and plot that count as a barplot:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat)) + 
+  geom_histogram()</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
+<p>One important flag to raise with histograms is that you need to pay attention to how your data is being binned. If you haven’t picked the right width for your bins, you might risk missing peaks and valleys in your dataset, and might misunderstand how your data is distributed – for instance, look what shifts if we graph 500 bins, instead of the 30 we used above:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat)) + 
+  geom_histogram(bins = 500)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
+<p>An alternative to the histogram is the frequency plot, which uses a line chart in the place of bars to represent the frequency of a value in your dataset:</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat)) + 
+  geom_freqpoly(bins = 30)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<p>Again, however, you have to pay attention to how wide your data bins are with these charts – you might accidentally smooth over major patterns in your data if you aren’t careful!</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat)) + 
+  geom_freqpoly(bins = 500)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+<p>One large advantage of the frequency chart over the histogram is how it deals with multiple groupings – if your groupings trade dominance at different levels of your variable, the frequency graph will make it much more obvious how they shift than a histogram will.</p>
+<p>(Note that I’ve done something weird to the data in order to show how the distributions change below.)</p>
+<pre class="r"><code>ggplot(diamonds, aes(carat, color = cut)) + 
+  geom_freqpoly(bins = 500) + 
+  scale_y_log10()</code></pre>
+<pre><code>## Warning: Transformation introduced infinite values in continuous y-axis</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
+</div>
+<div id="one-categorical-variable-one-continous" class="section level3">
+<h3>One categorical variable, one continous</h3>
+<p>If you want to compare a categorical and continuous variable, you’re usually stuck with some form of bar chart:</p>
+<pre class="r"><code>diamonds %&gt;%
+  group_by(cut, color) %&gt;%
+  summarise(price = mean(price)) %&gt;%
+  ggplot(aes(cut, price)) + 
+  geom_col()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-44-1.png" width="672" /></p>
+<p>The bar chart is possibly the least exciting type of graph in existence, mostly because of how prevalent it is – but that’s because it’s really good at what it does. Bar charts are one of the most easily interpreted and effective types of visualizations, no matter how exciting they are.</p>
+<p>However, some people are really intent on ruining that. Take, for instance, the stacked bar chart, often used to add a third variable to the mix:</p>
+<pre class="r"><code>diamonds %&gt;%
+  group_by(cut, color) %&gt;%
+  summarise(price = mean(price)) %&gt;%
+  ggplot(aes(cut, price, fill = color)) + 
+  geom_col()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-45-1.png" width="672" /></p>
+<p>Compare Fair/G to Premium/G. It’s next to impossible to accurately compare the boxes – they don’t share a top or a bottom line, so you can’t really make a comparison. In these situations, it’s a better idea to use a dodged bar chart instead:</p>
+<pre class="r"><code>diamonds %&gt;%
+  group_by(cut, color) %&gt;%
+  summarise(price = mean(price)) %&gt;%
+  ggplot(aes(cut, price, fill = color)) + 
+  geom_col(position = &quot;dodge&quot;)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-46-1.png" width="672" /></p>
+<p>Dodged bar charts are usually a better choice for comparing the actual numbers of different groupings. However, this chart does a good job showing one of the limitations dodged bar charts come up against – once you get past 4 or 5 groupings, making comparisons is tricky. In these cases, you’re probably trying to apply the wrong chart for the job, and should consider either breaking your chart up into smaller ones – remember, ink is cheap, and electrons or cheaper – or replacing your bars with a few lines.</p>
+<p>The one place where stacked bar charts are appropriate, however, is when you’re comparing the relative proportions of two different groups in each bar. For instance, take the following graph:</p>
+<pre class="r"><code>df &lt;- tibble(x = rep(c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;), each = 2),
+             y = c(60, 40, 70, 30, 75, 25),
+             group = rep(c(&quot;1&quot;, &quot;2&quot;), 3))
+
+ggplot(df, aes(x, y, fill = group)) + 
+  geom_col()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-47-1.png" width="672" /></p>
+<p>In this case, making comparisons across groups is trivial, made simple by the fact that the groupings all share a common line - at 100% for group 1, and at 0% for group 2. This point of reference solves the issue we had with more than two groupings – though note we’d still prefer a dodged bar chart if the bars didn’t always sum to the same amount.</p>
+<div id="a-quick-tangent" class="section level4">
+<h4>A Quick Tangent</h4>
+<p>This is usually where most people will go on a super long rant about pie charts and how bad they are. They’re wrong, but in an understandable way. People love to hate on pie charts, because they’re almost universally a bad chart. However, if it’s important for your viewer to be able to quickly figure out what proportion two or more groupings make up of the whole, a pie chart is actually the fastest and most effective way to get the point across. For instance, compare the following pie and bar charts, made with the same dataset:</p>
+<pre class="r"><code>df &lt;- tibble(x = rep(1, 6),
+   y = c(0.35, 0.25, 0.15, 0.1, 0.1, 0.05),
+   group = c(&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;))
+
+pie(df$y, labels = df$group)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(df, aes(x, y, fill = group)) + 
+  geom_col()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-49-1.png" width="672" /></p>
+<p>It’s a lot easier to tell that, say, A is smaller than C through F in the pie chart than the bar plot, since humans are better at summing angles than areas. In these instances, feel free to use a pie chart – and to tell anyone giving you flack that I said it was OK.</p>
+</div>
+</div>
+<div id="two-categorical-variables" class="section level3">
+<h3>Two categorical variables</h3>
+<p>Our last combination is when you’re looking to have a categorical variable on both the x and y axis. These are trickier plots to think about, as we no longer encode value in position based on how far away a point is from the lower left hand corner, but rather have to get creative in effectively using position to encode a value. Remember that a geom is a geometric representation of how your dataset is distributed along the x and y axes of your graph. When both of your axes are categorical, you have to get creative to show that distribution.</p>
+<p>One method is to use density, as we would in a scatterplot, to show how many datapoints you have falling into each combination of categories graphed. You can do this by making a “point cloud” chart, where more dense clouds represent more common combinations:</p>
+<pre class="r"><code>ggplot(diamonds, aes(cut, clarity)) + 
+  geom_jitter(alpha = 0.06)</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
+<p>Even without a single number on this chart, its message is clear - we can tell how our diamonds are distributed with a single glance. A similar way to do this is to use a heatmap, where differently colored cells represent a range of values:</p>
+<pre class="r"><code>diamonds %&gt;%
+  count(cut, clarity) %&gt;%
+  ggplot(aes(cut, clarity, fill = n)) + 
+  geom_tile()</code></pre>
+<p><img src="/courses/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-51-1.png" width="672" /></p>
+<p>I personally think heatmaps are less effective – partially because by using the color aesthetic to encode this value, you can’t use it for anything else – but they’re often easier to make with the resources at hand.</p>
+<p>The next post can be found <a href="https://www.mikemahoney218.com/tutorial/dataviz-excellent/">here</a>.</p>
+</div>
+</div>
+
+          </div>
+
+          
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/data-visualization/">Data Visualization</a>
+  
+  <a class="badge badge-light" href="/tags/tutorials/">Tutorials</a>
+  
+</div>
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/dataviz/excellent/" rel="prev">Making Excellent Visualizations</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Oct 9, 2019</p>
+
+          
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/dataviz/MechanicsOfDataViz.html">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2019 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.d6bd04fdad2ad213aa8111c5a3b72fc5.js"></script>
+
+    
+
+
+
+
+
+
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

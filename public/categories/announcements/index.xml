@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Announcements | Mike Mahoney</title>
+    <link>/categories/announcements/</link>
+      <atom:link href="/categories/announcements/index.xml" rel="self" type="application/rss+xml" />
+    <description>Announcements</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.jpg</url>
+      <title>Announcements</title>
+      <link>/categories/announcements/</link>
+    </image>
+    
+    <item>
+      <title>One Conference Down, One to Go!</title>
+      <link>/post/ras2018/one-conference-down/</link>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/post/ras2018/one-conference-down/</guid>
+      <description>
+
+
+&lt;p&gt;I was happy to attend the Rochester Academy of Sciences Fall Paper Session this past weekend! It seemed like an incredibly diverse array of work was on display - one particularly notable poster connected human heights and weights to the weight of their cremation remains - and the atmosphere was incredibly welcoming.&lt;/p&gt;
+&lt;p&gt;My talk on beaver impacts seemed to get decent reviews! I’ve &lt;a href=&#34;https://www.slideshare.net/MichaelMahoney83/beaver-foraging-preferences-and-impacts-on-forest-structure-ras&#34;&gt;posted my slides on SlideShare&lt;/a&gt;, and will be posting a rough script of the talk soon enough. I’ve got plans for a few changes before the &lt;a href=&#34;https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/&#34;&gt;FEMC conference&lt;/a&gt;, coming up in a month.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

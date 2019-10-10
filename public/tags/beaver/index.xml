@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beaver | Mike Mahoney</title>
+    <link>/tags/beaver/</link>
+      <atom:link href="/tags/beaver/index.xml" rel="self" type="application/rss+xml" />
+    <description>Beaver</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.jpg</url>
+      <title>Beaver</title>
+      <link>/tags/beaver/</link>
+    </image>
+    
+    <item>
+      <title>Thesis Now Available in ESF Digital Commons</title>
+      <link>/post/thesispublished/ml-beaver-data/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/post/thesispublished/ml-beaver-data/</guid>
+      <description>
+
+
+&lt;style&gt;
+p.caption {
+  font-size: 0.6em;
+}
+&lt;/style&gt;
+&lt;p&gt;My thesis is now available on the &lt;a href=&#34;https://digitalcommons.esf.edu/honors/141/&#34;&gt;ESF Digital Commons&lt;/a&gt;! I’m extremely grateful to Drs. John Drake and Bill Shields for their help in the revision and submission process, and of course to Dr. John Stella for the extensive support he provided throughout the project, from conceptualization to publication.&lt;/p&gt;
+&lt;p&gt;In the thesis, we look at the impacts beavers have on the forest community around them as they remove trees for food and building dams. While people had looked at these impacts in other parts of beaver’s range, the Adirondacks are a strange enough ecosystem - being largely protected from anthropogenic disturbances, most of the forest landscape exhibits only one or two age classes - that we weren’t sure how applicable conclusions from these regions would be. What we found was that while the broad conclusions of these studies held true - beavers still operate as central place foragers and create large disturbances in the landscape - the lack of early-successional species throughout the Adirondacks seriously shifted which stems were harvested preferrentially. We also found a lot of variance in the patterns of how individual species were utilized - for instance, beaver harvested almost any size speckled alder they could find, so long as it was close to their dam, but would harvest red maple at any distance, so long as the stem was small.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Wireframes.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;font size = 0.75em&gt;
+&lt;div style=&#34;line-height: 1&#34;&gt;
+One figure from the article version of the thesis, showing the odds a stem will be harvested (z-axis) as a function of how far (x-axis, left) and how big (y-axis, right) it is.
+&lt;/div&gt;
+&lt;p&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;We’re currently working on a journal article version of the thesis, using an expanded dataset and focusing more closely on the patterns in forage selectivity we found, and how they differ from other regions. That should hopefully be in the review process within the next few weeks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beaver Foraging Preferences and Impacts on Forest Structure in New York&#39;s Adirondack Mountains</title>
+      <link>/publication/beaver-thesis/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      <guid>/publication/beaver-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beaver Foraging Preferences and Impacts on Forest Structure and Composition</title>
+      <link>/talk/femc_2018/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <guid>/talk/femc_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beaver Foraging Preferences and Impacts on Forest Structure and Composition</title>
+      <link>/talk/ras_2018/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <guid>/talk/ras_2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impacts of Beaver on Forest Structure and Composition</title>
+      <link>/project/beaverimpacts/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <guid>/project/beaverimpacts/</guid>
+      <description>&lt;p&gt;The widespread reforestation of the Northeastern United States has been accompanied by a reintroduction of beaver (Castor canadensis) throughout the region, resulting in profound changes to stream and meadow ecosystems. In contrast to the large body of research on beaver biology and their wetlands, impacts to the adjacent forest from these &amp;lsquo;ecosystem engineers&amp;rsquo; are poorly understood. We are studying the dynamic relationship between landscape drivers of long-term site use by beavers and their reciprocal influence on forest communities adjacent to their ponds.  At a SUNY-ESF research forest in the Adirondack Mountains of New York State, we are using a 30-year record of beaver lodge occupancy to (1) test a process-based model of landscape controls on the duration of beaver occupancy; and (2) quantify the spatially-varying impacts of beaver foraging on forest tree composition and structure. This research will help to better understand the widespread and long-term effects on forests from a keystone species that is increasing in influence throughout North American and Europe.&lt;/p&gt;
+
+&lt;p&gt;My current focus is on expanding work done on beaver impacts within the Huntington Wildlife Forest (HWF) to public lands throughout the Adirondacks, to see if the results from our small-scale study at the HWF are applicable to the greater Park. This research may have truly exciting implications for land management moving forward - adaptive management of beaver recolonization has promising applications in wetlands restoration, endangered species recovery, and ecosystem remediation, just to name a few areas.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re interested in seeing an interactive map of my field sites, &lt;a href=&#34;{{ref &amp;quot;/beaversites/index.html&amp;quot;}}&#34; target=&#34;_blank&#34;&gt;click here!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Collaborators:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Stacy McNulty (SUNY-ESF)&lt;/li&gt;
+&lt;li&gt;Jacqueline Frair (SUNY-ESF)&lt;/li&gt;
+&lt;li&gt;Joe Wheaton (Utah State University)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Selected Presentations:&lt;/p&gt;
+
+&lt;p&gt;Links lead to posters or slides for that presentation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mahoney, M. J.&lt;/strong&gt;, and Stella, J. C. (2018). Beaver Foraging Preferences and Impacts on Forest Structure in the Adirondack Mountains of New York. Contributed talk at the Forest Ecosystem Monitoring Collective Conference, Burlington, VT.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mahoney, M. J.&lt;/strong&gt;, and Stella, J. C. (2018). Beaver Foraging Preferences and Impacts on Forest Structure in the Adirondack Mountains of New York. Contributed talk at the Rochester Academy of Sciences Fall Scientific Paper Session, Geneseo, NY.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Mahoney, M. J.&lt;/strong&gt;, Zevin, R., and Stella, J.C. (2018). Impacts of Beaver on Forest Structure and Composition. Poster session presented at the Spotlight on Student Research, Syracuse, NY.
+&lt;a href=&#34;https://www.mikemahoney218.com/project/beaverimpacts/SpotlightPoster2018.png&#34; target=&#34;_blank&#34;&gt;[Poster]&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

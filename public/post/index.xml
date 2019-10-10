@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Mike Mahoney</title>
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.jpg</url>
+      <title>Posts</title>
+      <link>/post/</link>
+    </image>
+    
+    <item>
+      <title>Thesis Now Available in ESF Digital Commons</title>
+      <link>/post/thesispublished/ml-beaver-data/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/post/thesispublished/ml-beaver-data/</guid>
+      <description>
+
+
+&lt;style&gt;
+p.caption {
+  font-size: 0.6em;
+}
+&lt;/style&gt;
+&lt;p&gt;My thesis is now available on the &lt;a href=&#34;https://digitalcommons.esf.edu/honors/141/&#34;&gt;ESF Digital Commons&lt;/a&gt;! I’m extremely grateful to Drs. John Drake and Bill Shields for their help in the revision and submission process, and of course to Dr. John Stella for the extensive support he provided throughout the project, from conceptualization to publication.&lt;/p&gt;
+&lt;p&gt;In the thesis, we look at the impacts beavers have on the forest community around them as they remove trees for food and building dams. While people had looked at these impacts in other parts of beaver’s range, the Adirondacks are a strange enough ecosystem - being largely protected from anthropogenic disturbances, most of the forest landscape exhibits only one or two age classes - that we weren’t sure how applicable conclusions from these regions would be. What we found was that while the broad conclusions of these studies held true - beavers still operate as central place foragers and create large disturbances in the landscape - the lack of early-successional species throughout the Adirondacks seriously shifted which stems were harvested preferrentially. We also found a lot of variance in the patterns of how individual species were utilized - for instance, beaver harvested almost any size speckled alder they could find, so long as it was close to their dam, but would harvest red maple at any distance, so long as the stem was small.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/Wireframes.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;font size = 0.75em&gt;
+&lt;div style=&#34;line-height: 1&#34;&gt;
+One figure from the article version of the thesis, showing the odds a stem will be harvested (z-axis) as a function of how far (x-axis, left) and how big (y-axis, right) it is.
+&lt;/div&gt;
+&lt;p&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;We’re currently working on a journal article version of the thesis, using an expanded dataset and focusing more closely on the patterns in forage selectivity we found, and how they differ from other regions. That should hopefully be in the review process within the next few weeks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>One Conference Down, One to Go!</title>
+      <link>/post/ras2018/one-conference-down/</link>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/post/ras2018/one-conference-down/</guid>
+      <description>
+
+
+&lt;p&gt;I was happy to attend the Rochester Academy of Sciences Fall Paper Session this past weekend! It seemed like an incredibly diverse array of work was on display - one particularly notable poster connected human heights and weights to the weight of their cremation remains - and the atmosphere was incredibly welcoming.&lt;/p&gt;
+&lt;p&gt;My talk on beaver impacts seemed to get decent reviews! I’ve &lt;a href=&#34;https://www.slideshare.net/MichaelMahoney83/beaver-foraging-preferences-and-impacts-on-forest-structure-ras&#34;&gt;posted my slides on SlideShare&lt;/a&gt;, and will be posting a rough script of the talk soon enough. I’ve got plans for a few changes before the &lt;a href=&#34;https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/&#34;&gt;FEMC conference&lt;/a&gt;, coming up in a month.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two Fall Conferences</title>
+      <link>/post/twofallconf2018/2018-10-23-two-fall-conferences/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <guid>/post/twofallconf2018/2018-10-23-two-fall-conferences/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m thrilled to be speaking at two conferences this fall, both on my work with beaver in the Adirondacks.&lt;br /&gt;
+The conferences are:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Rochester Academy of Sciences Fall Paper Session&lt;/strong&gt;&lt;br /&gt;
+Geneseo, New York&lt;br /&gt;
+November 9, 9:30 AM&lt;br /&gt;
+Bailey Hall Room 201&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Forest Ecosystem Monitoring Collaborative Conference&lt;/strong&gt;&lt;br /&gt;
+Burlington, Vermont&lt;br /&gt;
+December 14, 11:30 AM&lt;br /&gt;
+Davis Center RTBA&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll be posting my slides and talk notes here following each conference.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Welcome to the New Site!</title>
+      <link>/post/newsite/welcome-to-the-new-site/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/post/newsite/welcome-to-the-new-site/</guid>
+      <description>
+
+
+&lt;p&gt;Welcome to my new site! I’ll be using this site to post links to talks I give, packages I work on, and future publications. Please excuse me as I get this site off the ground - things are a little barren at the moment, but should get better as we go!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
