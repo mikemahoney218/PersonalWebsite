@@ -31,7 +31,8 @@ Let's move from theoretical considerations of graphing to the actual building bl
 
 Graphs are inherently a 2D image of our data:
 
-```{r}
+```{r, warning = F, message = F, echo = F}
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
 library(ggplot2)
 ggplot(mpg, aes(displ, hwy)) +
   geom_point()

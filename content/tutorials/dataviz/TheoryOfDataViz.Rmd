@@ -55,8 +55,8 @@ As far as the _why_ question goes, the answer usually comes down to one of two l
 
 These are the rationales behind creating what are known as, respectively, _exploratory_ and _explanatory_ graphics. Exploratory graphics are often very simple pictures of your data, built to identify patterns in your data that you might not know exist yet. Take for example a simple graphic, showing tree circumference as a function of age:
 
-```{r}
-knitr::opts_chunk$set(warning = F, message = F)
+```{r, c}
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
 library(ggplot2)
   ggplot(dplyr::as_tibble(Orange), aes(age, circumference)) + 
   geom_point()

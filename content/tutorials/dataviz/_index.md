@@ -19,4 +19,4 @@ Data visualization -- our working definition will be "the graphical display of d
 
 However, that isn't the best approach. Data visualization is a skill like any other, and even experienced practicioners could benefit from honing their skills in the subject. Hence, this short lesson on the topic. This set of three documents contain about the same amount of information as could be covered in a 60-90 minute lecture on the subject.
 
-This page serves as a landing page for the course as a whole -- use the menu above to navigate between courses on the site.
+This page serves as a landing page for the course as a whole -- use the menu above to navigate between courses on the site. You can find the full code used to make these graphs -- and to generate this tutorial itself -- [on GitHub](https://github.com/mikemahoney218/PersonalWebsite/tree/master/content/tutorials/dataviz).

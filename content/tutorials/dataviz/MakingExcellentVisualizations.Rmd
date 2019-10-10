@@ -33,8 +33,8 @@ As we move into our final section, it's time to dwell on our final mantra:
 
 Think back to the diamonds dataset we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatterplot would be a good way to do so:
 
-```{r}
-knitr::opts_chunk$set(warning = F, message = F)
+```{r, warning = F, message = F, echo = F}
+knitr::opts_chunk$set(warning = F, message = F, echo = F)
 library(ggplot2)
 ggplot(diamonds, aes(carat, price)) + 
   geom_point()

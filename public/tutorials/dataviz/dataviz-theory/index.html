@@ -321,28 +321,6 @@
         
         
         
-
-        <li class="nav-item">
-          <a class="nav-link  active" href="/tutorials/"><span>Tutorials</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
           
           
           
@@ -468,32 +446,14 @@
 <li>To explain those patterns to a wider audience</li>
 </ul>
 <p>These are the rationales behind creating what are known as, respectively, <em>exploratory</em> and <em>explanatory</em> graphics. Exploratory graphics are often very simple pictures of your data, built to identify patterns in your data that you might not know exist yet. Take for example a simple graphic, showing tree circumference as a function of age:</p>
-<pre class="r"><code>knitr::opts_chunk$set(warning = F, message = F)
+<pre class="r"><code>knitr::opts_chunk$set(warning = F, message = F, echo = F)
 library(ggplot2)
   ggplot(dplyr::as_tibble(Orange), aes(age, circumference)) + 
   geom_point()</code></pre>
-<p><img src="/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="/tutorials/dataviz/TheoryOfDataViz_files/figure-html/c-1.png" width="672" /></p>
 <p>This visualization isn’t anything too complex – two variables, thirty-five observations, not much text – but it already shows us a trend that exists in the data. We could use this information, if we were so inspired, to start investigating the <em>whys</em> of why tree growth changes with age, now that we’re broadly aware of <em>how</em> it changes.</p>
 <p>Explanatory graphs, meanwhile, are all about the <em>whys</em>. Where an exploratory graphic focuses on identifying patterns in the first place, an explanatory graphic aims to explain why they happen and – in the best examples – what exactly the reader is to do about them. Explanatory graphics can exist on their own or in the context of a larger report, but their goals are the same: to provide evidence about why a pattern exists and provide a call to action. For instance, we can reimagine the same tree graph with a few edits in order to explain what patterns we’re seeing:</p>
-<pre class="r"><code>library(dplyr)
-Orange %&gt;%
-  as_tibble() %&gt;%
-  ggplot(aes(age, circumference)) + 
-  geom_point() + 
-  geom_smooth(aes(group = Tree), se = F, color = &quot;lightgrey&quot;, formula = &quot;y ~ poly(x, 3)&quot;, method = &quot;lm&quot;) + 
-  geom_smooth(se = F, color = &quot;red&quot;, formula = &quot;y ~ poly(x, 3)&quot;, method = &quot;lm&quot;) +
-  scale_x_continuous(labels = c(&quot;Growth increases as\nleaf area outpaces biomass&quot;, 
-                                &quot;Biomass catches up,\nslowing growth&quot;, 
-                                &quot;Biomass growth \noutpaces leaf area&quot;, 
-                                &quot;I cut them down\nwith a saw&quot;),
-                     breaks = c(400, 800, 1200, 1550)) + 
-  theme_classic() + 
-  labs(x = &quot;Age&quot;,
-       y = &quot;Circumference (mm)&quot;,
-       title = &quot;Orange tree growth tapers by year 4&quot;,
-       subtitle = &quot;Biomass increases more rapidly than leaf area, slowing rate of growth once tree reaches 15cm&quot;,
-       caption = &quot;Data from Draper and Smith, 1998\nRed line represents mean growth curve, grey lines growth curves for individual trees.&quot;)</code></pre>
-<p><img src="/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/tutorials/dataviz/TheoryOfDataViz_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>I want to specifically call out the title here: “Orange tree growth tapers by year 4.” A good graphic tells a story, remember. As such, whatever title you give your graph should reflect the point of that story – titles such as “Tree diameter (cm) versus age (days)” and so on add nothing that the user can’t get from the graphic itself. Instead, use your title to advance your message whenever it makes sense – otherwise, if it doesn’t add any new information, you can likely erase it altogether.</p>
 <p>The important takeaway here is not that explanatory graphics are necessarily more polished than exploratory ones, or that exploratory graphics are only for the analyst – periodic reporting, for instance, will often use highly polished exploratory graphics to identify existing trends, hoping to spur more intensive analysis that will identify the whys. Instead, the message is that knowing the end purpose of your graph – whether it should help identify patterns in the first place or explain how they got there – can help you decide what elements need to be included to tell the story your graphic is designed to address.</p>
 </div>
