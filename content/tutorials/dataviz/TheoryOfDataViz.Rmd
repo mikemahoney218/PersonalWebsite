@@ -25,7 +25,7 @@ weight: 10
 
 <br>
 
-Data visualization -- our working definition will be "the graphical display of data" -- is one of those things like driving, cooking, or standup: everyone thinks they're really great at it, because they've been doing it for a while, and yet many -- if not most -- people don't even know where they could start learning how much better they could be doing things. For something so essential to so many people's daily work, data visualization is so rarely directly taught, and is usually assumed to be something people will pick up with time.
+Data visualization -- our working definition will be "the graphical display of data" -- is one of those things like driving, cooking, or being funny: everyone thinks they're really great at it, because they've been doing it for a while, and yet many -- if not most -- people don't even know where they could start learning how much better they could be doing things. For something so essential to so many people's daily work, data visualization is so rarely directly taught, and is usually assumed to be something people will pick up with time.
 
 However, that isn't the best approach. Data visualization is a skill like any other, and even experienced practicioners could benefit from honing their skills in the subject. Hence, this short lesson on the topic. This set of three documents contain about the same amount of information as could be covered in a 60-90 minute lecture on the subject.
 
