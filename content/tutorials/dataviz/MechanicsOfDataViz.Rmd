@@ -47,7 +47,7 @@ library(lattice)
 wireframe(hwy ~ cty + displ, data = mpg)
 ```
 
-But 3D images are hard to wrap your head around, complicated to produce, and not as effective in delivering your message. They do have their uses - particularly when you're able to build real 3D models, and not just make 3D shapes on 2D planes - but frequently aren't worth the trouble.
+But 3D images are hard to wrap your head around, complicated to produce, and not as effective in delivering your message. They do have their uses - particularly when you're able to build real, physical 3D models, and not just make 3D shapes on 2D planes - but frequently aren't worth the trouble.
 
 So what tools do we have in our toolbox? The ones that are generally agreed upon (no, really - this is an area of active debate) fall into four categories:
 
@@ -85,7 +85,7 @@ tibble(x = rnorm(20, 0, 0.5),
 
 Which values do you think are higher? 
 
-Most people innately assume that the bottom-left hand corner represents a 0 on both axes, and that the further you get from that corner the higher the values are. This -- relatively obvious -- revelation hints at a much more important concept in data visualizations: perceptual topology should match data topology. Values that feel larger in a graph should represent values that _are_ larger in your data. As such, when working with position, higher values should be the ones further away from that lower left-hand corner -- you should let your viewer's subconscious assumptions do the heavy lifting for you.
+Most people innately assume that the bottom-left hand corner represents a 0 on both axes, and that the further you get from that corner the higher the values are. This -- relatively obvious -- revelation hints at a much more important concept in data visualizations: perceptual topology should match data topology. Put another way, that means that values which _feel_ larger in a graph should represent values that _are_ larger in your data. As such, when working with position, higher values should be the ones further away from that lower left-hand corner -- you should let your viewer's subconscious assumptions do the heavy lifting for you.
 
 Applying this advice to categorical data can get a little tricky. Imagine that we're looking at the average highway mileages for manufacturers of the cars in our dataset:
 
@@ -113,7 +113,7 @@ mpg %>%
 
 Try to compare Pontiac and Hyundai on the first graph, versus on this second one. If anything, removing our extraneous x aesthetic has made it easier to compare manufacturers. This is a big driver behind our second mantra -- that everything should be made as simple as possible, but no simpler. Having extra aesthetics confuses a graph, making it harder to understand the story it's trying to tell.
 
-However, when making a graphic, we should always be aiming to make important comparisons easy. As such, we should take advantage of our x aesthetic, arranging our manufacturers not by the alphabet, but rather by their average highway mileage: 
+However, when making a graphic, we should always be aiming to make important comparisons easy. As such, we should take advantage of our x aesthetic by arranging our manufacturers not alphabetically, but rather by their average highway mileage: 
 ```{r}
 library(forcats)
 mpg %>%
@@ -202,9 +202,9 @@ ggplot(df, aes(x, y, color = factor(z))) +
 
 Sure, some of these colors are darker than others -- but I wouldn't say any of them tell me a value is particularly high or low.
 
-That's because humans don't percieve _hue_ as an ordered variable - the actual color a point is doesn't tell us how large a value is. Instead, the first graph altered the _luminance_ of each point - how bright or dark it was - in order to tell us what value it has.
+That's because humans don't percieve _hue_ -- the actual shade of a color -- as an ordered value. The color a point is doesn't communicate that the point has a higher or lower value than any other point on the graph. Instead, hue works as an _unordered_ value, which only tells us which points belong to which groupings. In order to tell how high or low a point's value is, we instead have to use _luminance_ -- or how bright or dark the individual point is. 
 
-There's one other axis you can move colors along in order to encode value, known as _chroma_:
+There's one other axis you can move colors along in order to encode value -- how vibrant a color is, known as _chroma_:
 
 ```{r}
 ggplot(df, aes(x, y, color = z)) + 
@@ -214,23 +214,7 @@ ggplot(df, aes(x, y, color = z)) +
   scale_color_gradient(low = "grey", high = "red")
 ```
 
-Chroma - or how vibrant a color is - also encodes a value, with more vibrant colors representing higher values. These three values -- hue, chroma, and luminence -- form the HCL color spectrum, which is more or less how humans perceive colors in our daily lives. By altering the C and L components, we're able to use color to encode numeric values in our graphics.
-
-Now, color brings with it a number of challenges. For example, as we've already shown, changing the hue of a color doesn't actually help us to encode any more information in our graphics. Combine that with the most common way to choose colors for a graphic - using the rainbow - and you wind up with a lot of graphics like this:
-
-```{r}
-ggplot(df, aes(x, y, color = factor(z))) + 
-  geom_point(size = 3) + 
-  scale_color_manual(values = rainbow(5)) + 
-  theme(text = element_blank(),
-        legend.position = "null")
-```
-
-Which values are larger? Who knows? 
-
-Now, it's not actually fair of me to say that hue doesn't encode any information in our graphics. For instance, in this example, you can clearly see that blue points are different in some manner from red points. It's more appropriate to say that hue is an _unordered value_ -- there's no hue that represents a larger or smaller value than any other, but two hues do clearly represent two different values.
-
-This becomes relevant when dealing with categorical data. For instance, moving back to the scatterplot we started with:
+Just keep in mind that _luminance_ and _chroma_ -- how light a color is and how vibrant it is -- are _ordered values_, while _hue_ (or shade of color) is _unordered_ This becomes relevant when dealing with categorical data. For instance, moving back to the scatterplot we started with:
 
 ```{r}
 ggplot(mpg, aes(displ, hwy)) +
@@ -253,7 +237,15 @@ ggplot(mpg, aes(displ, hwy, color = class)) +
   scale_color_brewer(palette = "OrRd")
 ```
 
-This is a case of knowing what tool to use for the job - chroma and luminescence will clearly imply certain variables are closer together than is appropriate for categorical data, while hue won't give your audience any helpful information about an ordered variable. Note, though, that I'd still discourage using the rainbow to distinguish categories in your graphics -- the rainbow is not perceptually uniform (for instance, red and orange are much more similar colors than yellow and blue), and you'll wind up implying connections between your categories that you might not want to suggest. 
+This is a case of knowing what tool to use for the job - chroma and luminescence will clearly imply certain variables are closer together than is appropriate for categorical data, while hue won't give your audience any helpful information about an ordered variable. Note, though, that I'd still discourage using the rainbow to distinguish categories in your graphics -- the colors of the rainbow aren't exactly unordered values (for instance, red and orange are much more similar colors than yellow and blue), and you'll wind up implying connections between your categories that you might not want to suggest. Also, the rainbow is just really ugly:
+
+```{r}
+ggplot(df, aes(x, y, color = factor(z))) + 
+  geom_point(size = 3) + 
+  scale_color_manual(values = rainbow(5)) + 
+  theme(text = element_blank(),
+        legend.position = "null")
+```
 
 Speaking of knowing the right rool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:
 
@@ -268,7 +260,7 @@ mpg %>%
   scale_fill_brewer(palette = "Dark2")
 ```
 
-In this graph, the variable "class" is being represented by both position, along the x axis, and by color. By duplicating this effort, we're making our graph harder to understand -- encoding the information once is enough, and doing it any more times than that is a distraction. Remember the second mantra: Everything should be made as simple as possible -- but no simpler. The best data visualization is one that includes all the elements needed to deliver the message, and no more.
+In this graph, the variable "class" is being represented by both position along the x axis, and by color. By duplicating this effort, we're making our graph harder to understand -- encoding the information once is enough, and doing it any more times than that is a distraction. Remember the second mantra: Everything should be made as simple as possible -- but no simpler. The best data visualization is one that includes all the elements needed to deliver the message, and no more.
 
 You can feel free to use color in your graphics, so long as it adds more information to the plot - for instance, if it's encoding a third variable:
 
