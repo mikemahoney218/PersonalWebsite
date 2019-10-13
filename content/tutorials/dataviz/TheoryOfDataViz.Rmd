@@ -27,7 +27,7 @@ weight: 10
 
 Data visualization -- our working definition will be "the graphical display of data" -- is one of those things like driving, cooking, or being funny: everyone thinks they're really great at it, because they've been doing it for a while, and yet many -- if not most -- people don't even know where they could start learning how much better they could be doing things. For something so essential to so many people's daily work, data visualization is so rarely directly taught, and is usually assumed to be something people will pick up with time.
 
-However, that isn't the best approach. Data visualization is a skill like any other, and even experienced practicioners could benefit from honing their skills in the subject. Hence, this short lesson on the topic. This set of three documents contain about the same amount of information as could be covered in a 60-90 minute lecture on the subject.
+However, that isn't the best approach. Data visualization is a skill like any other, and even experienced practitioners could benefit from honing their skills in the subject. Hence, this short lesson on the topic. This set of three documents contain about the same amount of information as could be covered in a 60-90 minute lecture on the subject.
 
 At no point do I intend to teach you how to make a specific graphic in a specific software. I don't know what softwares might be applicable to your needs in the future, or what visualizations you'll need to formulate when, and quite frankly Google exists -- so this isn't a cookbook with step-by-step instructions. The goal here is not to provide you with recipes for the future, but rather to teach you what flour is -- to introduce you to the basic concepts and building blocks of effective data visualizations. 
 
@@ -46,7 +46,7 @@ Each mantra serves as the theme for a section, and will also be interwoven throu
 
 When making a graphic, it is important to understand what the graphic is for. After all, you usually won't make a chart that is a perfect depiction of your data -- modern datasets tend to be too big (in terms of number of observations) and wide (in terms of number of variables) to depict every datapoint on a single graph. Instead, the analyst consciously chooses what elements to include in a visualization in order to identify patterns and trends in the data in the most effective manner possible. In order to make those decisions, it helps a little to think both about _why_ and _how_ graphics are made.
 
-### Exploratory vs explanatory graphics
+### Why do we tell a story?
 
 As far as the _why_ question goes, the answer usually comes down to one of two larger categories:
 

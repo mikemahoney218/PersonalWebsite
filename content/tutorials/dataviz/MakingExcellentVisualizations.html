@@ -29,6 +29,7 @@ weight: 30
 <p>As we move into our final section, it’s time to dwell on our final mantra:</p>
 <div id="ink-is-cheap.-electrons-are-even-cheaper." class="section level2">
 <h2>Ink is cheap. Electrons are even cheaper.</h2>
+<p>This is a fancy, dogmatic way to say: Make more than one chart. It’s rare that your first try is going to produce your best looking output. Play around with your dataset, try out different visuals, and keep the concepts we’ve talked about in mind. Your graphs will be all the better for it. In this section, we’ll talk about solutions to some of the most common problems people have with making charts:</p>
 <div id="dealing-with-big-datasets" class="section level3">
 <h3>Dealing with big datasets</h3>
 <p>Think back to the diamonds dataset we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatterplot would be a good way to do so:</p>
@@ -38,39 +39,40 @@ weight: 30
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>There are all sorts of ways we can do this sort of refactoring – if we wanted, we could get a very similar graph by binning our data and making a bar plot:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>Either way, though, we’re not truly showing the same thing as was in the original graph – we don’t have any indication of how our data is distributed along both these axes.</p>
+<p>Either way, though, we’re not truly showing the same thing as was in the original graph – we don’t have any indication of the actual distribution of our dataset along these axes.</p>
 <p>The second solution solves this problem much more effectively – make all your points semi-transparent:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>By doing this, we’re now able to see areas where our data is much more densely distributed, something that was lost in the summary statistics – for instance, it appears that low-carat diamonds are much more tighly grouped than higher carat ones. We can also see some dark stripes at “round-number” values for carat – that indicates to me that our data has some integrity issues, if appraisers are more likely to give a stone a rounded number.</p>
 <p>The challenge with this approach comes when we want to map a third variable – let’s use cut – in our graphic. We can try to change the aesthetics of our graph as usual:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<p>But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to facet our plots – that is, to split our one large plot into several small multiples:</p>
+<p>But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to turn to option number three and facet our plots – that is, to split our one large plot into several small multiples:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
-<p>Ink is cheap. Electrons are even cheaper. Make more than one graph.</p>
+<p>Remember: Ink is cheap. Electrons are even cheaper. Make more than one graph.</p>
 <p>By splitting out our data into several smaller graphics, we’re much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatterplots showing how different groups are distributed:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>One last, extremely helpful use of faceting is to split apart charts with multiple entangled lines:
 <img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>These charts, commonly referred to as “spaghetti charts”, are usually much easier to use when split into small multiples:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<p>Now, one major drawback of facet charts is that they can make comparisons much harder – if, in our line chart, it’s more important to know that most clarities are close in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it’s worth reassessing how many lines you actually need on your graph – if you only care about a few clarities, then only include those lines. The goal is to make making important comparisons easy, with the understanding that some comparisons are more important than others.</p>
+<p>Now, one major drawback of facet charts is that they can make comparisons much harder – if, in our line chart, it’s more important to know that most clarities are similar in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it’s worth reassessing how many lines you actually need on your graph – if you only care about a few clarities, then only include those lines, and if you only care about a narrow band of prices or carats, window your data so that’s all you show. The goal is to make making comparisons easy, with the understanding that some comparisons are more important than others.</p>
 </div>
 <div id="dealing-with-chartjunk" class="section level3">
 <h3>Dealing with chartjunk</h3>
 <p>Cast your mind back to the graphic I used as an example of an explanatory chart:</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>You might have noticed that this chart is differently styled from all the others in this course – it doesn’t have the grey background or grid lines or anything else.</p>
-<p>Remember our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We’ve lost some of the distracting elements – the colored background and gridlines – and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value – and if you’re expecting people to need specific values, you should give them a table!)</p>
-<p>Those extraneous elements are known as <em>chartjunk</em>. You see this a lot with graphs made in Excel – they’ll have dark backgrounds, dark lines, special shading effects or gradients that don’t encode information, or – worst of all – those “3D” bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler – so don’t try to pretty up your graph with non-useful elements.</p>
+<p>Think back to our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We’ve lost some of the distracting elements – the colored background and gridlines – and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value – and if you’re expecting people to need specific values, you should give them a table!)</p>
+<p>Those extraneous elements are known as <em>chartjunk</em>. You see this a lot with graphs made in Excel – they’ll have dark backgrounds, dark lines, special shading effects or gradients that don’t encode information, or – worst of all – those “3D” bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler; every element of your graphic should increase expressiveness or effectiveness. In short: don’t try to pretty up your graph with non-useful elements.</p>
 <p>Another common instance of chartjunk is animation in graphics. While animated graphics are exciting and trendy, they tend to reduce the effectiveness of your graphics because as humans, when something is moving we can’t focus on anything else. <a href="http://visionlab.harvard.edu/silencing/">Check out these examples from the Harvard Vision Lab</a> – they show just how hard it is to notice changes when animation is added. This isn’t to say you can never use animation – but its uses are best kept to times when your graphic looking cool is more important than it conveying information.</p>
 </div>
 </div>
 <div id="common-mistakes" class="section level2">
 <h2>Common Mistakes</h2>
-<p>As we wind down this course, I want to touch on a few common mistakes that didn’t have a great home in any other section – mostly because we were too busy talking about <em>good</em> design principles.</p>
+<p>As we wind down this section, I want to touch on a few common mistakes that didn’t have a great home in any other section – mostly because we were too busy talking about <em>good</em> design principles.</p>
 <div id="dual-y-axes" class="section level3">
 <h3>Dual y axes</h3>
-<p>Chief amongst these mistakes are plots with two y axes, beloved by charlatans and financial advisors since days unwritten. Plots with two y axes are a great way to force a correlation that doesn’t really exist into existence on your chart. In almost every case, you should just make two graphs – ink is cheap. Electrions are even cheaper. The precise reasons are outside of the scope of this lesson, <a href="https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/">so check out thist link</a> for an extremely entertaining read on the subject. I’ve borrowed Kieran’s code for the below viz – look at how we can imply different things, just by changing how we scale our axes!</p>
+<p>Chief amongst these mistakes are plots with two y axes, beloved by charlatans and financial advisors since days unwritten. Plots with two y axes are a great way to force a correlation that doesn’t really exist into existence on your chart, through manipulation of your units and axes. In almost every case, you should just make two graphs – ink is cheap. Electrions are even cheaper.</p>
+<p>For an extremely entertaining read on this subject, <a href="https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/">check out this link</a>. I’ve borrowed Kieran’s code for the below viz – look at how we can imply different things, just by changing how we scale our axes!</p>
 <p><img src="/tutorials/dataviz/MakingExcellentVisualizations_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 <div id="overcomplex-visualizations" class="section level3">
@@ -96,8 +98,7 @@ weight: 30
 <li>I used the following resources in putting this post together:
 <ul>
 <li><a href="http://stat405.had.co.nz/">Hadley Wickham’s Stat 405 Course</a>, particularly the lecture on <a href="http://stat405.had.co.nz/lectures/20-effective-vis.pdf">effective visualizations</a> (I’ve lifted “perceptual topology should match data toplogy”, “make important comparisons easy”, and “visualization is only one part of data analysis” directly from his slides)</li>
-<li><a href="https://courses.cs.washington.edu/courses/cse442/17au/lectures/CSE442-VisualEncoding.pdf">Jeffrey Heer’s CSE 442 lecture on visualizations</a>, particularly the definitions for expressiveness and effectiveness
-crayola crayon</li>
+<li><a href="https://courses.cs.washington.edu/courses/cse442/17au/lectures/CSE442-VisualEncoding.pdf">Jeffrey Heer’s CSE 442 lecture on visualizations</a>, particularly the definitions for expressiveness and effectiveness</li>
 </ul></li>
 </ul>
 </div>

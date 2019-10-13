@@ -29,6 +29,8 @@ As we move into our final section, it's time to dwell on our final mantra:
 
 ## Ink is cheap. Electrons are even cheaper.
 
+This is a fancy, dogmatic way to say: Make more than one chart. It's rare that your first try is going to produce your best looking output. Play around with your dataset, try out different visuals, and keep the concepts we've talked about in mind. Your graphs will be all the better for it. In this section, we'll talk about solutions to some of the most common problems people have with making charts:
+
 ### Dealing with big datasets
 
 Think back to the diamonds dataset we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatterplot would be a good way to do so:
@@ -64,7 +66,7 @@ diamonds2 %>%
   geom_col(color = "black")
 ```
 
-Either way, though, we're not truly showing the same thing as was in the original graph -- we don't have any indication of how our data is distributed along both these axes. 
+Either way, though, we're not truly showing the same thing as was in the original graph -- we don't have any indication of the actual distribution of our dataset along these axes. 
 
 The second solution solves this problem much more effectively -- make all your points semi-transparent:
 
@@ -85,7 +87,7 @@ diamonds %>%
   guides(color = guide_legend(override.aes = list(alpha = 1)))
 ```
 
-But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to facet our plots -- that is, to split our one large plot into several small multiples:
+But unfortunately the sheer number of points drowns out most of the variance in color and shape on the graphic. In this case, our best option may be to turn to option number three and facet our plots -- that is, to split our one large plot into several small multiples:
 
 ```{r}
 diamonds %>%
@@ -94,7 +96,7 @@ diamonds %>%
   facet_wrap(~ cut)
 ```
 
-Ink is cheap. Electrons are even cheaper. Make more than one graph. 
+Remember: Ink is cheap. Electrons are even cheaper. Make more than one graph. 
 
 By splitting out our data into several smaller graphics, we're much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatterplots showing how different groups are distributed:
 
@@ -119,7 +121,7 @@ ggplot(diamonds, aes(carat, price)) +
   facet_wrap(~ clarity)
 ```
 
-Now, one major drawback of facet charts is that they can make comparisons much harder -- if, in our line chart, it's more important to know that most clarities are close in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it's worth reassessing how many lines you actually need on your graph -- if you only care about a few clarities, then only include those lines. The goal is to make making important comparisons easy, with the understanding that some comparisons are more important than others.  
+Now, one major drawback of facet charts is that they can make comparisons much harder -- if, in our line chart, it's more important to know that most clarities are similar in price at 2 carats than it is to know how the price for each clarity changes with carat, then the first chart is likely the more effective option. In those cases, however, it's worth reassessing how many lines you actually need on your graph -- if you only care about a few clarities, then only include those lines, and if you only care about a narrow band of prices or carats, window your data so that's all you show. The goal is to make making comparisons easy, with the understanding that some comparisons are more important than others.  
 
 ### Dealing with chartjunk
 
@@ -147,19 +149,21 @@ Orange %>%
 
 You might have noticed that this chart is differently styled from all the others in this course -- it doesn't have the grey background or grid lines or anything else.
 
-Remember our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We've lost some of the distracting elements -- the colored background and gridlines -- and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value -- and if you're expecting people to need specific values, you should give them a table!)
+Think back to our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We've lost some of the distracting elements -- the colored background and gridlines -- and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value -- and if you're expecting people to need specific values, you should give them a table!)
 
-Those extraneous elements are known as _chartjunk_. You see this a lot with graphs made in Excel -- they'll have dark backgrounds, dark lines, special shading effects or gradients that don't encode information, or -- worst of all -- those "3D" bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler -- so don't try to pretty up your graph with non-useful elements. 
+Those extraneous elements are known as _chartjunk_. You see this a lot with graphs made in Excel -- they'll have dark backgrounds, dark lines, special shading effects or gradients that don't encode information, or -- worst of all -- those "3D" bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler; every element of your graphic should increase expressiveness or effectiveness. In short: don't try to pretty up your graph with non-useful elements. 
 
 Another common instance of chartjunk is animation in graphics. While animated graphics are exciting and trendy, they tend to reduce the effectiveness of your graphics because as humans, when something is moving we can't focus on anything else. [Check out these examples from the Harvard Vision Lab](http://visionlab.harvard.edu/silencing/) -- they show just how hard it is to notice changes when animation is added. This isn't to say you can never use animation -- but its uses are best kept to times when your graphic looking cool is more important than it conveying information.
 
 ## Common Mistakes
 
-As we wind down this course, I want to touch on a few common mistakes that didn't have a great home in any other section -- mostly because we were too busy talking about _good_ design principles.
+As we wind down this section, I want to touch on a few common mistakes that didn't have a great home in any other section -- mostly because we were too busy talking about _good_ design principles.
 
 ### Dual y axes
 
-Chief amongst these mistakes are plots with two y axes, beloved by charlatans and financial advisors since days unwritten. Plots with two y axes are a great way to force a correlation that doesn't really exist into existence on your chart. In almost every case, you should just make two graphs -- ink is cheap. Electrions are even cheaper. The precise reasons are outside of the scope of this lesson, [so check out thist link](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/) for an extremely entertaining read on the subject. I've borrowed Kieran's code for the below viz -- look at how we can imply different things, just by changing how we scale our axes!
+Chief amongst these mistakes are plots with two y axes, beloved by charlatans and financial advisors since days unwritten. Plots with two y axes are a great way to force a correlation that doesn't really exist into existence on your chart, through manipulation of your units and axes. In almost every case, you should just make two graphs -- ink is cheap. Electrons are even cheaper. 
+
+For an extremely entertaining read on this subject, [check out this link](https://kieranhealy.org/blog/archives/2016/01/16/two-y-axes/). I've borrowed Kieran's code for the below viz -- look at how we can imply different things, just by changing how we scale our axes!
 
 ```{r}
 library(lubridate)
@@ -284,4 +288,3 @@ And that just about wraps up this introduction to the basic concepts of data vis
 * I used the following resources in putting this post together:
     * [Hadley Wickham's Stat 405 Course](http://stat405.had.co.nz/), particularly the lecture on [effective visualizations](http://stat405.had.co.nz/lectures/20-effective-vis.pdf) (I've lifted "perceptual topology should match data toplogy", "make important comparisons easy", and "visualization is only one part of data analysis" directly from his slides)
     * [Jeffrey Heer's CSE 442 lecture on visualizations](https://courses.cs.washington.edu/courses/cse442/17au/lectures/CSE442-VisualEncoding.pdf), particularly the definitions for expressiveness and effectiveness 
-crayola crayon
