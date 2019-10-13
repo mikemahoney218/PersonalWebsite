@@ -28,6 +28,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/mikemahoney218
+- icon: copy
+  icon_pack: fas
+  link: "files/resume.pdf"
 superuser: true
 user_groups:
 - Author

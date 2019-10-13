@@ -31,7 +31,7 @@ weight: 20
 <h2>Everything should be made as simple as possible – but no simpler.</h2>
 <p>Graphs are inherently a 2D image of our data:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<p>They have an x and a y scale, and - as in our scatterplot here - the position a point falls along each scale tells you how large its values are. But this setup only allows us to look at two variables in our data - and we’re frequently interested in seeing relationships between more than two variables.</p>
+<p>They have an x and a y scale, and - as in our scatter plot here - the position a point falls along each scale tells you how large its values are. But this setup only allows us to look at two variables in our data - and we’re frequently interested in seeing relationships between more than two variables.</p>
 <p>So the question becomes: how can we visualize those extra variables? We can try adding another position scale:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 <p>But 3D images are hard to wrap your head around, complicated to produce, and not as effective in delivering your message. They do have their uses - particularly when you’re able to build real, physical 3D models, and not just make 3D shapes on 2D planes - but frequently aren’t worth the trouble.</p>
@@ -43,7 +43,7 @@ weight: 20
 <li>Size</li>
 </ul>
 <p>These are the tools we can use to encode more information into our graphics. We’re going to call these <em>aesthetics</em>, but any number of other words could work - some people refer to them as scales, some as values. I call them aesthetics because that’s what my software of choice calls them - but the word itself comes from the fact that these are the things that change how your graph looks.</p>
-<p>For what it’s worth, we’re using an EPA dataset for this unit, representing fuel economy data from 1999 and 2008 for 38 popular models of car. “Hwy” is highway mileage, “displ” is engine displacement (so volume), and “cty” is city mileage. But frankly, our dataset doesn’t matter right now - most of our discussion here is applicable to any dataset you’ll pick up.</p>
+<p>For what it’s worth, we’re using an EPA data set for this unit, representing fuel economy data from 1999 and 2008 for 38 popular models of car. “Hwy” is highway mileage, “displ” is engine displacement (so volume), and “cty” is city mileage. But frankly, our data set doesn’t matter right now - most of our discussion here is applicable to any data set you’ll pick up.</p>
 <p>We’re going to go through each of these aesthetics, to talk about how you can encode more information in each of your graphics. Along the way, remember our mantras:</p>
 <ol style="list-style-type: decimal">
 <li>A good graphic tells a story</li>
@@ -58,7 +58,7 @@ weight: 20
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>Which values do you think are higher?</p>
 <p>Most people innately assume that the bottom-left hand corner represents a 0 on both axes, and that the further you get from that corner the higher the values are. This – relatively obvious – revelation hints at a much more important concept in data visualizations: perceptual topology should match data topology. Put another way, that means that values which <em>feel</em> larger in a graph should represent values that <em>are</em> larger in your data. As such, when working with position, higher values should be the ones further away from that lower left-hand corner – you should let your viewer’s subconscious assumptions do the heavy lifting for you.</p>
-<p>Applying this advice to categorical data can get a little tricky. Imagine that we’re looking at the average highway mileages for manufacturers of the cars in our dataset:</p>
+<p>Applying this advice to categorical data can get a little tricky. Imagine that we’re looking at the average highway mileages for manufacturers of the cars in our data set:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>In this case, the position along the x axis just represents a different car maker, in alphabetical order. But remember, position in a graph is an aesthetic that we can use to encode more information in our graphics. And we aren’t doing that here – for instance, we could show the same information without using x position at all:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
@@ -77,7 +77,7 @@ weight: 20
 <div id="color" class="section level3">
 <h3>Color</h3>
 <p>While we’ve done a good job covering the role position plays in communicating information, we’re still stuck on the same question we started off with: How can we show a third variable on the graph?</p>
-<p>One of the most popular ways is to use colors to represent your third variable. It might be worth talking through how color can be used with a simulated dataset. Take for example the following graph:
+<p>One of the most popular ways is to use colors to represent your third variable. It might be worth talking through how color can be used with a simulated data set. Take for example the following graph:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>And now let’s add color for our third variable:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
@@ -85,10 +85,10 @@ weight: 20
 <p>Most people would say the darker ones. But is it always that simple? Let’s change our color scale to compare:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 <p>Sure, some of these colors are darker than others – but I wouldn’t say any of them tell me a value is particularly high or low.</p>
-<p>That’s because humans don’t percieve <em>hue</em> – the actual shade of a color – as an ordered value. The color a point is doesn’t communicate that the point has a higher or lower value than any other point on the graph. Instead, hue works as an <em>unordered</em> value, which only tells us which points belong to which groupings. In order to tell how high or low a point’s value is, we instead have to use <em>luminance</em> – or how bright or dark the individual point is.</p>
+<p>That’s because humans don’t percieve <em>hue</em> – the actual shade of a color – as an ordered value. The color a point is doesn’t communicate that the point has a higher or lower value than any other point on the graph. Instead, hue works as an <em>unordered</em> value, which only tells us which points belong to which groupings. In order to tell how high or low a point’s value is, we instead have to use <em>luminescence</em> – or how bright or dark the individual point is.</p>
 <p>There’s one other axis you can move colors along in order to encode value – how vibrant a color is, known as <em>chroma</em>:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
-<p>Just keep in mind that <em>luminance</em> and <em>chroma</em> – how light a color is and how vibrant it is – are <em>ordered values</em>, while <em>hue</em> (or shade of color) is <em>unordered</em> This becomes relevant when dealing with categorical data. For instance, moving back to the scatterplot we started with:</p>
+<p>Just keep in mind that <em>luminescence</em> and <em>chroma</em> – how light a color is and how vibrant it is – are <em>ordered values</em>, while <em>hue</em> (or shade of color) is <em>unordered</em> This becomes relevant when dealing with categorical data. For instance, moving back to the scatter plot we started with:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
 <p>If we wanted to encode a categorical variable in this – for instance, the class of vehicle – we could use hue to distinguish the different types of cars from one another:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
@@ -96,7 +96,7 @@ weight: 20
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
 <p>This is a case of knowing what tool to use for the job - chroma and luminescence will clearly imply certain variables are closer together than is appropriate for categorical data, while hue won’t give your audience any helpful information about an ordered variable. Note, though, that I’d still discourage using the rainbow to distinguish categories in your graphics – the colors of the rainbow aren’t exactly unordered values (for instance, red and orange are much more similar colors than yellow and blue), and you’ll wind up implying connections between your categories that you might not want to suggest. Also, the rainbow is just really ugly:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
-<p>Speaking of knowing the right rool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:</p>
+<p>Speaking of using the right tool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
 <p>In this graph, the variable “class” is being represented by both position along the x axis, and by color. By duplicating this effort, we’re making our graph harder to understand – encoding the information once is enough, and doing it any more times than that is a distraction. Remember the second mantra: Everything should be made as simple as possible – but no simpler. The best data visualization is one that includes all the elements needed to deliver the message, and no more.</p>
 <p>You can feel free to use color in your graphics, so long as it adds more information to the plot - for instance, if it’s encoding a third variable:</p>
@@ -110,7 +110,7 @@ weight: 20
 </div>
 <div id="shape" class="section level3">
 <h3>Shape</h3>
-<p>The easiest aesthetic to pair color with is the next most frequently used – shape. This one is much more intuitive than color – to demonstrate, let’s go back to our scatterplot:</p>
+<p>The easiest aesthetic to pair color with is the next most frequently used – shape. This one is much more intuitive than color – to demonstrate, let’s go back to our scatter plot:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-22-1.png" width="672" /></p>
 <p>We can now change the shape of each point based on what class of vehicle it represents:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
@@ -119,14 +119,14 @@ weight: 20
 <p>The same basic concepts apply when we change the shape of lines, not just points. For instance, if we plot separate trendlines for front-wheel, rear-wheel, and four-wheel drive cars, we can use linetype to represent each type of vehicle:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
 <p>But even here, no one linetype implies a higher or lower value than the others.</p>
-<p>There are two caveats to be made to this rule, however. For instance, if we go back to our original scatterplot and change which shapes we’re using:</p>
+<p>There are two caveats to be made to this rule, however. For instance, if we go back to our original scatter plot and change which shapes we’re using:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-25-1.png" width="672" /></p>
 <p>This graph seems to imply more connection between the first three classes of car (which are all different types of diamonds) and the next three classes (which are all types of triangle), while singling out SUVs. In this way, we’re able to use shape to imply connection between our groupings - more similar shapes, which differ only in angle or texture, imply a closer relationship to one another than to other types of shape. This can be a blessing as well as a curse - if you pick, for example, a square and a diamond to represent two unrelated groupings, your audience might accidentally read more into the relationship than you had meant to imply.</p>
 <p>It’s also worth noting that different shapes can pretty quickly clutter up a graph. As a general rule of thumb, using more than 3-4 shapes on a graph is a bad idea, and more than 6 means you need to do some thinking about what you actually want people to take away.</p>
 </div>
 <div id="size" class="section level3">
 <h3>Size</h3>
-<p>Our last aesthetic is that of size. Going back to our original scatterplot, we could imagine using size like this:</p>
+<p>Our last aesthetic is that of size. Going back to our original scatter plot, we could imagine using size like this:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-26-1.png" width="672" /></p>
 <p>Size is an inherently <em>ordered value</em> - large size points imply larger values. Specifically, humans perceive larger areas as corresponding to larger values - the points which are three times larger in the above graph are about three times larger in value, as well.</p>
 <p>This becomes tricky when size is used incorrectly, either by mistake or to distort the data. Sometimes an analyst maps radius to the variable, rather than area of the point, resulting in graphs as the below:</p>
@@ -176,34 +176,34 @@ weight: 20
 <h2>Use the right tool for the job.</h2>
 <p>Think back to our first chart:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
-<p>As you already know, this is a <em>scatterplot</em> - also known as a <em>point graph</em>. Now say we added a line of best fit to it:</p>
+<p>As you already know, this is a <em>scatter plot</em> - also known as a <em>point graph</em>. Now say we added a line of best fit to it:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-33-1.png" width="672" /></p>
-<p>This didn’t stop being a scatterplot once we drew a line on it – but the term scatterplot no longer really encompasses everything that’s going on here. It’s also obviously not a line chart, as even though there’s a line on it, it also has points.</p>
-<p>Rather than quibble about what type of chart this is, it’s more helpful to describe what tools we’ve used to depict our data. We refer to these as <em>geoms</em>, short for <em>geometries</em> – because when you get really deep into things, these are geometric representations of how your dataset is distributed along the x and y axes of your graph. I don’t want to get too far down that road – I just want to explain the vocabulary so that we aren’t talking about <em>what type of chart</em> that is, but rather <em>what geoms it uses</em>. Framing things that way makes it easier to understand how things can be combined and reformatted, rather than assuming each type of chart can only do one thing.</p>
+<p>This didn’t stop being a scatter plot once we drew a line on it – but the term scatter plot no longer really encompasses everything that’s going on here. It’s also obviously not a line chart, as even though there’s a line on it, it also has points.</p>
+<p>Rather than quibble about what type of chart this is, it’s more helpful to describe what tools we’ve used to depict our data. We refer to these as <em>geoms</em>, short for <em>geometries</em> – because when you get really deep into things, these are geometric representations of how your data set is distributed along the x and y axes of your graph. I don’t want to get too far down that road – I just want to explain the vocabulary so that we aren’t talking about <em>what type of chart</em> that is, but rather <em>what geoms it uses</em>. Framing things that way makes it easier to understand how things can be combined and reformatted, rather than assuming each type of chart can only do one thing.</p>
 <div id="two-continuous-variables" class="section level3">
 <h3>Two continuous variables</h3>
 <p>This chart uses two geoms that are really good for graphs that have a continuous y and a continuous x - points and lines. This is what people refer to most of the time when they say a line graph - a single smooth trendline that shows a pattern in the data. However, a line graph can also mean a chart where each point is connected in turn:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-34-1.png" width="672" /></p>
 <p>It’s important to be clear about which type of chart you’re expected to produce! I always refer to the prior as a trendline, for clarity.</p>
-<p>These types of charts have enormous value for quick exploratory graphics, showing how various combinations of variables interact with one another. For instance, many analysts start familiarizing themselves with new datasets using correlation matrices (also known as scatterplot matrices), which create a grid of scatterplots representing each variable:</p>
+<p>These types of charts have enormous value for quick exploratory graphics, showing how various combinations of variables interact with one another. For instance, many analysts start familiarizing themselves with new data sets using correlation matrices (also known as scatter plot matrices), which create a grid of scatter plots representing each variable:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-35-1.png" width="672" /></p>
 <p>In this format, understanding interactions between your data is quick and easy, with certain variable interactions obviously jumping out as promising avenues for further exploration.</p>
-<p>To back up just a little, there’s one major failing of scatterplots that I want to highlight before moving on. If you happen to have more than one point with the same x and y values, a scatterplot will just draw each point over the previous, making it seem like you have less data than you actually do. Adding a little bit of random noise - for instance, using RAND() in Excel - to your values can help show the actual densities of your data, especially when you’re dealing with numbers that haven’t been measured as precisely as they could a have been.
+<p>To back up just a little, there’s one major failing of scatter plots that I want to highlight before moving on. If you happen to have more than one point with the same x and y values, a scatter plot will just draw each point over the previous, making it seem like you have less data than you actually do. Adding a little bit of random noise - for instance, using RAND() in Excel - to your values can help show the actual densities of your data, especially when you’re dealing with numbers that haven’t been measured as precisely as they could a have been.
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-36-1.png" width="672" /></p>
 <p>One last chart that does well with two continuous variables is the area chart, which resembles a line chart but fills in the area beneath the line:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-37-1.png" width="672" /></p>
-<p>Area plots make sense when 0 is a relevant number to your dataset – that is, a 0 value wouldn’t be particularly unexpected. They’re also frequently used when you have multiple groupings and care about their total sum:</p>
+<p>Area plots make sense when 0 is a relevant number to your data set – that is, a 0 value wouldn’t be particularly unexpected. They’re also frequently used when you have multiple groupings and care about their total sum:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
-<p>(This new dataset is the “diamonds” dataset, representing 54,000 diamonds sizes, qualities, cut, and sale prices. We’ll be going back and forth using it and the EPA dataset from now on.)</p>
+<p>(This new data set is the “diamonds” data set, representing 54,000 diamonds sizes, qualities, cut, and sale prices. We’ll be going back and forth using it and the EPA data set from now on.)</p>
 <p>Now one drawback of stacked area charts is that it can be very hard to estimate how any individual grouping shifts along the x axis, due to the cumulative effects of all the groups underneath them. For instance, there are actually fewer “fair” diamonds at 0.25 carats than at 1.0 – but because “ideal” and “premium” spike so much, your audience might draw the wrong conclusions. In situations where the total matters more than the groupings, this is alright – but otherwise, it’s worth looking at other types of charts as a result.</p>
 </div>
 <div id="one-continuous-variable" class="section level3">
 <h3>One continuous variable</h3>
-<p>If instead you’re looking to see how a single continuous variable is distributed throughout your dataset, one of the best tools at your disposal is the histogram. A histogram shows you how many observations in your dataset fall into a certain range of a continuous variable, and plot that count as a barplot:</p>
+<p>If instead you’re looking to see how a single continuous variable is distributed throughout your data set, one of the best tools at your disposal is the histogram. A histogram shows you how many observations in your data set fall into a certain range of a continuous variable, and plot that count as a bar plot:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-39-1.png" width="672" /></p>
-<p>One important flag to raise with histograms is that you need to pay attention to how your data is being binned. If you haven’t picked the right width for your bins, you might risk missing peaks and valleys in your dataset, and might misunderstand how your data is distributed – for instance, look what shifts if we graph 500 bins, instead of the 30 we used above:
+<p>One important flag to raise with histograms is that you need to pay attention to how your data is being binned. If you haven’t picked the right width for your bins, you might risk missing peaks and valleys in your data set, and might misunderstand how your data is distributed – for instance, look what shifts if we graph 500 bins, instead of the 30 we used above:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-40-1.png" width="672" /></p>
-<p>An alternative to the histogram is the frequency plot, which uses a line chart in the place of bars to represent the frequency of a value in your dataset:
+<p>An alternative to the histogram is the frequency plot, which uses a line chart in the place of bars to represent the frequency of a value in your data set:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
 <p>Again, however, you have to pay attention to how wide your data bins are with these charts – you might accidentally smooth over major patterns in your data if you aren’t careful!
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
@@ -211,8 +211,8 @@ weight: 20
 <p>(Note that I’ve done something weird to the data in order to show how the distributions change below.)
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-43-1.png" width="672" /></p>
 </div>
-<div id="one-categorical-variable-one-continous" class="section level3">
-<h3>One categorical variable, one continous</h3>
+<div id="one-categorical-variable-one-continuous" class="section level3">
+<h3>One categorical variable, one continuous</h3>
 <p>If you want to compare a categorical and continuous variable, you’re usually stuck with some form of bar chart:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-44-1.png" width="672" /></p>
 <p>The bar chart is possibly the least exciting type of graph in existence, mostly because of how prevalent it is – but that’s because it’s really good at what it does. Bar charts are one of the most easily interpreted and effective types of visualizations, no matter how exciting they are.</p>
@@ -227,7 +227,7 @@ weight: 20
 <div id="a-quick-tangent" class="section level4">
 <h4>A Quick Tangent</h4>
 <p>This is usually where most people will go on a super long rant about pie charts and how bad they are. They’re wrong, but in an understandable way.</p>
-<p>People love to hate on pie charts, because they’re almost universally a bad chart. However, if it’s important for your viewer to be able to quickly figure out what proportion two or more groupings make up of the whole, a pie chart is actually the fastest and most effective way to get the point across. For instance, compare the following pie and bar charts, made with the same dataset:
+<p>People love to hate on pie charts, because they’re almost universally a bad chart. However, if it’s important for your viewer to be able to quickly figure out what proportion two or more groupings make up of the whole, a pie chart is actually the fastest and most effective way to get the point across. For instance, compare the following pie and bar charts, made with the same data set:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-48-1.png" width="672" /></p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-49-1.png" width="672" /></p>
 <p>It’s a lot easier to tell that, say, A is smaller than C through F in the pie chart than the bar plot, since humans are better at summing angles than areas. In these instances, feel free to use a pie chart – and to tell anyone giving you flack that I said it was OK.</p>
@@ -235,8 +235,8 @@ weight: 20
 </div>
 <div id="two-categorical-variables" class="section level3">
 <h3>Two categorical variables</h3>
-<p>Our last combination is when you’re looking to have a categorical variable on both the x and y axis. These are trickier plots to think about, as we no longer encode value in position based on how far away a point is from the lower left hand corner, but rather have to get creative in effectively using position to encode a value. Remember that a geom is a geometric representation of how your dataset is distributed along the x and y axes of your graph. When both of your axes are categorical, you have to get creative to show that distribution.</p>
-<p>One method is to use density, as we would in a scatterplot, to show how many datapoints you have falling into each combination of categories graphed. You can do this by making a “point cloud” chart, where more dense clouds represent more common combinations:
+<p>Our last combination is when you’re looking to have a categorical variable on both the x and y axis. These are trickier plots to think about, as we no longer encode value in position based on how far away a point is from the lower left hand corner, but rather have to get creative in effectively using position to encode a value. Remember that a geom is a geometric representation of how your data set is distributed along the x and y axes of your graph. When both of your axes are categorical, you have to get creative to show that distribution.</p>
+<p>One method is to use density, as we would in a scatter plot, to show how many datapoints you have falling into each combination of categories graphed. You can do this by making a “point cloud” chart, where more dense clouds represent more common combinations:
 <img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-50-1.png" width="672" /></p>
 <p>Even without a single number on this chart, its message is clear - we can tell how our diamonds are distributed with a single glance. A similar way to do this is to use a heatmap, where differently colored cells represent a range of values:</p>
 <p><img src="/tutorials/dataviz/MechanicsOfDataViz_files/figure-html/unnamed-chunk-51-1.png" width="672" /></p>

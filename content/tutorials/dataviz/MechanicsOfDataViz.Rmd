@@ -38,7 +38,7 @@ ggplot(mpg, aes(displ, hwy)) +
   geom_point()
 ```
 
-They have an x and a y scale, and - as in our scatterplot here - the position a point falls along each scale tells you how large its values are. But this setup only allows us to look at two variables in our data - and we're frequently interested in seeing relationships between more than two variables. 
+They have an x and a y scale, and - as in our scatter plot here - the position a point falls along each scale tells you how large its values are. But this setup only allows us to look at two variables in our data - and we're frequently interested in seeing relationships between more than two variables. 
 
 So the question becomes: how can we visualize those extra variables? We can try adding another position scale:
 
@@ -58,7 +58,7 @@ So what tools do we have in our toolbox? The ones that are generally agreed upon
 
 These are the tools we can use to encode more information into our graphics. We're going to call these _aesthetics_, but any number of other words could work - some people refer to them as scales, some as values. I call them aesthetics because that's what my software of choice calls them - but the word itself comes from the fact that these are the things that change how your graph looks.
 
-For what it's worth, we're using an EPA dataset for this unit, representing fuel economy data from 1999 and 2008 for 38 popular models of car. "Hwy" is highway mileage, "displ" is engine displacement (so volume), and "cty" is city mileage. But frankly, our dataset doesn't matter right now - most of our discussion here is applicable to any dataset you'll pick up. 
+For what it's worth, we're using an EPA data set for this unit, representing fuel economy data from 1999 and 2008 for 38 popular models of car. "Hwy" is highway mileage, "displ" is engine displacement (so volume), and "cty" is city mileage. But frankly, our data set doesn't matter right now - most of our discussion here is applicable to any data set you'll pick up. 
 
 We're going to go through each of these aesthetics, to talk about how you can encode more information in each of your graphics. Along the way, remember our mantras:
 
@@ -87,7 +87,7 @@ Which values do you think are higher?
 
 Most people innately assume that the bottom-left hand corner represents a 0 on both axes, and that the further you get from that corner the higher the values are. This -- relatively obvious -- revelation hints at a much more important concept in data visualizations: perceptual topology should match data topology. Put another way, that means that values which _feel_ larger in a graph should represent values that _are_ larger in your data. As such, when working with position, higher values should be the ones further away from that lower left-hand corner -- you should let your viewer's subconscious assumptions do the heavy lifting for you.
 
-Applying this advice to categorical data can get a little tricky. Imagine that we're looking at the average highway mileages for manufacturers of the cars in our dataset:
+Applying this advice to categorical data can get a little tricky. Imagine that we're looking at the average highway mileages for manufacturers of the cars in our data set:
 
 ```{r}
 mpg %>%
@@ -169,7 +169,7 @@ For this, at least, your mileage may vary. Also, it's worth pointing out how muc
 
 While we've done a good job covering the role position plays in communicating information, we're still stuck on the same question we started off with: How can we show a third variable on the graph?
 
-One of the most popular ways is to use colors to represent your third variable. It might be worth talking through how color can be used with a simulated dataset. Take for example the following graph:
+One of the most popular ways is to use colors to represent your third variable. It might be worth talking through how color can be used with a simulated data set. Take for example the following graph:
 ```{r}
 df <- tibble(x = c(1:20),
         y = rnorm(20),
@@ -202,7 +202,7 @@ ggplot(df, aes(x, y, color = factor(z))) +
 
 Sure, some of these colors are darker than others -- but I wouldn't say any of them tell me a value is particularly high or low.
 
-That's because humans don't percieve _hue_ -- the actual shade of a color -- as an ordered value. The color a point is doesn't communicate that the point has a higher or lower value than any other point on the graph. Instead, hue works as an _unordered_ value, which only tells us which points belong to which groupings. In order to tell how high or low a point's value is, we instead have to use _luminance_ -- or how bright or dark the individual point is. 
+That's because humans don't percieve _hue_ -- the actual shade of a color -- as an ordered value. The color a point is doesn't communicate that the point has a higher or lower value than any other point on the graph. Instead, hue works as an _unordered_ value, which only tells us which points belong to which groupings. In order to tell how high or low a point's value is, we instead have to use _luminescence_ -- or how bright or dark the individual point is. 
 
 There's one other axis you can move colors along in order to encode value -- how vibrant a color is, known as _chroma_:
 
@@ -214,7 +214,7 @@ ggplot(df, aes(x, y, color = z)) +
   scale_color_gradient(low = "grey", high = "red")
 ```
 
-Just keep in mind that _luminance_ and _chroma_ -- how light a color is and how vibrant it is -- are _ordered values_, while _hue_ (or shade of color) is _unordered_ This becomes relevant when dealing with categorical data. For instance, moving back to the scatterplot we started with:
+Just keep in mind that _luminescence_ and _chroma_ -- how light a color is and how vibrant it is -- are _ordered values_, while _hue_ (or shade of color) is _unordered_ This becomes relevant when dealing with categorical data. For instance, moving back to the scatter plot we started with:
 
 ```{r}
 ggplot(mpg, aes(displ, hwy)) +
@@ -247,7 +247,7 @@ ggplot(df, aes(x, y, color = factor(z))) +
         legend.position = "null")
 ```
 
-Speaking of knowing the right rool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:
+Speaking of using the right tool for the job, one of the worst things people like to do in data visualizations is overuse color. Take for instance the following example:
 
 ```{r}
 mpg %>%
@@ -309,7 +309,7 @@ There's one other reason color is a tricky aesthetic to get right in your graphi
 
 ### Shape
 
-The easiest aesthetic to pair color with is the next most frequently used -- shape. This one is much more intuitive than color -- to demonstrate, let's go back to our scatterplot:
+The easiest aesthetic to pair color with is the next most frequently used -- shape. This one is much more intuitive than color -- to demonstrate, let's go back to our scatter plot:
 
 ```{r}
 ggplot(mpg, aes(hwy, displ)) + 
@@ -336,7 +336,7 @@ ggplot(mpg, aes(hwy, displ, linetype = drv)) +
 
 But even here, no one linetype implies a higher or lower value than the others.
 
-There are two caveats to be made to this rule, however. For instance, if we go back to our original scatterplot and change which shapes we're using:
+There are two caveats to be made to this rule, however. For instance, if we go back to our original scatter plot and change which shapes we're using:
 
 ```{r}
 ggplot(mpg, aes(hwy, displ, shape = class)) + 
@@ -350,7 +350,7 @@ It's also worth noting that different shapes can pretty quickly clutter up a gra
 
 ### Size
 
-Our last aesthetic is that of size. Going back to our original scatterplot, we could imagine using size like this:
+Our last aesthetic is that of size. Going back to our original scatter plot, we could imagine using size like this:
 
 ```{r}
 ggplot(mpg, aes(hwy, displ, size = cty)) +
@@ -448,7 +448,7 @@ ggplot(mpg, aes(hwy, displ)) +
   geom_point()
 ```
 
-As you already know, this is a _scatterplot_ - also known as a _point graph_. Now say we added a line of best fit to it:
+As you already know, this is a _scatter plot_ - also known as a _point graph_. Now say we added a line of best fit to it:
 
 ```{r, message=F, warning=F}
 ggplot(mpg, aes(hwy, displ)) +
@@ -456,9 +456,9 @@ ggplot(mpg, aes(hwy, displ)) +
   geom_smooth(se = F)
 ```
 
-This didn't stop being a scatterplot once we drew a line on it -- but the term scatterplot no longer really encompasses everything that's going on here. It's also obviously not a line chart, as even though there's a line on it, it also has points.
+This didn't stop being a scatter plot once we drew a line on it -- but the term scatter plot no longer really encompasses everything that's going on here. It's also obviously not a line chart, as even though there's a line on it, it also has points.
 
-Rather than quibble about what type of chart this is, it's more helpful to describe what tools we've used to depict our data. We refer to these as _geoms_, short for _geometries_ -- because when you get really deep into things, these are geometric representations of how your dataset is distributed along the x and y axes of your graph. I don't want to get too far down that road -- I just want to explain the vocabulary so that we aren't talking about _what type of chart_ that is, but rather _what geoms it uses_. Framing things that way makes it easier to understand how things can be combined and reformatted, rather than assuming each type of chart can only do one thing.
+Rather than quibble about what type of chart this is, it's more helpful to describe what tools we've used to depict our data. We refer to these as _geoms_, short for _geometries_ -- because when you get really deep into things, these are geometric representations of how your data set is distributed along the x and y axes of your graph. I don't want to get too far down that road -- I just want to explain the vocabulary so that we aren't talking about _what type of chart_ that is, but rather _what geoms it uses_. Framing things that way makes it easier to understand how things can be combined and reformatted, rather than assuming each type of chart can only do one thing.
 
 ### Two continuous variables
 
@@ -472,7 +472,7 @@ ggplot(mpg, aes(hwy, displ)) +
 
 It's important to be clear about which type of chart you're expected to produce! I always refer to the prior as a trendline, for clarity.
 
-These types of charts have enormous value for quick exploratory graphics, showing how various combinations of variables interact with one another. For instance, many analysts start familiarizing themselves with new datasets using correlation matrices (also known as scatterplot matrices), which create a grid of scatterplots representing each variable:
+These types of charts have enormous value for quick exploratory graphics, showing how various combinations of variables interact with one another. For instance, many analysts start familiarizing themselves with new data sets using correlation matrices (also known as scatter plot matrices), which create a grid of scatter plots representing each variable:
 
 ```{r, message = FALSE, warning=F}
 mpg %>%
@@ -482,7 +482,7 @@ mpg %>%
 
 In this format, understanding interactions between your data is quick and easy, with certain variable interactions obviously jumping out as promising avenues for further exploration.
 
-To back up just a little, there's one major failing of scatterplots that I want to highlight before moving on. If you happen to have more than one point with the same x and y values, a scatterplot will just draw each point over the previous, making it seem like you have less data than you actually do. Adding a little bit of random noise - for instance, using RAND() in Excel - to your values can help show the actual densities of your data, especially when you're dealing with numbers that haven't been measured as precisely as they could a have been.
+To back up just a little, there's one major failing of scatter plots that I want to highlight before moving on. If you happen to have more than one point with the same x and y values, a scatter plot will just draw each point over the previous, making it seem like you have less data than you actually do. Adding a little bit of random noise - for instance, using RAND() in Excel - to your values can help show the actual densities of your data, especially when you're dealing with numbers that haven't been measured as precisely as they could a have been.
 ```{r}
 a <- ggplot(mpg, aes(hwy, cty)) +
   geom_point()
@@ -502,7 +502,7 @@ ggplot(aes(cty, hwy)) +
   geom_area()
 ```
 
-Area plots make sense when 0 is a relevant number to your dataset -- that is, a 0 value wouldn't be particularly unexpected. They're also frequently used when you have multiple groupings and care about their total sum:
+Area plots make sense when 0 is a relevant number to your data set -- that is, a 0 value wouldn't be particularly unexpected. They're also frequently used when you have multiple groupings and care about their total sum:
 
 ```{r}
 diamonds %>%
@@ -512,26 +512,26 @@ diamonds %>%
   scale_x_continuous(limits = c(0.2, 2))
 ```
 
-(This new dataset is the "diamonds" dataset, representing 54,000 diamonds sizes, qualities, cut, and sale prices. We'll be going back and forth using it and the EPA dataset from now on.)
+(This new data set is the "diamonds" data set, representing 54,000 diamonds sizes, qualities, cut, and sale prices. We'll be going back and forth using it and the EPA data set from now on.)
 
 Now one drawback of stacked area charts is that it can be very hard to estimate how any individual grouping shifts along the x axis, due to the cumulative effects of all the groups underneath them. For instance, there are actually fewer "fair" diamonds at 0.25 carats than at 1.0 -- but because "ideal" and "premium" spike so much, your audience might draw the wrong conclusions. In situations where the total matters more than the groupings, this is alright -- but otherwise, it's worth looking at other types of charts as a result.
 
 ### One continuous variable
 
-If instead you're looking to see how a single continuous variable is distributed throughout your dataset, one of the best tools at your disposal is the histogram. A histogram shows you how many observations in your dataset fall into a certain range of a continuous variable, and plot that count as a barplot:
+If instead you're looking to see how a single continuous variable is distributed throughout your data set, one of the best tools at your disposal is the histogram. A histogram shows you how many observations in your data set fall into a certain range of a continuous variable, and plot that count as a bar plot:
 
 ```{r}
 ggplot(diamonds, aes(carat)) + 
   geom_histogram()
 ```
 
-One important flag to raise with histograms is that you need to pay attention to how your data is being binned. If you haven't picked the right width for your bins, you might risk missing peaks and valleys in your dataset, and might misunderstand how your data is distributed -- for instance, look what shifts if we graph 500 bins, instead of the 30 we used above:
+One important flag to raise with histograms is that you need to pay attention to how your data is being binned. If you haven't picked the right width for your bins, you might risk missing peaks and valleys in your data set, and might misunderstand how your data is distributed -- for instance, look what shifts if we graph 500 bins, instead of the 30 we used above:
 ```{r}
 ggplot(diamonds, aes(carat)) + 
   geom_histogram(bins = 500)
 ```
 
-An alternative to the histogram is the frequency plot, which uses a line chart in the place of bars to represent the frequency of a value in your dataset:
+An alternative to the histogram is the frequency plot, which uses a line chart in the place of bars to represent the frequency of a value in your data set:
 ```{r}
 ggplot(diamonds, aes(carat)) + 
   geom_freqpoly(bins = 30)
@@ -552,7 +552,7 @@ ggplot(diamonds, aes(carat, color = cut)) +
   scale_y_log10()
 ```
 
-### One categorical variable, one continous
+### One categorical variable, one continuous
 
 If you want to compare a categorical and continuous variable, you're usually stuck with some form of bar chart:
 
@@ -604,7 +604,7 @@ In this case, making comparisons across groups is trivial, made simple by the fa
 #### A Quick Tangent
 This is usually where most people will go on a super long rant about pie charts and how bad they are. They're wrong, but in an understandable way. 
 
-People love to hate on pie charts, because they're almost universally a bad chart. However, if it's important for your viewer to be able to quickly figure out what proportion two or more groupings make up of the whole, a pie chart is actually the fastest and most effective way to get the point across. For instance, compare the following pie and bar charts, made with the same dataset:
+People love to hate on pie charts, because they're almost universally a bad chart. However, if it's important for your viewer to be able to quickly figure out what proportion two or more groupings make up of the whole, a pie chart is actually the fastest and most effective way to get the point across. For instance, compare the following pie and bar charts, made with the same data set:
 ```{r}
 df <- tibble(x = rep(1, 6),
    y = c(0.35, 0.25, 0.15, 0.1, 0.1, 0.05),
@@ -622,9 +622,9 @@ It's a lot easier to tell that, say, A is smaller than C through F in the pie ch
 
 ### Two categorical variables
 
-Our last combination is when you're looking to have a categorical variable on both the x and y axis. These are trickier plots to think about, as we no longer encode value in position based on how far away a point is from the lower left hand corner, but rather have to get creative in effectively using position to encode a value. Remember that a geom is a geometric representation of how your dataset is distributed along the x and y axes of your graph. When both of your axes are categorical, you have to get creative to show that distribution.
+Our last combination is when you're looking to have a categorical variable on both the x and y axis. These are trickier plots to think about, as we no longer encode value in position based on how far away a point is from the lower left hand corner, but rather have to get creative in effectively using position to encode a value. Remember that a geom is a geometric representation of how your data set is distributed along the x and y axes of your graph. When both of your axes are categorical, you have to get creative to show that distribution.
 
-One method is to use density, as we would in a scatterplot, to show how many datapoints you have falling into each combination of categories graphed. You can do this by making a "point cloud" chart, where more dense clouds represent more common combinations:
+One method is to use density, as we would in a scatter plot, to show how many datapoints you have falling into each combination of categories graphed. You can do this by making a "point cloud" chart, where more dense clouds represent more common combinations:
 ```{r}
 ggplot(diamonds, aes(cut, clarity)) + 
   geom_jitter(alpha = 0.06)

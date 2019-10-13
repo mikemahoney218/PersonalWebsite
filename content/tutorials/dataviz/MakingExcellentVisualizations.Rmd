@@ -29,11 +29,11 @@ As we move into our final section, it's time to dwell on our final mantra:
 
 ## Ink is cheap. Electrons are even cheaper.
 
-This is a fancy, dogmatic way to say: Make more than one chart. It's rare that your first try is going to produce your best looking output. Play around with your dataset, try out different visuals, and keep the concepts we've talked about in mind. Your graphs will be all the better for it. In this section, we'll talk about solutions to some of the most common problems people have with making charts:
+This is a fancy, dogmatic way to say: Make more than one chart. It's rare that your first try is going to produce your best looking output. Play around with your data set, try out different visuals, and keep the concepts we've talked about in mind. Your graphs will be all the better for it. In this section, we'll talk about solutions to some of the most common problems people have with making charts:
 
-### Dealing with big datasets
+### Dealing with big data sets
 
-Think back to the diamonds dataset we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatterplot would be a good way to do so:
+Think back to the diamonds data set we used in the last section. It contains data on 54,000 individual diamonds, including the carat and sale price for each. If we wanted to compare those two continuous variables, we might think a scatter plot would be a good way to do so:
 
 ```{r, warning = F, message = F, echo = F}
 knitr::opts_chunk$set(warning = F, message = F, echo = F)
@@ -66,7 +66,7 @@ diamonds2 %>%
   geom_col(color = "black")
 ```
 
-Either way, though, we're not truly showing the same thing as was in the original graph -- we don't have any indication of the actual distribution of our dataset along these axes. 
+Either way, though, we're not truly showing the same thing as was in the original graph -- we don't have any indication of the actual distribution of our data set along these axes. 
 
 The second solution solves this problem much more effectively -- make all your points semi-transparent:
 
@@ -98,7 +98,7 @@ diamonds %>%
 
 Remember: Ink is cheap. Electrons are even cheaper. Make more than one graph. 
 
-By splitting out our data into several smaller graphics, we're much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatterplots showing how different groups are distributed:
+By splitting out our data into several smaller graphics, we're much better able to see how the distribution shifts between our categories. In fact, we could use this technique to split our data even further, into a matrix of scatter plots showing how different groups are distributed:
 
 ```{r}
 diamonds %>%
@@ -149,7 +149,7 @@ Orange %>%
 
 You might have noticed that this chart is differently styled from all the others in this course -- it doesn't have the grey background or grid lines or anything else.
 
-Think back to our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We've lost some of the distracting elements -- the colored background and gridlines -- and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value -- and if you're expecting people to need specific values, you should give them a table!)
+Think back to our second mantra: everything should be made as simple as possible, but no simpler. This chart reflects that goal. We've lost some of the distracting elements -- the colored background and grid lines -- and changed the other elements to make the overall graphic more effective. The objective is to have no extraneous element on the graph, so that it might be as expressive and effective as possible. This usually means using minimal colors, minimal text, and no grid lines. (After all, those lines are usually only useful in order to pick out a specific value -- and if you're expecting people to need specific values, you should give them a table!)
 
 Those extraneous elements are known as _chartjunk_. You see this a lot with graphs made in Excel -- they'll have dark backgrounds, dark lines, special shading effects or gradients that don't encode information, or -- worst of all -- those "3D" bar/line/pie charts, because these things can be added with a single click. However, they tend to make your graphics less effective as they force the user to spend more time separating data from ornamentation. Everything should be made as simple as possible, but no simpler; every element of your graphic should increase expressiveness or effectiveness. In short: don't try to pretty up your graph with non-useful elements. 
 
@@ -259,7 +259,7 @@ two.y(x=data$date,
 
 ### Overcomplex visualizations
 
-Another common issue in visualizations comes from the analyst getting a little too technical with their graphs. For instance, think back to our original diamonds scatterplot:
+Another common issue in visualizations comes from the analyst getting a little too technical with their graphs. For instance, think back to our original diamonds scatter plot:
 ```{r}
 ggplot(diamonds, aes(carat, price)) +
   geom_point()

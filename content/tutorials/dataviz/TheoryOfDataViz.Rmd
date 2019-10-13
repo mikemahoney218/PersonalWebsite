@@ -44,13 +44,13 @@ Each mantra serves as the theme for a section, and will also be interwoven throu
 
 ## A good graphic tells a story
 
-When making a graphic, it is important to understand what the graphic is for. After all, you usually won't make a chart that is a perfect depiction of your data -- modern datasets tend to be too big (in terms of number of observations) and wide (in terms of number of variables) to depict every datapoint on a single graph. Instead, the analyst consciously chooses what elements to include in a visualization in order to identify patterns and trends in the data in the most effective manner possible. In order to make those decisions, it helps a little to think both about _why_ and _how_ graphics are made.
+When making a graphic, it is important to understand what the graphic is for. After all, you usually won't make a chart that is a perfect depiction of your data -- modern data sets tend to be too big (in terms of number of observations) and wide (in terms of number of variables) to depict every datapoint on a single graph. Instead, the analyst consciously chooses what elements to include in a visualization in order to identify patterns and trends in the data in the most effective manner possible. In order to make those decisions, it helps a little to think both about _why_ and _how_ graphics are made.
 
 ### Why do we tell a story?
 
 As far as the _why_ question goes, the answer usually comes down to one of two larger categories:
 
-* To help identify patterns in a dataset, or
+* To help identify patterns in a data set, or
 * To explain those patterns to a wider audience
 
 These are the rationales behind creating what are known as, respectively, _exploratory_ and _explanatory_ graphics. Exploratory graphics are often very simple pictures of your data, built to identify patterns in your data that you might not know exist yet. Take for example a simple graphic, showing tree circumference as a function of age:
