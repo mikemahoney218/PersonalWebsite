@@ -113,12 +113,12 @@
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/tags/publications/</loc>
+    <loc>https://www.mikemahoney218.com/categories/publications/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/categories/publications/</loc>
+    <loc>https://www.mikemahoney218.com/tags/publications/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -249,6 +249,11 @@
   
   <url>
     <loc>https://www.mikemahoney218.com/authors/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/post/tdsdataviz/2019-10-13-dataviz-published/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
