@@ -23,13 +23,63 @@
   </url>
   
   <url>
+    <loc>https://www.mikemahoney218.com/authors/admin/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/authors/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.mikemahoney218.com/categories/</loc>
-    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/categories/data-visualization/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.mikemahoney218.com/tags/data-visualization/</loc>
-    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/post/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/tags/publications/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/categories/publications/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/tags/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/tags/towards-data-science/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -38,22 +88,12 @@
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/</loc>
-    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/tags/</loc>
+    <loc>https://www.mikemahoney218.com/tags/tutorials/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.mikemahoney218.com/categories/tutorials/</loc>
-    <lastmod>2019-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/tags/tutorials/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -88,11 +128,6 @@
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/authors/</loc>
-    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.mikemahoney218.com/tags/beaver/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url>
@@ -104,21 +139,6 @@
   
   <url>
     <loc>https://www.mikemahoney218.com/authors/mike-mahoney/</loc>
-    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/post/</loc>
-    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/categories/publications/</loc>
-    <lastmod>2019-03-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/tags/publications/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -245,15 +265,6 @@
   <url>
     <loc>https://www.mikemahoney218.com/post/newsite/welcome-to-the-new-site/</loc>
     <lastmod>2018-10-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/post/tdsdataviz/2019-10-13-dataviz-published/</loc>
-    <priority>0</priority>
   </url>
   
   <url>

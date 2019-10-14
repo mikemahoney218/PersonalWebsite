@@ -1,6 +1,6 @@
 ---
 title: "The Art and Science of Data Visualization published in Towards Data Science"
-authors: admin
+authors: [admin]
 date: '2019-10-13'
 slug: tds-dataviz
 categories:
