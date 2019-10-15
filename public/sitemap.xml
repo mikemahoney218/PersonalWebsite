@@ -24,41 +24,31 @@
   
   <url>
     <loc>https://www.mikemahoney218.com/authors/admin/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/slides/dataviz/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.mikemahoney218.com/authors/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.mikemahoney218.com/categories/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.mikemahoney218.com/categories/data-visualization/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.mikemahoney218.com/slides/</loc>
-    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.mikemahoney218.com/tags/data-visualization/</loc>
+    <lastmod>2019-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/</loc>
     <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -98,12 +88,12 @@
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/tags/tutorials/</loc>
+    <loc>https://www.mikemahoney218.com/categories/tutorials/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/categories/tutorials/</loc>
+    <loc>https://www.mikemahoney218.com/tags/tutorials/</loc>
     <lastmod>2019-10-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -138,12 +128,12 @@
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/categories/beaver/</loc>
+    <loc>https://www.mikemahoney218.com/tags/beaver/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.mikemahoney218.com/tags/beaver/</loc>
+    <loc>https://www.mikemahoney218.com/categories/beaver/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -155,6 +145,11 @@
   <url>
     <loc>https://www.mikemahoney218.com/post/thesispublished/ml-beaver-data/</loc>
     <lastmod>2019-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
