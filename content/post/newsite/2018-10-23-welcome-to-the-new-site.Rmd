@@ -1,6 +1,6 @@
 ---
 title: Welcome to the New Site!
-author: Mike Mahoney
+author: [admin]
 date: '2018-10-23'
 slug: welcome-to-the-new-site
 categories:

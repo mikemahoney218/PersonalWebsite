@@ -1,0 +1,40 @@
+---
+title: "Two Fall Conferences"
+date: 2018-10-23T00:00:00
+lastmod: 2018-10-23T00:00:00
+draft: false
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors: [admin]
+
+tags: ["Announcements","Conferences"]
+summary: "I'll be presenting at two new conferences this fall."
+---
+title: "The Art and Science of Data Visualization published in Towards Data Science"
+authors: [admin]
+date: '2019-10-13'
+slug: tds-dataviz
+categories:
+  - Publications
+  - Data Visualization
+tags: ["Publications", "Data Visualization", "Towards Data Science"]
+image:
+  caption: ''
+  focal_point: ''
+summary: "A comprehensive guide on how to think about and create brilliant data visualizations."
+---
+  
+I'm thrilled to be speaking at two conferences this fall, both on my work with beaver in the Adirondacks.  
+The conferences are:  
+
+**The Rochester Academy of Sciences Fall Paper Session**  
+Geneseo, New York  
+November 9, 9:30 AM   
+Bailey Hall Room 201
+
+**The Forest Ecosystem Monitoring Collaborative Conference**  
+Burlington, Vermont  
+December 14, 11:30 AM  
+Davis Center RTBA
+
+I'll be posting my slides and talk notes here following each conference.

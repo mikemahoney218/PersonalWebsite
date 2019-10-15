@@ -5,12 +5,144 @@
     <link>https://www.mikemahoney218.com/authors/admin/</link>
       <atom:link href="https://www.mikemahoney218.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Mike Mahoney</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>Mike Mahoney</title>
       <link>https://www.mikemahoney218.com/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>An introduction to data visualization</title>
+      <link>https://www.mikemahoney218.com/slides/dataviz/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/slides/dataviz/</guid>
+      <description>
+
+
+&lt;div id=&#34;welcome-to-slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Welcome to Slides&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;features&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;controls&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-highlighting&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fragments&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
+   One 
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   &lt;strong&gt;Two&lt;/strong&gt; 
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three 
+&lt;/span&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;speaker-notes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;p&gt;{{&amp;lt; speaker_note &amp;gt;}}
+- Only the speaker can read these notes
+- Press &lt;code&gt;S&lt;/code&gt; key to view
+{{&amp;lt; /speaker_note &amp;gt;}}&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;themes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;{{&amp;lt; slide background-image=“/img/boards.jpg” &amp;gt;}}&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;custom-slide&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre class=&#34;markdown&#34;&gt;&lt;code&gt;{{&amp;lt;/* slide background-image=&amp;quot;/img/boards.jpg&amp;quot; */&amp;gt;}}
+{{&amp;lt;/* slide background-color=&amp;quot;#0000FF&amp;quot; */&amp;gt;}}
+{{&amp;lt;/* slide class=&amp;quot;my-style&amp;quot; */&amp;gt;}}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;custom-css-example&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let’s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre class=&#34;css&#34;&gt;&lt;code&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;questions&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(iris)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/slides/dataviz/index_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>The Art and Science of Data Visualization published in Towards Data Science</title>
@@ -22,6 +154,66 @@
 
 &lt;p&gt;I’m in &lt;a href=&#34;https://towardsdatascience.com/the-art-and-science-of-data-visualization-6f9d706d673e&#34;&gt;Towards Data Science&lt;/a&gt; today, talking about the theory behind what makes a good visualization and how you can use those concepts to improve your own graphics. The guide is written for all experience levels and doesn’t contain a snippet of code, though – as usual – you can find the R Markdown documents used to build the article on [GitHub].&lt;/p&gt;
 &lt;p&gt;The TDS article can be found &lt;a href=&#34;https://towardsdatascience.com/the-art-and-science-of-data-visualization-6f9d706d673e&#34;&gt;at this link&lt;/a&gt; – I plan on putting the content on this website, too, once I get the chance.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thesis Now Available in ESF Digital Commons</title>
+      <link>https://www.mikemahoney218.com/post/thesispublished/ml-beaver-data/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/post/thesispublished/ml-beaver-data/</guid>
+      <description>
+
+
+&lt;style&gt;
+p.caption {
+  font-size: 0.6em;
+}
+&lt;/style&gt;
+&lt;p&gt;My thesis is now available on the &lt;a href=&#34;https://digitalcommons.esf.edu/honors/141/&#34;&gt;ESF Digital Commons&lt;/a&gt;! I’m extremely grateful to Drs. John Drake and Bill Shields for their help in the revision and submission process, and of course to Dr. John Stella for the extensive support he provided throughout the project, from conceptualization to publication.&lt;/p&gt;
+&lt;p&gt;In the thesis, we look at the impacts beavers have on the forest community around them as they remove trees for food and building dams. While people had looked at these impacts in other parts of beaver’s range, the Adirondacks are a strange enough ecosystem - being largely protected from anthropogenic disturbances, most of the forest landscape exhibits only one or two age classes - that we weren’t sure how applicable conclusions from these regions would be. What we found was that while the broad conclusions of these studies held true - beavers still operate as central place foragers and create large disturbances in the landscape - the lack of early-successional species throughout the Adirondacks seriously shifted which stems were harvested preferrentially. We also found a lot of variance in the patterns of how individual species were utilized - for instance, beaver harvested almost any size speckled alder they could find, so long as it was close to their dam, but would harvest red maple at any distance, so long as the stem was small.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/img/Wireframes.png&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;font size = 0.75em&gt;
+&lt;div style=&#34;line-height: 1&#34;&gt;
+One figure from the article version of the thesis, showing the odds a stem will be harvested (z-axis) as a function of how far (x-axis, left) and how big (y-axis, right) it is.
+&lt;/div&gt;
+&lt;p&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;We’re currently working on a journal article version of the thesis, using an expanded dataset and focusing more closely on the patterns in forage selectivity we found, and how they differ from other regions. That should hopefully be in the review process within the next few weeks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Two Fall Conferences</title>
+      <link>https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/</guid>
+      <description>
+
+
+&lt;p&gt;title: “The Art and Science of Data Visualization published in Towards Data Science”
+authors: [admin]
+date: ‘2019-10-13’
+slug: tds-dataviz
+categories:
+- Publications
+- Data Visualization
+tags: [“Publications”, “Data Visualization”, “Towards Data Science”]
+image:
+caption: ’’
+focal_point: ’’
+summary: “A comprehensive guide on how to think about and create brilliant data visualizations.”
+—&lt;/p&gt;
+&lt;p&gt;I’m thrilled to be speaking at two conferences this fall, both on my work with beaver in the Adirondacks.&lt;br /&gt;
+The conferences are:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Rochester Academy of Sciences Fall Paper Session&lt;/strong&gt;&lt;br /&gt;
+Geneseo, New York&lt;br /&gt;
+November 9, 9:30 AM&lt;br /&gt;
+Bailey Hall Room 201&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Forest Ecosystem Monitoring Collaborative Conference&lt;/strong&gt;&lt;br /&gt;
+Burlington, Vermont&lt;br /&gt;
+December 14, 11:30 AM&lt;br /&gt;
+Davis Center RTBA&lt;/p&gt;
+&lt;p&gt;I’ll be posting my slides and talk notes here following each conference.&lt;/p&gt;
 </description>
     </item>
     

@@ -66,22 +66,35 @@ One figure from the article version of the thesis, showing the odds a stem will 
     <item>
       <title>Two Fall Conferences</title>
       <link>https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/</link>
-      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m thrilled to be speaking at two conferences this fall, both on my work with beaver in the Adirondacks.&lt;br /&gt;
-The conferences are:&lt;/p&gt;
+      <description>
 
+
+&lt;p&gt;title: “The Art and Science of Data Visualization published in Towards Data Science”
+authors: [admin]
+date: ‘2019-10-13’
+slug: tds-dataviz
+categories:
+- Publications
+- Data Visualization
+tags: [“Publications”, “Data Visualization”, “Towards Data Science”]
+image:
+caption: ’’
+focal_point: ’’
+summary: “A comprehensive guide on how to think about and create brilliant data visualizations.”
+—&lt;/p&gt;
+&lt;p&gt;I’m thrilled to be speaking at two conferences this fall, both on my work with beaver in the Adirondacks.&lt;br /&gt;
+The conferences are:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Rochester Academy of Sciences Fall Paper Session&lt;/strong&gt;&lt;br /&gt;
 Geneseo, New York&lt;br /&gt;
 November 9, 9:30 AM&lt;br /&gt;
 Bailey Hall Room 201&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;The Forest Ecosystem Monitoring Collaborative Conference&lt;/strong&gt;&lt;br /&gt;
 Burlington, Vermont&lt;br /&gt;
 December 14, 11:30 AM&lt;br /&gt;
 Davis Center RTBA&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll be posting my slides and talk notes here following each conference.&lt;/p&gt;
+&lt;p&gt;I’ll be posting my slides and talk notes here following each conference.&lt;/p&gt;
 </description>
     </item>
     

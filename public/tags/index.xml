@@ -101,14 +101,6 @@
     </item>
     
     <item>
-      <title>Announcements</title>
-      <link>https://www.mikemahoney218.com/tags/announcements/</link>
-      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/announcements/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Beech-Bark</title>
       <link>https://www.mikemahoney218.com/tags/beech-bark/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
@@ -117,9 +109,17 @@
     </item>
     
     <item>
+      <title>Announcements</title>
+      <link>https://www.mikemahoney218.com/tags/announcements/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/tags/announcements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Conferences</title>
       <link>https://www.mikemahoney218.com/tags/conferences/</link>
-      <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
       <guid>https://www.mikemahoney218.com/tags/conferences/</guid>
       <description></description>
     </item>
