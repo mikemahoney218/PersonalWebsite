@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Announcements | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/categories/announcements/</link>
-      <atom:link href="https://www.mikemahoney218.com/categories/announcements/index.xml" rel="self" type="application/rss+xml" />
+    <link>/categories/announcements/</link>
+      <atom:link href="/categories/announcements/index.xml" rel="self" type="application/rss+xml" />
     <description>Announcements</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Announcements</title>
-      <link>https://www.mikemahoney218.com/categories/announcements/</link>
+      <link>/categories/announcements/</link>
     </image>
     
     <item>
       <title>One Conference Down, One to Go!</title>
-      <link>https://www.mikemahoney218.com/post/ras2018/one-conference-down/</link>
+      <link>/post/ras2018/one-conference-down/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/ras2018/one-conference-down/</guid>
+      <guid>/post/ras2018/one-conference-down/</guid>
       <description>
 
 

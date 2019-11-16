@@ -2,21 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Visualization | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/categories/data-visualization/</link>
-      <atom:link href="https://www.mikemahoney218.com/categories/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    <link>/categories/data-visualization/</link>
+      <atom:link href="/categories/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Visualization</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Data Visualization</title>
-      <link>https://www.mikemahoney218.com/categories/data-visualization/</link>
+      <link>/categories/data-visualization/</link>
     </image>
     
     <item>
+      <title>The Art and Science of Data Visualization is now live on the site!</title>
+      <link>/post/tdstutorial/tutorial-dataviz/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/tdstutorial/tutorial-dataviz/</guid>
+      <description>
+
+
+&lt;p&gt;I finally got to uploading my &lt;a href=&#34;https://towardsdatascience.com/the-art-and-science-of-data-visualization-6f9d706d673e&#34;&gt;Towards Data Science&lt;/a&gt; article as a tutorial (using the cool “courses” function of the Hugo academic theme). I personally like this format better than the Medium article – you can check it out at &lt;a href=&#34;../../../tutorials/dataviz&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Art and Science of Data Visualization published in Towards Data Science</title>
-      <link>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</link>
+      <link>/post/tdsdataviz/tds-dataviz/</link>
       <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</guid>
+      <guid>/post/tdsdataviz/tds-dataviz/</guid>
       <description>
 
 

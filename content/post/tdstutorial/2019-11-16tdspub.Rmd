@@ -1,0 +1,16 @@
+---
+title: "The Art and Science of Data Visualization is now live on the site!"
+authors: [admin]
+date: '2019-11-16'
+slug: tutorial-dataviz
+categories:
+  - Tutorials
+  - Data Visualization
+tags: ["Publications", "Data Visualization", "Tutorials"]
+image:
+  caption: ''
+  focal_point: ''
+summary: "Same story, new place."
+---
+
+I finally got to uploading my [Towards Data Science](https://towardsdatascience.com/the-art-and-science-of-data-visualization-6f9d706d673e) article as a tutorial (using the cool "courses" function of the Hugo academic theme). I personally like this format better than the Medium article -- you can check it out at [this link](../../../tutorials/dataviz).

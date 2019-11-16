@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Towards Data Science | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tags/towards-data-science/</link>
-      <atom:link href="https://www.mikemahoney218.com/tags/towards-data-science/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/towards-data-science/</link>
+      <atom:link href="/tags/towards-data-science/index.xml" rel="self" type="application/rss+xml" />
     <description>Towards Data Science</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Towards Data Science</title>
-      <link>https://www.mikemahoney218.com/tags/towards-data-science/</link>
+      <link>/tags/towards-data-science/</link>
     </image>
     
     <item>
       <title>The Art and Science of Data Visualization published in Towards Data Science</title>
-      <link>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</link>
+      <link>/post/tdsdataviz/tds-dataviz/</link>
       <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</guid>
+      <guid>/post/tdsdataviz/tds-dataviz/</guid>
       <description>
 
 

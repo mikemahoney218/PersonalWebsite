@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/categories/</link>
-      <atom:link href="https://www.mikemahoney218.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <link>/categories/</link>
+      <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Categories</title>
-      <link>https://www.mikemahoney218.com/categories/</link>
+      <link>/categories/</link>
     </image>
     
     <item>
       <title>Data Visualization</title>
-      <link>https://www.mikemahoney218.com/categories/data-visualization/</link>
-      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/data-visualization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://www.mikemahoney218.com/categories/publications/</link>
-      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DataViz</title>
-      <link>https://www.mikemahoney218.com/categories/dataviz/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/dataviz/</guid>
+      <link>/categories/data-visualization/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/categories/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorials</title>
-      <link>https://www.mikemahoney218.com/categories/tutorials/</link>
+      <link>/categories/tutorials/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/categories/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/categories/publications/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/categories/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataViz</title>
+      <link>/categories/dataviz/</link>
       <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/tutorials/</guid>
+      <guid>/categories/dataviz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beaver</title>
-      <link>https://www.mikemahoney218.com/categories/beaver/</link>
+      <link>/categories/beaver/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/beaver/</guid>
+      <guid>/categories/beaver/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Announcements</title>
-      <link>https://www.mikemahoney218.com/categories/announcements/</link>
+      <link>/categories/announcements/</link>
       <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/announcements/</guid>
+      <guid>/categories/announcements/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Other</title>
-      <link>https://www.mikemahoney218.com/categories/other/</link>
+      <link>/categories/other/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/categories/other/</guid>
+      <guid>/categories/other/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/publication/</link>
-      <atom:link href="https://www.mikemahoney218.com/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>/publication/</link>
+      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 01 Dec 2018 00:00:00 -0500</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Publications</title>
-      <link>https://www.mikemahoney218.com/publication/</link>
+      <link>/publication/</link>
     </image>
     
     <item>
       <title>Beaver Foraging Preferences and Impacts on Forest Structure in New York&#39;s Adirondack Mountains</title>
-      <link>https://www.mikemahoney218.com/publication/beaver-thesis/</link>
+      <link>/publication/beaver-thesis/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      <guid>https://www.mikemahoney218.com/publication/beaver-thesis/</guid>
+      <guid>/publication/beaver-thesis/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>404 Page Not Found</title>
+      <link>/publication/extra/</link>
+      <pubDate>Tue, 13 Nov 2018 00:00:00 -0500</pubDate>
+      <guid>/publication/extra/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

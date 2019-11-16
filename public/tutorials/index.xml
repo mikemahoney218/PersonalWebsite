@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorials | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tutorials/</link>
-      <atom:link href="https://www.mikemahoney218.com/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tutorials/</link>
+      <atom:link href="/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <description>Tutorials</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Tutorials</title>
-      <link>https://www.mikemahoney218.com/tutorials/</link>
+      <link>/tutorials/</link>
     </image>
     
   </channel>

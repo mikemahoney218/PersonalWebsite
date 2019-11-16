@@ -2,125 +2,125 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tags/</link>
-      <atom:link href="https://www.mikemahoney218.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Tags</title>
-      <link>https://www.mikemahoney218.com/tags/</link>
+      <link>/tags/</link>
     </image>
     
     <item>
       <title>Data Visualization</title>
-      <link>https://www.mikemahoney218.com/tags/data-visualization/</link>
-      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/data-visualization/</guid>
+      <link>/tags/data-visualization/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://www.mikemahoney218.com/tags/publications/</link>
-      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Towards Data Science</title>
-      <link>https://www.mikemahoney218.com/tags/towards-data-science/</link>
-      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/towards-data-science/</guid>
+      <link>/tags/publications/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorials</title>
-      <link>https://www.mikemahoney218.com/tags/tutorials/</link>
-      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/tutorials/</guid>
+      <link>/tags/tutorials/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards Data Science</title>
+      <link>/tags/towards-data-science/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/towards-data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data-analytics</title>
-      <link>https://www.mikemahoney218.com/tags/data-analytics/</link>
+      <link>/tags/data-analytics/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/data-analytics/</guid>
+      <guid>/tags/data-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data-science</title>
-      <link>https://www.mikemahoney218.com/tags/data-science/</link>
+      <link>/tags/data-science/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/data-science/</guid>
+      <guid>/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>machine-learning</title>
-      <link>https://www.mikemahoney218.com/tags/machine-learning/</link>
+      <link>/tags/machine-learning/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/machine-learning/</guid>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://www.mikemahoney218.com/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beaver</title>
-      <link>https://www.mikemahoney218.com/tags/beaver/</link>
+      <link>/tags/beaver/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/beaver/</guid>
+      <guid>/tags/beaver/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Thesis</title>
-      <link>https://www.mikemahoney218.com/tags/thesis/</link>
+      <link>/tags/thesis/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/thesis/</guid>
+      <guid>/tags/thesis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beaver-Impacts</title>
-      <link>https://www.mikemahoney218.com/tags/beaver-impacts/</link>
+      <link>/tags/beaver-impacts/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/beaver-impacts/</guid>
+      <guid>/tags/beaver-impacts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Beech-Bark</title>
-      <link>https://www.mikemahoney218.com/tags/beech-bark/</link>
+      <link>/tags/beech-bark/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/beech-bark/</guid>
+      <guid>/tags/beech-bark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Announcements</title>
-      <link>https://www.mikemahoney218.com/tags/announcements/</link>
+      <link>/tags/announcements/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/announcements/</guid>
+      <guid>/tags/announcements/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conferences</title>
-      <link>https://www.mikemahoney218.com/tags/conferences/</link>
+      <link>/tags/conferences/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/tags/conferences/</guid>
+      <guid>/tags/conferences/</guid>
       <description></description>
     </item>
     
