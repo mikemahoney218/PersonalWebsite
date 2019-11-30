@@ -5,7 +5,7 @@
     <link>/tutorials/</link>
       <atom:link href="/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <description>Tutorials</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tutorials</title>
