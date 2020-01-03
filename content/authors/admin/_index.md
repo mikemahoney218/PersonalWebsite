@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: "Developing big data solutions on a daily basis"
+bio: "Data Science and DevOps"
 education:
   courses:
   - course: B.S. in Forest Ecosystem Science
