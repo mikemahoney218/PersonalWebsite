@@ -31,6 +31,9 @@ social:
 - icon: copy
   icon_pack: fas
   link: "files/resume.pdf"
+- icon: file
+  icon_pack: fas
+  link: "files/cv.pdf"
 superuser: true
 user_groups:
 - Author

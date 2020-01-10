@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data-analytics | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tags/data-analytics/</link>
-      <atom:link href="https://www.mikemahoney218.com/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/data-analytics/</link>
+      <atom:link href="/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
     <description>data-analytics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Sat, 18 May 2019 00:00:00 -0400</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>data-analytics</title>
-      <link>https://www.mikemahoney218.com/tags/data-analytics/</link>
+      <link>/tags/data-analytics/</link>
     </image>
     
     <item>
       <title>Introduction to Data Exploration and Analysis with R</title>
-      <link>https://www.mikemahoney218.com/project/idear/</link>
+      <link>/project/idear/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/project/idear/</guid>
+      <guid>/project/idear/</guid>
       <description>&lt;p&gt;There are a lot of resources online to learn R. Some of them are extremely well-written and well-structured, but approach things from a different perspective than I find useful. Some of them are expansive and touch on a massive number of topics, but either don’t go as thoroughly into these topics as might be helpful, or have an interesting writing style or are otherwise hard to follow.&lt;/p&gt;
 
 &lt;p&gt;I’ve got a very specific idea of how R should be taught, at least to those interested in using it for data science and other analytical applications. And so in 2018 I began working on a reader - conceived at the time as a series of lecture notes, to support a 3-credit undergrad course - that could be used to learn R that way. However, as I started giving out copies of the reader to friends for feedback, I noticed that a lot of them found the book useful to learn R on their own, and would rather learn that way than in a lecture environment. As such, I started shifting the content into more of a standalone book, attempting to teach R for use in analysis work in both scientific and business contexts.&lt;/p&gt;
