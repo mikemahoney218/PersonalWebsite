@@ -42,10 +42,16 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
   name = "Resume"
+  identifier = "resumes"
+
+[[main]]
+  name = "Resume"
+  parent = "resumes"
   url = "files/resume.pdf"
   weight = 70
   
 [[main]]
   name = "CV"
+  parent = "resumes"
   url = "files/cv.pdf"
   weight = 80
