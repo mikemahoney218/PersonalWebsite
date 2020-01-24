@@ -24,16 +24,61 @@
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2020-01-09T20:09:26-05:00</lastmod>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/heddlrcran/heddlr-release/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2019-11-16T12:02:52-05:00</lastmod>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/heddlr/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r-packages/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data-visualization/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
@@ -43,23 +88,8 @@
   </url>
   
   <url>
-    <loc>/categories/data-visualization/</loc>
-    <lastmod>2019-11-16T12:02:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/publications/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
   </url>
   
   <url>
@@ -133,22 +163,12 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/beaver/</loc>
+    <loc>/tags/beaver/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/beaver/</loc>
+    <loc>/categories/beaver/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   

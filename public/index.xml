@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Mike Mahoney</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Mike Mahoney</title>
@@ -386,6 +386,28 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Announcing {heddlr}, now on CRAN!</title>
+      <link>/post/heddlrcran/heddlr-release/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/heddlrcran/heddlr-release/</guid>
+      <description>
+
+
+&lt;p&gt;My first package just got published to CRAN today! &lt;code&gt;heddlr&lt;/code&gt; is a set of tools
+that make it easier to write modular R Markdown documents by decomposing them
+into a set of patterns which can be repeated and combined based on your input
+data, letting you dynamically add and remove sections based on your data. I
+started this package to solve an issue I found myself running into when
+building &lt;a href=&#34;https://rmarkdown.rstudio.com/flexdashboard/&#34;&gt;flexdashboards&lt;/a&gt;, and
+have since found out that there’s all sorts of cool tricks you can do by
+applying this type of functional programming mindset to R Markdown documents.&lt;/p&gt;
+&lt;p&gt;You can find out more on heddlr’s &lt;a href=&#34;https://mikemahoney218.github.io/heddlr/&#34;&gt;documentation website&lt;/a&gt;,
+proudly made in R via &lt;a href=&#34;https://pkgdown.r-lib.org/&#34;&gt;pkgdown&lt;/a&gt;. This first version
+on CRAN is 0.5.0, with 0.1 -&amp;gt; 0.4 previously released on &lt;a href=&#34;https://github.com/mikemahoney218/heddlr&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R | Mike Mahoney</title>
-    <link>/categories/r/</link>
-      <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
-    <description>R</description>
+    <title>heddlr | Mike Mahoney</title>
+    <link>/categories/heddlr/</link>
+      <atom:link href="/categories/heddlr/index.xml" rel="self" type="application/rss+xml" />
+    <description>heddlr</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>R</title>
-      <link>/categories/r/</link>
+      <title>heddlr</title>
+      <link>/categories/heddlr/</link>
     </image>
     
     <item>

@@ -10,7 +10,7 @@ summary = "Applying functional programming concepts to Markdown content generati
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["heddlr", "R", "R-markdown"]
+tags = ["heddlr", "R", "R Markdown"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
