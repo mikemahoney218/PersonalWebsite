@@ -122,7 +122,7 @@
     
       <meta property="article:published_time" content="2020-03-24T00:00:00-04:00">
     
-    <meta property="article:modified_time" content="2020-04-13T20:33:49-04:00">
+    <meta property="article:modified_time" content="2020-04-13T20:46:02-04:00">
   
 
   
@@ -155,7 +155,7 @@
   ],
   
   "datePublished": "2020-03-24T00:00:00-04:00",
-  "dateModified": "2020-04-13T20:33:49-04:00",
+  "dateModified": "2020-04-13T20:46:02-04:00",
   
   "author": {
     "@type": "Person",
@@ -636,50 +636,10 @@
 quickly build beautiful maps of locations in the United States via the
 <a href="https://github.com/tylermorganwall/rayshader" target="_blank">rayshader</a> package. First
 off, it provides an <code>automap</code> function to quickly make maps using data
-from the USGS national map:</p>
-
-<pre><code>library(spacey)
-example_map &lt;- automap(44.121268, -73.903734)
-example_map
-</code></pre>
-
-<p><img src="johns_brook_basic-1.png" alt="" /></p>
-
-<p>As well as letting you incorporate overlay textures from ESRI’s
-MapServer API:</p>
-
-<pre><code>example_map$update_values(overlay = &quot;World_Imagery&quot;)
-example_map
-</code></pre>
-
-<p><img src="johns-brook-texture.png" alt="" /></p>
-
-<p>And optionally even turn these into 3D visualizations:</p>
-
-<pre><code>example_map$method &lt;- &quot;3d&quot;
-example_map
-</code></pre>
-
-<p><img src="johns_brook_3d-1.png" alt="" /></p>
-
-<p>All of these can also work with the <code>future</code> package to speed up
-processing, letting you iterate on your map designs faster:</p>
-
-<pre><code>library(future)
-plan(&quot;sequential&quot;)
-tictoc::tic()
-example_map &lt;- automap(44.121268, -73.903734)
-tictoc::toc()
-
-## 21.162 sec elapsed
-
-plan(&quot;multisession&quot;)
-tictoc::tic()
-example_map &lt;- automap(44.121268, -73.903734)
-tictoc::toc()
-
-## 17.864 sec elapsed
-</code></pre>
+from the USGS national map, as well as letting you incorporate overlay textures from ESRI’s
+MapServer API and optionally even turn these into 3D visualizations.
+All of these can also work with the <code>future</code> package to speed up
+processing, letting you iterate on your map designs faster!</p>
 
 <p>And while <code>automap</code> tries to make it easy to configure these maps,
 <code>spacey</code> also lets you save off your heightmaps and overlays directly
@@ -689,18 +649,7 @@ work directly with <code>rayshader</code> to make these maps by yourself.</p>
 <p>There’s a lot more to these three functions, alongside a few basic
 geospatial utilities <code>spacey</code> implements to make it easier to make maps
 from your data. For more information, check out the <a href="https://mikemahoney218.github.io/spacey/articles/introduction-to-spacey.html" target="_blank">introductory
-vignette</a>!</p>
-
-<p>You can install the released version of <code>spacey</code> from <a href="https://CRAN.R-project.org" target="_blank">CRAN</a> with:</p>
-
-<pre><code>install.packages(&quot;spacey&quot;)
-</code></pre>
-
-<p>You can always get the most up-to-date development version with:</p>
-
-<pre><code># install.packages(&quot;remotes&quot;)
-remotes::install_github(&quot;mikemahoney218/spacey&quot;)
-</code></pre>
+vignette</a>.</p>
 
 <p>You can find more information about this project in the
 <a href="https://mikemahoney218.github.io/spacey/" target="_blank">documentation</a>, or check out the
