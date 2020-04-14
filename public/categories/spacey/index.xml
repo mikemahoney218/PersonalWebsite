@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spacey | Mike Mahoney</title>
+    <link>https://www.mikemahoney218.com/categories/spacey/</link>
+      <atom:link href="https://www.mikemahoney218.com/categories/spacey/index.xml" rel="self" type="application/rss+xml" />
+    <description>spacey</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <title>spacey</title>
+      <link>https://www.mikemahoney218.com/categories/spacey/</link>
+    </image>
+    
+    <item>
+      <title>Announcing {spacey}, now on CRAN!</title>
+      <link>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</guid>
+      <description>
+
+
+&lt;p&gt;I’ve launched a new package to CRAN! &lt;code&gt;spacey&lt;/code&gt; helps you pull elevation and
+image overlay data from the USGS and ESRI, then helps you turn them into
+beautiful maps via &lt;a href=&#34;https://www.rayshader.com/&#34;&gt;the fantastic &lt;code&gt;rayshader&lt;/code&gt; package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The package has a &lt;a href=&#34;https://mikemahoney218.github.io/spacey/&#34;&gt;documentation website&lt;/a&gt;
+built with &lt;a href=&#34;https://pkgdown.r-lib.org/&#34;&gt;pkgdown&lt;/a&gt; – check it out for more
+information!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

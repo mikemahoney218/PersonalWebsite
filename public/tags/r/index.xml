@@ -2,21 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | Mike Mahoney</title>
-    <link>/tags/r/</link>
-      <atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/tags/r/</link>
+      <atom:link href="https://www.mikemahoney218.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0400</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://www.mikemahoney218.com/tags/r/</link>
     </image>
     
     <item>
+      <title>spacey: Obtain Spatial Data and Make Better Maps</title>
+      <link>https://www.mikemahoney218.com/project/spacey/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 -0400</pubDate>
+      <guid>https://www.mikemahoney218.com/project/spacey/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;spacey&lt;/code&gt; package provides three main functions to make it easy to
+quickly build beautiful maps of locations in the United States via the
+&lt;a href=&#34;https://github.com/tylermorganwall/rayshader&#34; target=&#34;_blank&#34;&gt;rayshader&lt;/a&gt; package. First
+off, it provides an &lt;code&gt;automap&lt;/code&gt; function to quickly make maps using data
+from the USGS national map:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(spacey)
+example_map &amp;lt;- automap(44.121268, -73.903734)
+example_map
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;temp_files/figure-markdown_strict/johns_brook_basic-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As well as letting you incorporate overlay textures from ESRI’s
+MapServer API:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;example_map$update_values(overlay = &amp;quot;World_Imagery&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And optionally even turn these into 3D visualizations:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;example_map$method &amp;lt;- &amp;quot;3d&amp;quot;
+example_map
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;temp_files/figure-markdown_strict/johns_brook_3d-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of these can also work with the &lt;code&gt;future&lt;/code&gt; package to speed up
+processing, letting you iterate on your map designs faster:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(future)
+plan(&amp;quot;sequential&amp;quot;)
+tictoc::tic()
+example_map &amp;lt;- automap(44.121268, -73.903734)
+tictoc::toc()
+
+## 21.162 sec elapsed
+
+plan(&amp;quot;multisession&amp;quot;)
+tictoc::tic()
+example_map &amp;lt;- automap(44.121268, -73.903734)
+tictoc::toc()
+
+## 17.864 sec elapsed
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And while &lt;code&gt;automap&lt;/code&gt; tries to make it easy to configure these maps,
+&lt;code&gt;spacey&lt;/code&gt; also lets you save off your heightmaps and overlays directly
+through the functions &lt;code&gt;get_heightmap&lt;/code&gt; and &lt;code&gt;get_overlay&lt;/code&gt;, so that you can
+work directly with &lt;code&gt;rayshader&lt;/code&gt; to make these maps by yourself.&lt;/p&gt;
+
+&lt;p&gt;There’s a lot more to these three functions, alongside a few basic
+geospatial utilities &lt;code&gt;spacey&lt;/code&gt; implements to make it easier to make maps
+from your data. For more information, check out the &lt;a href=&#34;https://mikemahoney218.github.io/spacey/articles/introduction-to-spacey.html&#34; target=&#34;_blank&#34;&gt;introductory
+vignette&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;You can install the released version of &lt;code&gt;spacey&lt;/code&gt; from &lt;a href=&#34;https://CRAN.R-project.org&#34; target=&#34;_blank&#34;&gt;CRAN&lt;/a&gt; with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;quot;spacey&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can always get the most up-to-date development version with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# install.packages(&amp;quot;remotes&amp;quot;)
+remotes::install_github(&amp;quot;mikemahoney218/spacey&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can find more information about this project in the
+&lt;a href=&#34;https://mikemahoney218.github.io/spacey/&#34; target=&#34;_blank&#34;&gt;documentation&lt;/a&gt;, or check out the
+code on &lt;a href=&#34;https://github.com/mikemahoney218/spacey&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Announcing {spacey}, now on CRAN!</title>
+      <link>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</guid>
+      <description>
+
+
+&lt;p&gt;I’ve launched a new package to CRAN! &lt;code&gt;spacey&lt;/code&gt; helps you pull elevation and
+image overlay data from the USGS and ESRI, then helps you turn them into
+beautiful maps via &lt;a href=&#34;https://www.rayshader.com/&#34;&gt;the fantastic &lt;code&gt;rayshader&lt;/code&gt; package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The package has a &lt;a href=&#34;https://mikemahoney218.github.io/spacey/&#34;&gt;documentation website&lt;/a&gt;
+built with &lt;a href=&#34;https://pkgdown.r-lib.org/&#34;&gt;pkgdown&lt;/a&gt; – check it out for more
+information!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Announcing {heddlr}, now on CRAN!</title>
-      <link>/post/heddlrcran/heddlr-release/</link>
+      <link>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/post/heddlrcran/heddlr-release/</guid>
+      <guid>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</guid>
       <description>
 
 
@@ -36,9 +131,9 @@ on CRAN is 0.5.0, with 0.1 -&amp;gt; 0.4 previously released on &lt;a href=&#34;
     
     <item>
       <title>heddlr: Dynamic R Markdown Document Generation</title>
-      <link>/project/heddlr/</link>
+      <link>https://www.mikemahoney218.com/project/heddlr/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>/project/heddlr/</guid>
+      <guid>https://www.mikemahoney218.com/project/heddlr/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/rmarkdown&#34; target=&#34;_blank&#34;&gt;R Markdown&lt;/a&gt; is one of the coolest
 parts of the R ecosystem, making it trivial to create professional-looking
 HTML and PDF documents using simple markdown language. &lt;code&gt;heddlr&lt;/code&gt; looks to
@@ -56,9 +151,9 @@ code on &lt;a href=&#34;https://github.com/mikemahoney218/heddlr&#34; target=&#3
     
     <item>
       <title>Introduction to Data Exploration and Analysis with R</title>
-      <link>/project/idear/</link>
+      <link>https://www.mikemahoney218.com/project/idear/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>/project/idear/</guid>
+      <guid>https://www.mikemahoney218.com/project/idear/</guid>
       <description>&lt;p&gt;There are a lot of resources online to learn R. Some of them are extremely well-written and well-structured, but approach things from a different perspective than I find useful. Some of them are expansive and touch on a massive number of topics, but either don’t go as thoroughly into these topics as might be helpful, or have an interesting writing style or are otherwise hard to follow.&lt;/p&gt;
 
 &lt;p&gt;I’ve got a very specific idea of how R should be taught, at least to those interested in using it for data science and other analytical applications. And so in 2018 I began working on a reader - conceived at the time as a series of lecture notes, to support a 3-credit undergrad course - that could be used to learn R that way. However, as I started giving out copies of the reader to friends for feedback, I noticed that a lot of them found the book useful to learn R on their own, and would rather learn that way than in a lecture environment. As such, I started shifting the content into more of a standalone book, attempting to teach R for use in analysis work in both scientific and business contexts.&lt;/p&gt;

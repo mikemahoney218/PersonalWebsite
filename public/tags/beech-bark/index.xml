@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Beech-Bark | Mike Mahoney</title>
-    <link>/tags/beech-bark/</link>
-      <atom:link href="/tags/beech-bark/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/tags/beech-bark/</link>
+      <atom:link href="https://www.mikemahoney218.com/tags/beech-bark/index.xml" rel="self" type="application/rss+xml" />
     <description>Beech-Bark</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 23 Oct 2018 00:00:00 -0400</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>Beech-Bark</title>
-      <link>/tags/beech-bark/</link>
+      <link>https://www.mikemahoney218.com/tags/beech-bark/</link>
     </image>
     
     <item>
       <title>Impacts of Fertilization on Beech Bark Disease</title>
-      <link>/project/beechbark/</link>
+      <link>https://www.mikemahoney218.com/project/beechbark/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
-      <guid>/project/beechbark/</guid>
+      <guid>https://www.mikemahoney218.com/project/beechbark/</guid>
       <description>&lt;p&gt;Although beech bark disease was first detected in North America almost 130 years ago, questions remain about this stand-restructuring pathosystem. Two phloem-feeding beech scale insects, &lt;em&gt;Cryptococcus fagisuga&lt;/em&gt;, an invasive species and &lt;em&gt;Xylococcus betulae&lt;/em&gt;, a native species, predispose American beech (&lt;em&gt;Fagus grandifolia&lt;/em&gt;) to infection by &lt;em&gt;Neonectria ditissima&lt;/em&gt; and &lt;em&gt;N. faginata&lt;/em&gt;, fungal pathogens believed to be a cause of beech decline. While it is known that high bark N:P predisposes trees to BBD, it is unknown whether N or P affects which of the causal organisms are involved.&lt;/p&gt;
 
 &lt;p&gt;As part of the Multiple Element Limitation in Northern Hardwood Ecosystem project (MELNHE), experimental plots have been established within Bartlett Experimental Forest in Bartlett, New Hampshire in order to investigate the impact of nutrient additions on this pathosystem. These plots – located within nine stands of three distinct age classes – have been maintained as controls or fertilized each year since 2011 with either nitrogen, phosphorous, or a combination of both nitrogen and phosphorous. Fungal samples and photographs were collected from these experimental plots in summer and fall of 2017. By quantifying the densities of scale insect and the relative proportions of Neonectria species across plots of different treatments, we hope to understand how nutrient additions impact the causal organisms of beech bark disease.&lt;/p&gt;

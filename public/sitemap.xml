@@ -3,327 +3,337 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tutorials/dataviz/</loc>
+    <loc>https://www.mikemahoney218.com/tutorials/dataviz/</loc>
     <lastmod>2019-10-10T00:13:08-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tutorials/dataviz/dataviz-theory/</loc>
+    <loc>https://www.mikemahoney218.com/tutorials/dataviz/dataviz-theory/</loc>
     <lastmod>2019-10-12T23:47:18-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tutorials/dataviz/dataviz-mechanics/</loc>
+    <loc>https://www.mikemahoney218.com/tutorials/dataviz/dataviz-mechanics/</loc>
     <lastmod>2019-10-12T23:47:18-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tutorials/dataviz/excellent/</loc>
+    <loc>https://www.mikemahoney218.com/tutorials/dataviz/excellent/</loc>
     <lastmod>2019-10-12T23:47:18-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/admin/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/tags/maps/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/heddlrcran/heddlr-release/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/project/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/tags/r/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/heddlr/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/tags/r-packages/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/tags/spacey/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/project/spacey/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/tags/</loc>
+    <lastmod>2020-03-24T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/authors/admin/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r-packages/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+    <loc>https://www.mikemahoney218.com/authors/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/data-visualization/</loc>
+    <loc>https://www.mikemahoney218.com/categories/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/tags/geospatial-data/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/categories/r/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/categories/spacey/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</loc>
+    <lastmod>2020-01-23T19:10:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/categories/heddlr/</loc>
+    <lastmod>2020-01-23T19:10:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/tags/r-markdown/</loc>
+    <lastmod>2020-01-23T19:10:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.mikemahoney218.com/tags/data-visualization/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-visualization/</loc>
+    <loc>https://www.mikemahoney218.com/categories/data-visualization/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/publications/</loc>
+    <loc>https://www.mikemahoney218.com/tags/publications/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/tdstutorial/tutorial-dataviz/</loc>
+    <loc>https://www.mikemahoney218.com/post/tdstutorial/tutorial-dataviz/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tutorials/</loc>
+    <loc>https://www.mikemahoney218.com/categories/tutorials/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/tutorials/</loc>
+    <loc>https://www.mikemahoney218.com/tags/tutorials/</loc>
     <lastmod>2019-11-16T12:02:52-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/publications/</loc>
+    <loc>https://www.mikemahoney218.com/categories/publications/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/tdsdataviz/tds-dataviz/</loc>
+    <loc>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</loc>
     <lastmod>2019-10-13T21:14:12-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/towards-data-science/</loc>
+    <loc>https://www.mikemahoney218.com/tags/towards-data-science/</loc>
     <lastmod>2019-10-13T21:14:12-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/dataviz/</loc>
+    <loc>https://www.mikemahoney218.com/categories/dataviz/</loc>
     <lastmod>2019-10-12T23:47:18-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-analytics/</loc>
+    <loc>https://www.mikemahoney218.com/tags/data-analytics/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-science/</loc>
+    <loc>https://www.mikemahoney218.com/tags/data-science/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/heddlr/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
+    <loc>https://www.mikemahoney218.com/tags/heddlr/</loc>
+    <lastmod>2020-01-23T19:10:29-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/heddlr/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
+    <loc>https://www.mikemahoney218.com/project/heddlr/</loc>
+    <lastmod>2020-01-23T19:10:29-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/idear/</loc>
+    <loc>https://www.mikemahoney218.com/project/idear/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
+    <loc>https://www.mikemahoney218.com/tags/machine-learning/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
-    <lastmod>2020-01-03T11:26:35-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/beaver/</loc>
+    <loc>https://www.mikemahoney218.com/categories/beaver/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/beaver/</loc>
+    <loc>https://www.mikemahoney218.com/tags/beaver/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/thesis/</loc>
+    <loc>https://www.mikemahoney218.com/tags/thesis/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/thesispublished/ml-beaver-data/</loc>
+    <loc>https://www.mikemahoney218.com/post/thesispublished/ml-beaver-data/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
+    <loc>https://www.mikemahoney218.com/slides/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/example/</loc>
+    <loc>https://www.mikemahoney218.com/slides/example/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/3/</loc>
+    <loc>https://www.mikemahoney218.com/publication_types/3/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/beaver-thesis/</loc>
+    <loc>https://www.mikemahoney218.com/publication/beaver-thesis/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/beaver-impacts/</loc>
+    <loc>https://www.mikemahoney218.com/tags/beaver-impacts/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/michael-j-mahoney/</loc>
+    <loc>https://www.mikemahoney218.com/authors/michael-j-mahoney/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>https://www.mikemahoney218.com/publication_types/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2019-10-09T23:49:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/extra/</loc>
-    <lastmod>2019-10-09T23:49:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/announcements/</loc>
+    <loc>https://www.mikemahoney218.com/categories/announcements/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/ras2018/one-conference-down/</loc>
+    <loc>https://www.mikemahoney218.com/post/ras2018/one-conference-down/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/femc_2018/</loc>
+    <loc>https://www.mikemahoney218.com/talk/femc_2018/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/ras_2018/</loc>
+    <loc>https://www.mikemahoney218.com/talk/ras_2018/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/beech-bark/</loc>
+    <loc>https://www.mikemahoney218.com/tags/beech-bark/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/beaverimpacts/</loc>
+    <loc>https://www.mikemahoney218.com/project/beaverimpacts/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/beechbark/</loc>
+    <loc>https://www.mikemahoney218.com/project/beechbark/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/john-c.-stella/</loc>
+    <loc>https://www.mikemahoney218.com/authors/john-c.-stella/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/michael-j.-mahoney/</loc>
+    <loc>https://www.mikemahoney218.com/authors/michael-j.-mahoney/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/announcements/</loc>
+    <loc>https://www.mikemahoney218.com/tags/announcements/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/conferences/</loc>
+    <loc>https://www.mikemahoney218.com/tags/conferences/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/other/</loc>
+    <loc>https://www.mikemahoney218.com/categories/other/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/twofallconf2018/2018-10-23-two-fall-conferences/</loc>
+    <loc>https://www.mikemahoney218.com/post/twofallconf2018/2018-10-23-two-fall-conferences/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/newsite/welcome-to-the-new-site/</loc>
+    <loc>https://www.mikemahoney218.com/post/newsite/welcome-to-the-new-site/</loc>
     <lastmod>2019-10-14T20:33:35-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/privacy/</loc>
+    <loc>https://www.mikemahoney218.com/post/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/terms/</loc>
+    <loc>https://www.mikemahoney218.com/publication/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://www.mikemahoney218.com/talk/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/</loc>
-    <lastmod>2019-10-09T23:49:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2019-10-09T23:49:28-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorials/</loc>
+    <loc>https://www.mikemahoney218.com/tutorials/</loc>
     <lastmod>2019-10-09T23:49:28-04:00</lastmod>
   </url>
   

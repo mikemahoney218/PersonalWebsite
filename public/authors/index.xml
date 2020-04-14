@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors | Mike Mahoney</title>
-    <link>/authors/</link>
-      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/authors/</link>
+      <atom:link href="https://www.mikemahoney218.com/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>Authors</title>
-      <link>/authors/</link>
+      <link>https://www.mikemahoney218.com/authors/</link>
     </image>
     
     <item>
       <title></title>
-      <link>/authors/admin/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/authors/admin/</guid>
+      <link>https://www.mikemahoney218.com/authors/admin/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/authors/admin/</guid>
       <description>&lt;p&gt;I am an analyst at Wayfair, Inc., working within the Forecasting Analytics team within the larger Workforce Management group. In the past I&amp;rsquo;ve worked as an independent researcher with both the Stella Riparian and Stream Ecology and Yanai Forest Ecosystem Science laboratories, as well as the Beaver Impact Assessment intern for the New York State Department of Environmental Conservation. In all of these roles I&amp;rsquo;ve worked to apply data science techniques to large-scale challenges, frequently serving as the statistical and technical expert within my team.&lt;/p&gt;
 
 &lt;p&gt;My past projects have included assessing the landscape-level impacts of ecosystem engineers within New York&amp;rsquo;s Adirondack State Park, as well as investigating the impact of fertilization on beech bark disease within the White Mountains of New Hampshire. I&amp;rsquo;ve also written a primer on how to use R for data exploration and analysis in both scientific and business contexts.&lt;/p&gt;
@@ -25,25 +25,25 @@
     
     <item>
       <title>Michael J Mahoney</title>
-      <link>/authors/michael-j-mahoney/</link>
+      <link>https://www.mikemahoney218.com/authors/michael-j-mahoney/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-      <guid>/authors/michael-j-mahoney/</guid>
+      <guid>https://www.mikemahoney218.com/authors/michael-j-mahoney/</guid>
       <description></description>
     </item>
     
     <item>
       <title>John C. Stella</title>
-      <link>/authors/john-c.-stella/</link>
+      <link>https://www.mikemahoney218.com/authors/john-c.-stella/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
-      <guid>/authors/john-c.-stella/</guid>
+      <guid>https://www.mikemahoney218.com/authors/john-c.-stella/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Michael J. Mahoney</title>
-      <link>/authors/michael-j.-mahoney/</link>
+      <link>https://www.mikemahoney218.com/authors/michael-j.-mahoney/</link>
       <pubDate>Tue, 23 Oct 2018 00:00:00 -0400</pubDate>
-      <guid>/authors/michael-j.-mahoney/</guid>
+      <guid>https://www.mikemahoney218.com/authors/michael-j.-mahoney/</guid>
       <description></description>
     </item>
     

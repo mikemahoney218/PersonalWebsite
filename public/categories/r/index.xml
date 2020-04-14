@@ -2,21 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R | Mike Mahoney</title>
-    <link>/categories/r/</link>
-      <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/categories/r/</link>
+      <atom:link href="https://www.mikemahoney218.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <description>R</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>R</title>
-      <link>/categories/r/</link>
+      <link>https://www.mikemahoney218.com/categories/r/</link>
     </image>
     
     <item>
+      <title>Announcing {spacey}, now on CRAN!</title>
+      <link>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</guid>
+      <description>
+
+
+&lt;p&gt;I’ve launched a new package to CRAN! &lt;code&gt;spacey&lt;/code&gt; helps you pull elevation and
+image overlay data from the USGS and ESRI, then helps you turn them into
+beautiful maps via &lt;a href=&#34;https://www.rayshader.com/&#34;&gt;the fantastic &lt;code&gt;rayshader&lt;/code&gt; package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The package has a &lt;a href=&#34;https://mikemahoney218.github.io/spacey/&#34;&gt;documentation website&lt;/a&gt;
+built with &lt;a href=&#34;https://pkgdown.r-lib.org/&#34;&gt;pkgdown&lt;/a&gt; – check it out for more
+information!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Announcing {heddlr}, now on CRAN!</title>
-      <link>/post/heddlrcran/heddlr-release/</link>
+      <link>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/post/heddlrcran/heddlr-release/</guid>
+      <guid>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</guid>
       <description>
 
 

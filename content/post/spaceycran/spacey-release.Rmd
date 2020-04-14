@@ -1,0 +1,22 @@
+---
+title: "Announcing {spacey}, now on CRAN!"
+authors: [admin]
+date: '2020-03-24'
+slug: spacey-release
+categories:
+  - R
+  - spacey
+tags: ["R", "R Packages", "maps", "geospatial data"]
+image:
+  caption: ''
+  focal_point: ''
+summary: "USGS data access and rayshader maps, done cheap."
+---
+
+I've launched a new package to CRAN! `spacey` helps you pull elevation and 
+image overlay data from the USGS and ESRI, then helps you turn them into 
+beautiful maps via [the fantastic `rayshader` package](https://www.rayshader.com/).
+
+The package has a [documentation website](https://mikemahoney218.github.io/spacey/)
+built with [pkgdown](https://pkgdown.r-lib.org/) -- check it out for more 
+information!

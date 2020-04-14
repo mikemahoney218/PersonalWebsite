@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data Visualization | Mike Mahoney</title>
-    <link>/categories/data-visualization/</link>
-      <atom:link href="/categories/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/categories/data-visualization/</link>
+      <atom:link href="https://www.mikemahoney218.com/categories/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     <description>Data Visualization</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>Data Visualization</title>
-      <link>/categories/data-visualization/</link>
+      <link>https://www.mikemahoney218.com/categories/data-visualization/</link>
     </image>
     
     <item>
       <title>The Art and Science of Data Visualization is now live on the site!</title>
-      <link>/post/tdstutorial/tutorial-dataviz/</link>
+      <link>https://www.mikemahoney218.com/post/tdstutorial/tutorial-dataviz/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>/post/tdstutorial/tutorial-dataviz/</guid>
+      <guid>https://www.mikemahoney218.com/post/tdstutorial/tutorial-dataviz/</guid>
       <description>
 
 
@@ -26,9 +26,9 @@
     
     <item>
       <title>The Art and Science of Data Visualization published in Towards Data Science</title>
-      <link>/post/tdsdataviz/tds-dataviz/</link>
+      <link>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</link>
       <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/post/tdsdataviz/tds-dataviz/</guid>
+      <guid>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</guid>
       <description>
 
 

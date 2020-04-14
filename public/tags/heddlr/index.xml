@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>heddlr | Mike Mahoney</title>
-    <link>/tags/heddlr/</link>
-      <atom:link href="/tags/heddlr/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.mikemahoney218.com/tags/heddlr/</link>
+      <atom:link href="https://www.mikemahoney218.com/tags/heddlr/index.xml" rel="self" type="application/rss+xml" />
     <description>heddlr</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Sat, 18 May 2019 00:00:00 -0400</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
       <title>heddlr</title>
-      <link>/tags/heddlr/</link>
+      <link>https://www.mikemahoney218.com/tags/heddlr/</link>
     </image>
     
     <item>
       <title>heddlr: Dynamic R Markdown Document Generation</title>
-      <link>/project/heddlr/</link>
+      <link>https://www.mikemahoney218.com/project/heddlr/</link>
       <pubDate>Sat, 18 May 2019 00:00:00 -0400</pubDate>
-      <guid>/project/heddlr/</guid>
+      <guid>https://www.mikemahoney218.com/project/heddlr/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/rstudio/rmarkdown&#34; target=&#34;_blank&#34;&gt;R Markdown&lt;/a&gt; is one of the coolest
 parts of the R ecosystem, making it trivial to create professional-looking
 HTML and PDF documents using simple markdown language. &lt;code&gt;heddlr&lt;/code&gt; looks to
