@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>heddlr | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/categories/heddlr/</link>
-      <atom:link href="https://www.mikemahoney218.com/categories/heddlr/index.xml" rel="self" type="application/rss+xml" />
+    <link>/categories/heddlr/</link>
+      <atom:link href="/categories/heddlr/index.xml" rel="self" type="application/rss+xml" />
     <description>heddlr</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>heddlr</title>
-      <link>https://www.mikemahoney218.com/categories/heddlr/</link>
+      <link>/categories/heddlr/</link>
     </image>
     
     <item>
       <title>Announcing {heddlr}, now on CRAN!</title>
-      <link>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</link>
+      <link>/post/heddlrcran/heddlr-release/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</guid>
+      <guid>/post/heddlrcran/heddlr-release/</guid>
       <description>
 
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Packages | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tags/r-packages/</link>
-      <atom:link href="https://www.mikemahoney218.com/tags/r-packages/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/r-packages/</link>
+      <atom:link href="/tags/r-packages/index.xml" rel="self" type="application/rss+xml" />
     <description>R Packages</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 24 Mar 2020 00:00:00 -0400</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>R Packages</title>
-      <link>https://www.mikemahoney218.com/tags/r-packages/</link>
+      <link>/tags/r-packages/</link>
     </image>
     
     <item>
       <title>spacey: Obtain Spatial Data and Make Better Maps</title>
-      <link>https://www.mikemahoney218.com/project/spacey/</link>
+      <link>/project/spacey/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 -0400</pubDate>
-      <guid>https://www.mikemahoney218.com/project/spacey/</guid>
+      <guid>/project/spacey/</guid>
       <description>&lt;p&gt;The &lt;code&gt;spacey&lt;/code&gt; package provides three main functions to make it easy to
 quickly build beautiful maps of locations in the United States via the
 &lt;a href=&#34;https://github.com/tylermorganwall/rayshader&#34; target=&#34;_blank&#34;&gt;rayshader&lt;/a&gt; package. First
@@ -28,13 +28,16 @@ example_map &amp;lt;- automap(44.121268, -73.903734)
 example_map
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;temp_files/figure-markdown_strict/johns_brook_basic-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;johns_brook_basic-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;As well as letting you incorporate overlay textures from ESRI’s
 MapServer API:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;example_map$update_values(overlay = &amp;quot;World_Imagery&amp;quot;)
+example_map
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;johns-brook-texture.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And optionally even turn these into 3D visualizations:&lt;/p&gt;
 
@@ -42,7 +45,7 @@ MapServer API:&lt;/p&gt;
 example_map
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;temp_files/figure-markdown_strict/johns_brook_3d-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;johns_brook_3d-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;All of these can also work with the &lt;code&gt;future&lt;/code&gt; package to speed up
 processing, letting you iterate on your map designs faster:&lt;/p&gt;
@@ -92,9 +95,9 @@ code on &lt;a href=&#34;https://github.com/mikemahoney218/spacey&#34; target=&#3
     
     <item>
       <title>Announcing {spacey}, now on CRAN!</title>
-      <link>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</link>
+      <link>/post/spaceycran/spacey-release/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</guid>
+      <guid>/post/spaceycran/spacey-release/</guid>
       <description>
 
 
@@ -109,9 +112,9 @@ information!&lt;/p&gt;
     
     <item>
       <title>Announcing {heddlr}, now on CRAN!</title>
-      <link>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</link>
+      <link>/post/heddlrcran/heddlr-release/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/heddlrcran/heddlr-release/</guid>
+      <guid>/post/heddlrcran/heddlr-release/</guid>
       <description>
 
 

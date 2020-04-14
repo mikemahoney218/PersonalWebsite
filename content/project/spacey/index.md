@@ -36,19 +36,22 @@ from the USGS national map:
     example_map <- automap(44.121268, -73.903734)
     example_map
 
-![](temp_files/figure-markdown_strict/johns_brook_basic-1.png)
+![](johns_brook_basic-1.png)
 
 As well as letting you incorporate overlay textures from ESRI’s
 MapServer API:
 
     example_map$update_values(overlay = "World_Imagery")
+    example_map
+
+![](johns-brook-texture.png)
 
 And optionally even turn these into 3D visualizations:
 
     example_map$method <- "3d"
     example_map
 
-![](temp_files/figure-markdown_strict/johns_brook_3d-1.png)
+![](johns_brook_3d-1.png)
 
 All of these can also work with the `future` package to speed up
 processing, letting you iterate on your map designs faster:

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>geospatial data | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tags/geospatial-data/</link>
-      <atom:link href="https://www.mikemahoney218.com/tags/geospatial-data/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/geospatial-data/</link>
+      <atom:link href="/tags/geospatial-data/index.xml" rel="self" type="application/rss+xml" />
     <description>geospatial data</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>geospatial data</title>
-      <link>https://www.mikemahoney218.com/tags/geospatial-data/</link>
+      <link>/tags/geospatial-data/</link>
     </image>
     
     <item>
       <title>Announcing {spacey}, now on CRAN!</title>
-      <link>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</link>
+      <link>/post/spaceycran/spacey-release/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/spaceycran/spacey-release/</guid>
+      <guid>/post/spaceycran/spacey-release/</guid>
       <description>
 
 

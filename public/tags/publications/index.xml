@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Mike Mahoney</title>
-    <link>https://www.mikemahoney218.com/tags/publications/</link>
-      <atom:link href="https://www.mikemahoney218.com/tags/publications/index.xml" rel="self" type="application/rss+xml" />
+    <link>/tags/publications/</link>
+      <atom:link href="/tags/publications/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Mike Mahoney 2019</copyright><lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://www.mikemahoney218.com/img/icon-192.png</url>
+      <url>/img/icon-192.png</url>
       <title>Publications</title>
-      <link>https://www.mikemahoney218.com/tags/publications/</link>
+      <link>/tags/publications/</link>
     </image>
     
     <item>
       <title>The Art and Science of Data Visualization is now live on the site!</title>
-      <link>https://www.mikemahoney218.com/post/tdstutorial/tutorial-dataviz/</link>
+      <link>/post/tdstutorial/tutorial-dataviz/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/tdstutorial/tutorial-dataviz/</guid>
+      <guid>/post/tdstutorial/tutorial-dataviz/</guid>
       <description>
 
 
@@ -26,9 +26,9 @@
     
     <item>
       <title>The Art and Science of Data Visualization published in Towards Data Science</title>
-      <link>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</link>
+      <link>/post/tdsdataviz/tds-dataviz/</link>
       <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/tdsdataviz/tds-dataviz/</guid>
+      <guid>/post/tdsdataviz/tds-dataviz/</guid>
       <description>
 
 
@@ -39,9 +39,9 @@
     
     <item>
       <title>Thesis Now Available in ESF Digital Commons</title>
-      <link>https://www.mikemahoney218.com/post/thesispublished/ml-beaver-data/</link>
+      <link>/post/thesispublished/ml-beaver-data/</link>
       <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.mikemahoney218.com/post/thesispublished/ml-beaver-data/</guid>
+      <guid>/post/thesispublished/ml-beaver-data/</guid>
       <description>
 
 
@@ -52,7 +52,7 @@ p.caption {
 &lt;/style&gt;
 &lt;p&gt;My thesis is now available on the &lt;a href=&#34;https://digitalcommons.esf.edu/honors/141/&#34;&gt;ESF Digital Commons&lt;/a&gt;! I’m extremely grateful to Drs. John Drake and Bill Shields for their help in the revision and submission process, and of course to Dr. John Stella for the extensive support he provided throughout the project, from conceptualization to publication.&lt;/p&gt;
 &lt;p&gt;In the thesis, we look at the impacts beavers have on the forest community around them as they remove trees for food and building dams. While people had looked at these impacts in other parts of beaver’s range, the Adirondacks are a strange enough ecosystem - being largely protected from anthropogenic disturbances, most of the forest landscape exhibits only one or two age classes - that we weren’t sure how applicable conclusions from these regions would be. What we found was that while the broad conclusions of these studies held true - beavers still operate as central place foragers and create large disturbances in the landscape - the lack of early-successional species throughout the Adirondacks seriously shifted which stems were harvested preferrentially. We also found a lot of variance in the patterns of how individual species were utilized - for instance, beaver harvested almost any size speckled alder they could find, so long as it was close to their dam, but would harvest red maple at any distance, so long as the stem was small.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.mikemahoney218.com/home/mikemahoney218/codebase/PersonalWebsite/static/img/Wireframes.png&#34; width=&#34;274&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/home/mikemahoney218/codebase/PersonalWebsite/static/img/Wireframes.png&#34; width=&#34;274&#34; /&gt;&lt;/p&gt;
 &lt;font size = 0.75em&gt;
 &lt;div style=&#34;line-height: 1&#34;&gt;
 One figure from the article version of the thesis, showing the odds a stem will be harvested (z-axis) as a function of how far (x-axis, left) and how big (y-axis, right) it is.
