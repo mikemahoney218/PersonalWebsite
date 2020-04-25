@@ -40,3 +40,8 @@
 [[redirects]]
   from = "/researchgate"
   to = "https://www.researchgate.net/profile/Michael_Mahoney13"
+
+[[redirects]]
+  from = "/"
+  to = "https://mm218.dev"
+
