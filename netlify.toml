@@ -44,4 +44,5 @@
 [[redirects]]
   from = "/"
   to = "https://mm218.dev"
+  force = true
 
